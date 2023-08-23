@@ -1,0 +1,13 @@
+.box {
+    width: 423px;
+    height: 90px;
+    background-color: rgb(24, 8, 8);
+    color: white;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 30%, 83% 100%, 0% 100%, 0% 50%);
+  }
+  
+  .parent {
+    filter: url('#goo');
+    overflow:hidden;
+    z-index: 1;
+  }
