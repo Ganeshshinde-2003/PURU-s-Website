@@ -1,0 +1,59 @@
+.footer{
+    margin-top: 40px;
+    height: auto;
+    background-color: #141a16;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 80px;
+    padding: 40px 40px;
+}
+
+.part1, .part2{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    color: white;
+}
+.part1{
+    justify-content: center;
+}
+.links, .socialmedia {
+    display: flex;
+    gap: 20px;
+    font-size: 25px;
+}
+.links a, .socialmedia a {
+    color: white;
+}
+.text{
+    font-size: 20px;
+}
+.arrowdown {
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid white;
+    cursor: pointer;
+}
+.cotactus{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 30px;
+}
+.logoname{
+    font-size: 110px;
+}
+/* Puru's color palette
+Brown 2f2b2a
+Pink   cd3774
+Green 25362d
+Orange e46737 */

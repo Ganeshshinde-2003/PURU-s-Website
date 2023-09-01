@@ -1,3 +1,15 @@
 body {
   background-color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img{
+  border-radius: 10px;
+}
+a {
+  text-decoration: none;
+}
+p{
+  margin: 0 0;
 }
