@@ -1,0 +1,30 @@
+.main {
+  padding: 100px 300px;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+.namings {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 50px;
+}
+.contact {
+  font-size: 45px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.askings {
+  font-size: 20px;
+  font-weight: 500;
+}
+.askings span {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.arrow{
+    transform: rotate(270deg);
+}

@@ -13,3 +13,20 @@ a {
 p{
   margin: 0 0;
 }
+input{
+  outline: none; 
+  border: none;
+  background-color: #524e4d;
+  padding: 10px 20px;
+  font-size: 17px;
+  color: white;
+  width: auto;
+  max-width: 100%;
+}
+input::placeholder {
+  color: white;
+}
+input:focus,
+input:active {
+  background-color: #524e4d;
+}
