@@ -1,0 +1,71 @@
+.main {
+    margin: 0 70px;
+  }
+.activeLink p {
+  text-decoration: underline;
+  color: white;
+}
+
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .container {
+    position: relative;
+  }
+  
+  .box {
+    width: 60vw;
+    height: 90px;
+    background-color: #2f2b2a;
+    color: white;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 30%, 90% 100%, 0% 100%, 0% 50%);
+  }
+  
+  .parent {
+    filter: url('#goo');
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .headerlinks {
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .headerlinks a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2rem;
+  }
+  
+  .box2 {
+    width: 200px;
+    height: 90px;
+    background-color: #2f2b2a;
+    color: white;
+    clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 0% 100%, 0% 69%, 40% 0%);
+  }
+  
+  .headerlinks2 {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    font-size: 2rem;
+    color: white;
+  }
+  
+  .headerlinks a,
+  .search {
+    cursor: pointer;
+  }
+  
