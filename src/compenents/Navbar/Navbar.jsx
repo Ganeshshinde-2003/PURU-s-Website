@@ -14,7 +14,7 @@ function Navbar() {
   const handleLinkClick = (index) => {
     setActiveLink(index);
   };
-
+ 
   return (
     <div className={styles.main}>
       <div className={styles.header}>
@@ -54,10 +54,10 @@ function Navbar() {
             <Link href="/purustories">
                 Puru's story
             </Link>
-            <Link href="/purustories">
+            <Link href="/collaboration">
                 Collaboration
             </Link>
-            <Link href="/">
+            <Link href="/contactus">
                 Contact us
             </Link>
           </div>
