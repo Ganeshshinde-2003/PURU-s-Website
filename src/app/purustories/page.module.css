@@ -1,0 +1,86 @@
+.main {
+    margin-top: 40px;
+}
+.part1 {
+    margin: 30px 100px;
+    display: flex;
+    gap: 20px;
+}
+.part1 div {
+    width: 50%;
+}
+.textpart p {
+    font-size: 25px;
+}
+.ourvalues{
+  position: relative;
+}
+.approach {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 30px;
+    height: auto;
+    margin-top: 140px;
+  }
+  .approach div {
+    width: 50%;
+  }
+  .imgpart {
+    display: flex;
+    justify-content: center;
+    padding-left: 40px;
+  }
+  .approach span , .ourvalues span{
+    top: 43%;
+    left: -10px;
+    position: absolute;
+    font-size: 40px;
+    font-weight: 600;
+    transform: rotate(-90deg);
+  }
+  .approach .textpart {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .textpart .head{
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .textpart p:nth-child(2){
+    font-size: 20px;
+    padding-right: 150px;
+  }
+  .ourvalues{
+    margin: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .ourvalues .values{
+    margin-left: 15%;
+    display: flex;
+  }
+  .values div{
+    width: 50%;
+  }
+  .values .headings{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+  }
+  .values .headings p {
+    font-size: 30px;
+    font-weight: bold;
+  }
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -5%;
+  }
+  .text p {
+    font-size: 20px;
+  }
