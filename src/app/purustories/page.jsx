@@ -42,7 +42,7 @@ function page() {
         </div>
       </section>
       <section className={styles.ourvalues}>
-        <span>Our values</span>
+        <span>OUR VALUES</span>
         <div className={styles.values}>
           <div className={styles.headings}>
             <Image src={v1} alt="vector one" />

@@ -1,7 +1,6 @@
 "use client";
 
 import styles from "./page.module.css";
-import Logo from "../../public/logo.png";
 import Arroedownn from "../../public/arrowdown.png";
 import vec1 from "../../public/vectors/1.png";
 import vec2 from "../../public/vectors/2.png";
@@ -9,30 +8,41 @@ import vec3 from "../../public/vectors/3.png";
 import vec4 from "../../public/vectors/7.png";
 import vec5 from "../../public/vectors/4.png";
 import Approach from "../../public/ricardo-gomez-angel-WsEAiVwGrwo-unsplash 1.png";
+import vec6 from "../../public/vectors/5.png";
+import vec7 from "../../public/vectors/6.png";
+import vec8 from "../../public/vectors/8.png";
+import vec9 from "../../public/vectors/9.png";
 import wwd1 from "../../public/0F4A9036 1.png";
 import wwd2 from "../../public/matthew-henry-VviFtDJakYk-unsplash 1.png";
 import jobs from "../../public/lycs-architecture-U2BI3GMnSSE-unsplash 1.png";
 import Image from "next/image";
-import Link from "next/link";
-import { useState } from "react";
-import { FaSearch } from "react-icons/fa";
+
+import { useEffect } from "react";
 
 export default function Home() {
-  const [moveX, setMoveX] = useState(0);
-  const [moveY, setMoveY] = useState(0);
 
-  const handleMouseMove = (e) => {
-    const centerX = window.innerWidth / 2;
-    const centerY = window.innerHeight / 2;
-    const newMoveX = (centerX - e.clientX) * 0.02;
-    const newMoveY = (centerY - e.clientY) * 0.02;
+  useEffect(() => {
+    const vectorDiv =  document.querySelector(`.${styles.vectors}`);
 
-    setMoveX(newMoveX);
-    setMoveY(newMoveY);
-  };
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const triggerPositionSec = vectorDiv.offsetTop - window.innerHeight / 2;
+
+      if (scrollPosition > triggerPositionSec) {
+        vectorDiv.classList.add(styles.changeColor);
+      } else {
+        vectorDiv.classList.remove(styles.changeColor);
+      }
+    }
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <main className={styles.main} onMouseMove={handleMouseMove}>
+    <main className={styles.main}>
 
       <section className={styles.part1}>
         <div className={styles.text}>
@@ -50,51 +60,65 @@ export default function Home() {
         </div>
       </section>
       <section className={styles.vectors}>
-        <div
-          className={styles.imageContainer1}
-          style={{ transform: `translate(${moveX}px, ${moveY}px)` }}
-        >
           <Image
             src={vec1}
             className={styles.imgvec1}
             alt="vector"
-            height={400}
+            height={300}
           />
           <Image
             src={vec2}
             className={styles.imgvec2}
             alt="vector"
-            height={400}
+            height={500}
           />
-        </div>
+          <Image
+            src={vec6}
+            className={styles.imgvec3}
+            alt="vector"
+            height={250}
+          />
+          <Image
+            src={vec7}
+            className={styles.imgvec4}
+            alt="vector"
+            height={200}
+          />
         <p className={styles.vectorp}>
           Inspiring <br />
           for <br />
           Innovation
         </p>
-        <div
-          className={styles.imageContainer2}
-          style={{ transform: `translate(${moveX}px, ${moveY}px)` }}
-        >
           <Image
             src={vec3}
-            className={styles.imgvec3}
+            className={styles.imgvec5}
             alt="vector"
             height={400}
           />
           <Image
             src={vec4}
-            className={styles.imgvec4}
+            className={styles.imgvec6}
             alt="vector"
             height={400}
           />
           <Image
             src={vec5}
-            className={styles.imgvec5}
+            className={styles.imgvec7}
             alt="vector"
             height={400}
           />
-        </div>
+          <Image
+            src={vec8}
+            className={styles.imgvec8}
+            alt="vector"
+            height={400}
+          />
+          <Image
+            src={vec9}
+            className={styles.imgvec9}
+            alt="vector"
+            height={350}
+          />
       </section>
       <section className={styles.about}>
         <span className={styles.aboutus}>
@@ -119,7 +143,7 @@ export default function Home() {
             initiatives and actions aimed at the preservation of a particular
             resource. However, it actually refers to four distinct areas: human,
             social. economic and environmental - known as the four pillars of
-            sustainability
+            sustainability.
           </p>
           <div className={styles.links}>
             <div className={styles.dis}>
@@ -143,7 +167,7 @@ export default function Home() {
             <Image
               src={Arroedownn}
               alt="LOGO"
-              height={60}
+              height={80}
               className={styles.approachlink}
             />
           </div>
@@ -155,7 +179,7 @@ export default function Home() {
             <Image
               src={Arroedownn}
               alt="LOGO"
-              height={60}
+              height={80}
               className={styles.approachlink}
             />
           </div>

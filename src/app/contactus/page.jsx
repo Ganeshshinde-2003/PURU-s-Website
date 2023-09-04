@@ -20,7 +20,7 @@ function page() {
           <Image
             src={Arroedownn}
             alt="LOGO"
-            height={200}
+            height={300}
             className={styles.arrow}
           />
         </div>

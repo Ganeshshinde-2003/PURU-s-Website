@@ -1,6 +1,7 @@
 import Link from "next/link";
 import styles from "./footer.module.css";
 import Logo from "../../../public/logo.png";
+import Purus from "../../../public/purus.png"
 
 import React from 'react'
 import Image from "next/image";
@@ -31,7 +32,7 @@ function Footer() {
             <p>Contact Us</p> 
             <div className={styles.arrowdown}><FaArrowRight /></div> 
           </div>
-          <p className={styles.logoname}>puru's</p>
+          <Image src={Purus} alt="PURUS" width={300} />
         </div>
       </div>
     </div>

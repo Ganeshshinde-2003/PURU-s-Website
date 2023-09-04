@@ -30,7 +30,7 @@
   .imgpart {
     display: flex;
     justify-content: center;
-    padding-left: 40px;
+    padding-left: 170px;
   }
   .approach span , .ourvalues span{
     top: 43%;
@@ -39,6 +39,9 @@
     font-size: 40px;
     font-weight: 600;
     transform: rotate(-90deg);
+  }
+  .ourvalues span{
+    left: -30px;
   }
   .approach .textpart {
     display: flex;

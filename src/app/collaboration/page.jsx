@@ -29,7 +29,7 @@ function page() {
           undetachable entity from Puru’s Enterprises. Kudos to our partnership
           and collective vision!
         </p>
-        <p className={styles.link}>Visite Our Site: <Link href="https://haraaydesignstudio.com/" target="_black">@HaraayDesignStudio</Link></p>
+        <p className={styles.link}>Visite Site: <Link href="https://haraaydesignstudio.com/" target="_black">@HaraayDesignStudio</Link></p>
       </div>
     </div>
   );

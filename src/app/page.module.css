@@ -79,6 +79,7 @@
   flex-direction: column;
   justify-content: center;
   z-index: 2;
+  gap: 20px;
 }
 
 .empty {
@@ -94,7 +95,7 @@
 
 .text .dis p {
   border-radius: 5px;
-  padding: 2px 5px;
+  padding: 4px 10px;
   font-size: 20px;
   background-color: #25362d;
   color: white;
@@ -108,95 +109,73 @@
   right: 10px;
 }
 
-.vectors {
-  margin-top: 100px;
+.vectors{
+  margin: 65px -70px;
   position: relative;
+  text-align: center;
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 600px;
-}
-
-.imageContainer1,
-.imageContainer2 {
-  width: 100%;
-  margin-left: 50px;
-  margin-right: 50px;
-  height: 100%;
-  display: flex;
   justify-content: center;
-  align-items: center;
-  z-index: -1;
+  height: 100vh;
+  background-color: white;
 }
-
-.imageContainer2 {
+.vectorp{
+  font-size: 80px;
+  font-weight: 500;
+  text-align: right;
   z-index: 10;
 }
-
-.imageContainer img {
-  height: 200px;
-}
-
-.vectorp {
-  z-index: 1;
-  text-align: right;
-  font-size: 80px;
-  /* Adjust as needed */
-}
-
-.imgvec1 {
+.vectors img{
   position: absolute;
-  left: -20%;
-  bottom: -5%;
-  transform: rotate(45deg);
 }
-
-.imgvec2 {
-  position: absolute;
-  left: 230%;
-  bottom: 5%;
-  transform: rotate(45deg);
+.imgvec1{
+  top: 30%;
+  left: 15%;
 }
-
-.imgvec3 {
-  position: absolute;
-  right: 200%;
-  top: -15%;
-  transform: rotate(45deg);
+.imgvec2{
+  bottom: -15%;
+  left: -5%;
 }
-
-.imgvec4 {
-  position: absolute;
+.imgvec4{
+  top: 20%;
+  left: 5%;
+}
+.imgvec6{
+  top: -10%;
+  left: 18%;
+}
+.imgvec5{
+  bottom: -9%;
+  left: 40%;
+}
+.imgvec8{
+  top: -5%;
+  left: 60%;
+}
+.imgvec3{
+  bottom: 17%;
   right: 20%;
-  top: -15%;
-  transform: rotate(45deg);
 }
-.imgvec5 {
-  position: absolute;
-  right: 20%;
-  bottom: -25%;
-  transform: rotate(45deg);
+.imgvec9{
+  top: 10%;
+  right: 0%;
 }
-/* For the first set of images */
-.imgvec1, .imgvec2 {
-  /* ... your existing styles ... */
-  transition: transform 1s ease; /* Add a transition for smooth movement */
+.imgvec7{
+  bottom: 0%;
+  right: 0%;
 }
 
-/* For the second set of images */
-.imgvec3, .imgvec4, .imgvec5 {
-  /* ... your existing styles ... */
-  transition: transform 1s ease; /* Add a transition for smooth movement */
+.changeColor {
+  animation: fadeInBackground 1s ease forwards;
 }
 
-/* On hover, slightly move the images up and down */
-.vectors:hover .imgvec1, .vectors:hover .imgvec2 {
-  transform: translateY(-10px); /* Move up */
-}
-
-/* On hover, slightly move the images up and down */
-.vectors:hover .imgvec3, .vectors:hover .imgvec4, .vectors:hover .imgvec5 {
-  transform: translateY(-10px); /* Move up */
+@keyframes fadeInBackground {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: rgb(224, 222, 222);
+  }
 }
 
 .about {
@@ -204,13 +183,13 @@
   display: flex;
   justify-content: space-between;
 }
-.aboutus p{
-  font-size: 90px;
+.aboutus p{ 
+  font-size: 60px;
   font-weight: 500;
 }
 .aboutus {
   transform: rotate(-90deg);
-  margin-left: -10%;
+  margin-left: -3%;
 }
 .aboutlink{
   align-self: self-end;
@@ -235,15 +214,16 @@
 }
 .approach .imgpart span {
   top: 43%;
-  left: -19%;
+  left: -12.5%;
   position: absolute;
-  font-size: 80px;
-  font-weight: 600;
+  font-size: 60px;
+  font-weight: 500;
   transform: rotate(-90deg);
 }
 .textpart {
   display: flex;
   flex-direction: column;
+  gap: 50px;
 }
 .textpart .head{
   font-size: 50px;
@@ -259,7 +239,7 @@
 }
 .textpart .dis p {
   border-radius: 5px;
-  padding: 2px 4px;
+  padding: 4px 10px;
   font-size: 20px;
   background-color: #25362d;
   color: white;
@@ -280,9 +260,10 @@
 }
 .whatwedo .imgsection span {
   top: 43%;
-  left: -15%;
+  left: -17%;
   position: absolute;
-  font-size: 50px;
+  font-size: 60px;
+  font-weight: 500;
   transform: rotate(-90deg);
 }
 .imgsection {
@@ -292,7 +273,7 @@
   justify-content: flex-end;
 }
 .imgsection .links p {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 600;
 }
 .jobs {
@@ -317,7 +298,7 @@
   justify-content: space-around;
 }
 .joinus .textpart p {
-  font-size: 20px;
+  font-size: 17px;
   padding-left: 200px;
   font-weight: 400;
 }
@@ -340,9 +321,9 @@
 }
 .jobhead {
   position: absolute;
-  font-size: 70px;
-  font-weight: 400;
+  font-size: 60px;
+  font-weight: 500;
   transform: rotate(-90deg);
   top: 15%;
-  left: -2%;
+  left: -9.5%;
 }
