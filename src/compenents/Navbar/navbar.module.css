@@ -1,71 +1,92 @@
 .main {
-    margin: 0 70px;
-  }
-.activeLink p {
-  text-decoration: underline;
+  margin: 0 70px;
+}
+/* Styling for the active link and its animated underline */
+.activeLink {
+  position: relative;
+  color: #000; /* Change the color of the link text */
+  text-decoration: none; /* Remove default underline */
+}
+
+.activeLink::before {
+  content: "";
+  position: absolute;
+  bottom: -10px; /* Adjust this value to control the gap from the link text and center the line */
+  left: 0;
+  width: 0;
+  height: 4px; /* Increase the thickness of the line */
+  background: linear-gradient(180deg, #D03A71 0%, #E86026 100%, rgba(119, 205, 216, 0) 100%);
+  background-size: 100% 4px; /* Match the width and height of the underline */
+  background-repeat: no-repeat;
+  border-radius: 2px; /* Make the line rounded at the corners */
+  transition: width 3s ease-in-out; /* Adjust animation duration as needed */
+}
+
+/* Apply the animation when the link is active or hovered over */
+.activeLink::before{
+  width: 100%;
+}
+
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.container {
+  position: relative;
+}
+
+.box {
+  width: 60vw;
+  height: 90px;
+  background-color: #2f2b2a;
+  color: white;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 30%, 90% 100%, 0% 100%, 0% 50%);
+}
+
+.parent {
+  filter: url("#goo");
+  overflow: hidden;
+  z-index: 1;
+}
+
+.headerlinks {
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.headerlinks a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1.2rem;
+}
+
+.box2 {
+  width: 200px;
+  height: 90px;
+  background-color: #2f2b2a;
+  color: white;
+  clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 0% 100%, 0% 69%, 40% 0%);
+}
+
+.headerlinks2 {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  font-size: 2rem;
   color: white;
 }
 
-  .header {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    margin-top: 20px;
-  }
-  
-  .container {
-    position: relative;
-  }
-  
-  .box {
-    width: 60vw;
-    height: 90px;
-    background-color: #2f2b2a;
-    color: white;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 30%, 90% 100%, 0% 100%, 0% 50%);
-  }
-  
-  .parent {
-    filter: url('#goo');
-    overflow: hidden;
-    z-index: 1;
-  }
-  
-  .headerlinks {
-    width: 100%;
-    position: absolute;
-    top: 40%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-  
-  .headerlinks a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 1.2rem;
-  }
-  
-  .box2 {
-    width: 200px;
-    height: 90px;
-    background-color: #2f2b2a;
-    color: white;
-    clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 0% 100%, 0% 69%, 40% 0%);
-  }
-  
-  .headerlinks2 {
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translate(50%, -50%);
-    font-size: 2rem;
-    color: white;
-  }
-  
-  .headerlinks a,
-  .search {
-    cursor: pointer;
-  }
-  
+.headerlinks a,
+.search {
+  cursor: pointer;
+}

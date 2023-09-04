@@ -143,7 +143,7 @@ export default function Home() {
             initiatives and actions aimed at the preservation of a particular
             resource. However, it actually refers to four distinct areas: human,
             social. economic and environmental - known as the four pillars of
-            sustainability
+            sustainability.
           </p>
           <div className={styles.links}>
             <div className={styles.dis}>
