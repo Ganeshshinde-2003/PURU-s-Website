@@ -40,6 +40,9 @@
     font-weight: 600;
     transform: rotate(-90deg);
   }
+  .ourvalues span{
+    left: -30px;
+  }
   .approach .textpart {
     display: flex;
     flex-direction: column;

@@ -1,5 +1,5 @@
 .box {
-  width: 250px;
+  width: 315px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,7 +30,7 @@
 }
 .box1{
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   cursor: pointer;
 }

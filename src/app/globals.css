@@ -1,8 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,400;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: white;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 img{
   border-radius: 10px;
@@ -20,8 +29,7 @@ input{
   padding: 10px 20px;
   font-size: 17px;
   color: white;
-  width: auto;
-  max-width: 100%;
+  width: 100%;
 }
 input::placeholder {
   color: white;
