@@ -4,6 +4,7 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import styles from "./page.module.css"; // You can remove this import
 import MainImage from "../../../public/ourapproach.png";
+import Gallery from "@/compenents/Animation/Animation";
 
 function Page() {
   const [scrollY, setScrollY] = useState(0);
@@ -11,7 +12,7 @@ function Page() {
   useEffect(() => {
     const rightLeftScroll = () => {
       setScrollY(window.scrollY);
-    };
+    };  
 
     window.addEventListener("scroll", rightLeftScroll);
 
@@ -57,6 +58,10 @@ function Page() {
       >
         to Community
       </span>
+      <Gallery />
+      <div className={styles.faqsection}>
+
+      </div>
     </div>
   );
 }
