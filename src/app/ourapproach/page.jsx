@@ -9,18 +9,19 @@ function Page() {
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
-    const handleScroll = () => {
+    const rightLeftScroll = () => {
       setScrollY(window.scrollY);
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", rightLeftScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", rightLeftScroll);
     };
   }, []);
 
-  const horizontalMovement = scrollY * 0.5; // Adjust the multiplier to control the horizontal movement
+  const horizontalMovementGivingBack = scrollY * 0.5; // Left to right
+  const horizontalMovementCommunity = scrollY * -0.5; // Right to left
 
   return (
     <div className={styles.main}>
@@ -46,11 +47,16 @@ function Page() {
       </p>
       <span
         className={styles.giving}
-        style={{ transform: `translateX(${horizontalMovement}px)` }}
+        style={{ transform: `translateX(${horizontalMovementGivingBack - 200}px)` }}
       >
         Giving Back
       </span>
-      {/* <span className={styles.community}>to Community</span> */}
+      <span
+        className={styles.community}
+        style={{ transform: `translateX(${horizontalMovementCommunity - 200}px)` }}
+      >
+        to Community
+      </span>
     </div>
   );
 }

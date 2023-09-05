@@ -1,54 +1,44 @@
-.main{
-    margin: 40px 0;
+.main {
+  margin: 40px 0;
+  overflow-x: hidden;
 }
-.imgcontainer{
-    position: relative;
-    width: 100%;
+.imgcontainer {
+  position: relative;
+  width: 100%;
 }
-.imgcontainer img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.imgcontainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .imgcontainer .textonimg {
-    position: absolute;
-    bottom: 10%;
-    color: white;
-    padding: 0 200px;
-    font-size: 20px;
+  position: absolute;
+  bottom: 10%;
+  color: white;
+  padding: 0 200px;
+  font-size: 20px;
 }
-.disc{
-    font-size: 20px;
-    padding: 30px 100px;
+.disc {
+  font-size: 20px;
+  padding: 30px 100px;
 }
-.giving{
-    padding: 10px 40px;
-    font-size: 50px;
-    font-weight: bold;
+.giving {
+  padding: 10px 40px;
+  font-size: 60px;
+  font-weight: bold;
 }
-.community{
-    padding: 10px 40px;
-    font-size: 50px;
-    font-weight: bold;
-    margin-right: 40px;
+.community {
+  padding: 10px 40px;
+  padding-left: 100%;
+  font-size: 60px;
+  font-weight: bold;
+  margin-right: 40px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
 }
-/* @keyframes scrollAnimation {
-    0% {
-      transform: translateX(0%);
-    }
-    100% {
-      transform: translateX(200%);
-    }
-  } */
-
-  .giving {
-    display: inline-block;
-    white-space: nowrap;
-    overflow: hidden;
-  }
-  
-  .scroll {
-    animation: scrollAnimation 3s linear infinite;
-  }
-  
-  
+.giving {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+}
