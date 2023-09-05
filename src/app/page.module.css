@@ -66,7 +66,7 @@
 }
 
 .part1 {
-  height: 500px;
+  height: 130vh;
   display: flex;
   position: relative;
   margin-left: 50px;
@@ -79,12 +79,70 @@
   flex-direction: column;
   justify-content: center;
   z-index: 2;
-  gap: 20px;
+  gap: 50px;
 }
 
 .empty {
-  width: 70%;
-  background-color: #FFF0F0;
+  position: relative;
+}
+
+.empty img {
+  position: absolute;
+  height: 800px;
+  width: 800px;
+}
+
+.empty .head1 {
+  overflow: hidden;
+  top: -110px;
+  left: 200px;
+  perspective: 10px;
+  animation: parallaxHead1 3s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite alternate; /* Adjust animation duration and cubic-bezier as needed */
+  transform-style: preserve-3d; /* Enable 3D transformations */
+  transform: translateZ(0); /* Create a 3D context */
+  backface-visibility: hidden;
+}
+
+.empty .head2 {
+  overflow: hidden;
+  height: 1200px;
+  top: -50px;
+  left: 215px;
+  perspective: 20px;
+  animation: parallaxHead2 3s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite alternate; /* Adjust animation duration and cubic-bezier as needed */
+  transform-style: preserve-3d; /* Enable 3D transformations */
+  transform: translateZ(0); /* Create a 3D context */
+  backface-visibility: hidden;
+}
+
+
+
+@keyframes parallaxHead1 {
+  0% {
+    transform: translateY(-10px) scale(0.9) rotate(0deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(10px) scale(1) rotate(3deg); /* Adjust the rotation angle as needed */
+    opacity: 1;
+  }
+}
+
+@keyframes parallaxHead2 {
+  0% {
+    transform: translateY(-20px) scale(1) rotate(0deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(30px) scale(1) rotate(-3deg); /* Adjust the rotation angle as needed */
+    opacity: 1;
+  }
+}
+
+
+.dis {
+  margin-left: 10px;
+  transition: background-color 0.3s ease, font-size 0.3s ease, transform 0.3s ease;
 }
 
 .text p {
@@ -103,12 +161,57 @@
   cursor: pointer;
 }
 
-.circle {
-  position: absolute;
-  bottom: -20%;
-  right: 10px;
+.dis:hover { /* Change to the desired background color on hover */
+  font-size: 24px; /* Change to the desired font size on hover */
+  transform: scale(1.1); /* Add a subtle scale effect on hover */
 }
 
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  position: absolute;
+  bottom: 0%;
+  right: 10px;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 2px solid rgb(0, 0, 0);
+  background-color: transparent; /* Set the initial background color to transparent */
+  transition: background-color 2s ease, transform 1s ease, box-shadow 1s ease;
+}
+
+.circle:hover {
+  background-color: #D03A71;
+  transform: scale(1.05); /* Increase size on hover for a 3D effect */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 5);
+  cursor: pointer;
+}
+
+.circle2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  bottom: 0%;
+  right: 10px;
+  height: 200px;
+  width: 200px;
+  transform: rotate(-90deg);
+  border-radius: 50%;
+  border: 2px solid rgb(0, 0, 0);
+  background-color: transparent; /* Set the initial background color to transparent */
+  transition: background-color 2s ease, transform 1s ease, box-shadow 1s ease;
+}
+
+.circle2:hover {
+  background-color: #D03A71;
+  transform: scale(1.05) rotate(-90deg); /* Increase size on hover for a 3D effect */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 5);
+  cursor: pointer;
+}
 .vectors{
   margin: 65px -70px;
   position: relative;
@@ -125,7 +228,7 @@
   text-align: right;
   z-index: 10;
 }
-.vectors img{
+.vectors .imgvec1, .vectors .imgvec2,.vectors .imgvec3,.vectors .imgvec4,.vectors .imgvec5,.vectors .imgvec6,.vectors .imgvec7,.vectors .imgvec8,.vectors .imgvec9{
   position: absolute;
 }
 .imgvec1{
@@ -315,6 +418,7 @@
   color: white;
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 20% 100%);
   cursor: pointer;
+  transition: background-color 0.3s ease, font-size 0.3s ease, transform 0.3s ease;
 }
 .joinus .joinuslink p {
   padding-left: 0;
@@ -326,4 +430,8 @@
   transform: rotate(-90deg);
   top: 15%;
   left: -9.5%;
+}
+.joinuslink:hover { /* Change to the desired background color on hover */
+  font-size: 24px; /* Change to the desired font size on hover */
+  transform: scale(1.1); /* Add a subtle scale effect on hover */
 }

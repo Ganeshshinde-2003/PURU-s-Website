@@ -56,6 +56,10 @@
     font-size: 20px;
     padding-right: 150px;
   }
+  .textpartwedo p{
+    font-size: 20px;
+    padding-right: 150px;
+  }
   .ourvalues{
     margin: 100px 20px;
     display: flex;
@@ -86,4 +90,21 @@
   }
   .text p {
     font-size: 20px;
+  }
+  .mainwork{
+    margin: 50px 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .mainworkhead{
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .mainworkdisc{
+    padding-left: 20%;
+  }
+  .mainworkdisc p {
+    font-size: 20px;
+    font-weight: 400;
   }
