@@ -23,7 +23,7 @@ function page() {
         <div className={styles.content}>
           <p>Our Approach</p>
           <Image src={Approach} className={styles.image} alt="wwt" />
-          <Link href="/purustories">
+          <Link href="/ourapproach">
             <Image
             src={Arroedownn}
             alt="LOGO"

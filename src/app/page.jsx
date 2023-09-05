@@ -15,11 +15,19 @@ import vec9 from "../../public/vectors/9.png";
 import wwd1 from "../../public/0F4A9036 1.png";
 import wwd2 from "../../public/matthew-henry-VviFtDJakYk-unsplash 1.png";
 import jobs from "../../public/lycs-architecture-U2BI3GMnSSE-unsplash 1.png";
+import Design from "../../public/puru-design.png"
+import Inspiring from "../../public/puru-inspiring.png"
+import vechead1 from "../../public/1 10.png";
+import vechead2 from "../../public/3 2.png";
 import Image from "next/image";
-
-import { useEffect } from "react";
+import { FaArrowDown } from 'react-icons/fa';
+import { useEffect, useRef } from "react";
 
 export default function Home() {
+
+  const iconStyle = {
+    strokeWidth: '1px', // Adjust the stroke width as needed
+  };
 
   useEffect(() => {
     const vectorDiv =  document.querySelector(`.${styles.vectors}`);
@@ -41,25 +49,54 @@ export default function Home() {
     };
   }, []);
 
+  const vectorSectionRef = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (vectorSectionRef.current) {
+        const scrollPosition = window.scrollY;
+        const vectorSectionTop = vectorSectionRef.current.offsetTop;
+        const rotationAngle = (scrollPosition - vectorSectionTop) / 6; // Adjust the division factor for rotation speed
+
+        // Get all image elements within the vector section
+        const images = Array.from(vectorSectionRef.current.querySelectorAll("img"));
+
+        // Remove the fifth element (index 4) from the images array
+        if (images.length >= 5) {
+          images.splice(4, 1); // Remove the fifth element
+        }
+        images.forEach((image) => {
+          image.style.transform = `rotate(${rotationAngle}deg)`;
+        });
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <main className={styles.main}>
 
       <section className={styles.part1}>
         <div className={styles.text}>
-          <p>
-            Designed for the
-            <br /> Future
-          </p>
+          <Image src={Design} alt="Design" />
           <div className={styles.dis}>
             <p>Discover</p>
           </div>
         </div>
-        <div className={styles.empty}></div>
+        <div className={styles.empty}>
+          <Image className={styles.head1} src={vechead1} alt="head-one" />
+          <Image className={styles.head2} src={vechead2} alt="head-two" />
+        </div>
         <div className={styles.circle}>
-          <Image src={Arroedownn} alt="LOGO" height={200} />
+          <FaArrowDown style={iconStyle} />
         </div>
       </section>
-      <section className={styles.vectors}>
+      <section className={styles.vectors} ref={vectorSectionRef}>
           <Image
             src={vec1}
             className={styles.imgvec1}
@@ -84,10 +121,8 @@ export default function Home() {
             alt="vector"
             height={200}
           />
-        <p className={styles.vectorp}>
-          Inspiring <br />
-          for <br />
-          Innovation
+        <p className={`${styles.vectorp} no-rotation`}>
+          <Image className={styles.vectorimages} src={Inspiring} alt="Inspring" />
         </p>
           <Image
             src={vec3}
@@ -124,12 +159,9 @@ export default function Home() {
         <span className={styles.aboutus}>
           <p>About Us</p>
         </span>
-        <Image
-          src={Arroedownn}
-          alt="LOGO"
-          height={300}
-          className={styles.aboutlink}
-        />
+        <div className={styles.circle2}>
+          <FaArrowDown style={iconStyle} />
+        </div>
       </section>
       <section className={styles.approach}>
         <div className={styles.imgpart}>

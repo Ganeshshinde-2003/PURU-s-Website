@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useRef } from "react";
 import styles from "./page.module.css";
 
 import Stories from "../../../public/2 1 (1).png";
@@ -8,6 +10,35 @@ import v2 from "../../../public/vectors/Vector (2).png";
 import Image from "next/image";
 
 function page() {
+  const vectorSectionRef = useRef(null);
+
+  useEffect(() => {
+    const rorateOnScroll = () => {
+      if (vectorSectionRef.current) {
+        const scrollPosition = window.scrollY;
+        const vectorSectionTop = vectorSectionRef.current.offsetTop;
+        const rotationAngle = (scrollPosition - vectorSectionTop) / 7; // Adjust the division factor for rotation speed
+
+        // Get all image elements within the headings div
+        const images = Array.from(
+          vectorSectionRef.current.querySelectorAll(
+            "." + styles.headings + " img"
+          )
+        );
+
+        images.forEach((image) => {
+          image.style.transform = `rotate(${rotationAngle}deg)`;
+        });
+      }
+    };
+
+    window.addEventListener("scroll", rorateOnScroll);
+
+    return () => {
+      window.removeEventListener("scroll", rorateOnScroll);
+    };
+  }, []);
+
   return (
     <div className={styles.main}>
       <Image src={Stories} alt="Strories" />
@@ -41,7 +72,51 @@ function page() {
           </p>
         </div>
       </section>
-      <section className={styles.ourvalues}>
+      <section className={styles.approach}>
+        <div className={styles.imgpart}>
+          <span>What “We” Do</span>
+          <Image src={wwr} alt="approach" height={600} />
+        </div>
+        <div className={`${styles.textpart} ${styles.textpartwedo}`}>
+          <p>
+            Puru’s Enterprises formation is an outcome of a Purpose. A Purpose,
+            how do ‘We’ simplify ‘You’, your lifestyle by contributing to both
+            segments of Personal & Professional developments.
+          </p>
+        </div>
+      </section>
+      <section className={styles.mainwork}>
+        <p className={styles.mainworkhead}>• Consulting -</p>
+        <div className={styles.mainworkdisc}>
+          <p>
+            We offer Consulting Services – to individuals and organizations to
+            remain consistent in their area of expertise and business
+            operations. Our Consulting service span across four key aspect of
+            business – Strategy, Management, Marketing & Finance. We play a key
+            role in, how do ‘You’ evolve and succeed on business path and
+            personal growth.
+          </p>
+        </div>
+      </section>
+      <section className={styles.mainwork}>
+        <p className={styles.mainworkhead}>• Sustainable Solutions -</p>
+        <div className={styles.mainworkdisc}>
+          <p>
+            Our Sustainable Solutions ensure that ‘You’ get more efficient and
+            qualitative product range. May it be a necessity or luxury products,
+            we will ensure to fill your lives with impactful products. Keeping
+            in themind, the Sustainable aspect remains at core of our products,
+            processes to make these products emphasize on minimal or no use of
+            natural resources. The key element of our products are they are
+            handmade by traditional and skilled craftsmen from different part of
+            the Nation. Three broad segments our products will be available for
+            ‘You’ are – Stationery, Home Décor and Utility and Luxury
+            Accessories. Our aim is to build a ‘conscious’ perspective and
+            effective lifestyle.
+          </p>
+        </div>
+      </section>
+      <section className={styles.ourvalues} ref={vectorSectionRef}>
         <span>OUR VALUES</span>
         <div className={styles.values}>
           <div className={styles.headings}>
