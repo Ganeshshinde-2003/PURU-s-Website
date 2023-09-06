@@ -7,6 +7,7 @@ import Stories from "../../../public/2 1 (1).png";
 import wwr from "../../../public/katthy-k-mal-FBX_qonbn5M-unsplash 1.png";
 import v1 from "../../../public/vectors/Vector (1).png";
 import v2 from "../../../public/vectors/Vector (2).png";
+import StoriesIamge from "../../../public/stories-image.png";
 import Image from "next/image";
 
 function page() {
@@ -167,6 +168,19 @@ function page() {
             </p>
           </div>
         </div>
+      </section>
+      <section className={styles.lastpart}>
+        <Image src={StoriesIamge} alt="Image" className={styles.lastImage} />
+        <span className={styles.vission}>VISSION</span>
+        <span className={styles.mission}>MISSION</span>
+        <p className={styles.firstdisc}>
+          To Strive for Excellence and to bring change by inspiring individuals,
+          influencing systematicchange, and fostering collaborations.
+        </p>
+        <p className={styles.secdisc}>
+          Our mission is to foster sustainable growth, advocate for positive
+          change, build impactful networks and prioritize human sustainability.
+        </p>
       </section>
     </div>
   );
