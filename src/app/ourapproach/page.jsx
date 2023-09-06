@@ -59,9 +59,6 @@ function Page() {
         to Community
       </span>
       <Gallery />
-      <div className={styles.faqsection}>
-
-      </div>
     </div>
   );
 }
