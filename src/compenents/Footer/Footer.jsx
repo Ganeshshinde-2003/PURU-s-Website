@@ -13,9 +13,9 @@ function Footer() {
       <div className={styles.container}>
         <div className={styles.part1}>
           <div className={styles.links}>
-            <Link href="/">FAQ</Link>
+            <Link href="/faqs">FAQ</Link>
             <Link href="/">News</Link>
-            <Link href="/">Contact</Link>
+            <Link href="/contactus">Contact</Link>
           </div>
           <div className={styles.socialmedia}>
             <Link href="/"><FaInstagram /></Link>
