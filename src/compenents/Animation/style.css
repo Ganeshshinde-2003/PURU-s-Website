@@ -68,24 +68,24 @@
 
 /* styles.css */
 .red {
-	background-image: url('../../../public/g3.png'); /* Replace with the actual image path */
+	background-image: url('../../../public/g1.png'); /* Replace with the actual image path */
 	background-size: contain;
 	background-repeat: no-repeat;
   }  
   .green {
-	background-image: url('../../../public/g4.png'); /* Replace with the actual image path */
-	background-size: contain;
-	background-repeat: no-repeat;
-  }
-  
-  .blue {
 	background-image: url('../../../public/g2.png'); /* Replace with the actual image path */
 	background-size: contain;
 	background-repeat: no-repeat;
   }
   
+  .blue {
+	background-image: url('../../../public/g4.png'); /* Replace with the actual image path */
+	background-size: contain;
+	background-repeat: no-repeat;
+  }
+  
   .pink {
-	background-image: url('../../../public/g1.png'); /* Replace with the actual image path */
+	background-image: url('../../../public/g3.png'); /* Replace with the actual image path */
 	background-size: contain;
 	background-repeat: no-repeat;
   }
