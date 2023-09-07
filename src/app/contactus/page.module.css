@@ -42,7 +42,8 @@
 }
 
 .circle:hover {
-  background-color: #D03A71;
+  background-color: black;
+  color: white;
   transform: scale(1.05) rotate(-90deg); /* Increase size on hover for a 3D effect */
   box-shadow: 0 0 20px rgba(0, 0, 0, 5);
   cursor: pointer;

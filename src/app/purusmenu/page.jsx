@@ -27,7 +27,7 @@ function Page() {
   const containerStyle = {
     opacity: isVisible ? 1 : 0,
     transform: isVisible ? 'translateY(0)' : 'translateY(-100%)',
-    transition: 'opacity 1s, transform 3s',
+    transition: 'opacity 1s, transform 2s',
   };
 
   return (
