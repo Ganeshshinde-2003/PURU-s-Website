@@ -15,7 +15,6 @@ function Footer() {
           <div className={styles.links}>
             <Link href="/faqs">FAQ</Link>
             <Link href="/">News</Link>
-            <Link href="/contactus">Contact</Link>
           </div>
           <div className={styles.socialmedia}>
             <Link href="/"><FaInstagram /></Link>
@@ -30,7 +29,7 @@ function Footer() {
           </div>
           <div className={styles.cotactus}>
             <p>Contact Us</p> 
-            <div className={styles.arrowdown}><FaArrowRight /></div> 
+            <div className={styles.arrowdown}><Link href="/contactus"><FaArrowRight /></Link></div> 
           </div>
           <Image src={Purus} alt="PURUS" width={300} />
         </div>

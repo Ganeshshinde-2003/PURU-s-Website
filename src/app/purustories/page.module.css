@@ -9,6 +9,10 @@
 .part1 div {
     width: 50%;
 }
+.img{
+  width: 100%;
+  height: auto;
+}
 .textpart p {
     font-size: 25px;
 }
@@ -31,6 +35,10 @@
     display: flex;
     justify-content: center;
     padding-left: 170px;
+  }
+  .imgpart img{
+    width: 100%;
+    height: auto;
   }
   .approach span , .ourvalues span{
     top: 43%;

@@ -23,12 +23,14 @@
   padding: 30px 100px;
 }
 .giving {
-  padding: 10px 40px;
+  padding-top: 50px;
+  padding-left: 40px;
   font-size: 70px;
   font-weight: bold;
+  padding-bottom: 50px;
 }
 .community {
-  padding: 10px 40px;
+  padding-bottom: 50px;
   padding-left: 100%;
   font-size: 70px;
   font-weight: bold;

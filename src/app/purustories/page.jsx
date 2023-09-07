@@ -42,7 +42,7 @@ function page() {
 
   return (
     <div className={styles.main}>
-      <Image src={Stories} alt="Strories" />
+      <Image src={Stories} alt="Strories" className={styles.img} />
       <div className={styles.part1}>
         <div className={styles.textpart}>
           <p>
@@ -59,7 +59,7 @@ function page() {
       <section className={styles.approach}>
         <div className={styles.imgpart}>
           <span>WHO WE ARE</span>
-          <Image src={wwr} alt="approach" height={600} />
+          <Image src={wwr} alt="approach" />
         </div>
         <div className={styles.textpart}>
           <p className={styles.head}>Actions that shape the future.</p>

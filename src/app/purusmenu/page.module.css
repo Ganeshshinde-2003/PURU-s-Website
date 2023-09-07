@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 100px;
+    gap: 30px;
 }
 
 .content{
@@ -21,15 +22,36 @@
 }
 .image{
     height: 500px;
-    width: 500px;
+    width: 100%;
     object-fit: cover;
     border-radius: 15%;
 }
-.arrow{
-    position: absolute;
-    height: 250px;
-    width: 250px;
-    transform: rotate(-90deg);
-    bottom: -28%;
-    right: 0;
+.content a{
+    text-decoration: none;
+    color: black;
 }
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    position: absolute;
+    bottom: -20%;
+    transform: rotate(-90deg);
+    right: 0px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: transparent; /* Set the initial background color to transparent */
+    transition: background-color 2s ease, transform 1s ease, box-shadow 1s ease;
+  }
+  
+  .circle:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.05) rotate(-90deg); /* Increase size on hover for a 3D effect */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 5);
+    cursor: pointer;
+  }
+  

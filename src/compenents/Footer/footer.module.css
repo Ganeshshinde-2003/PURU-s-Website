@@ -22,7 +22,7 @@
 }
 .links, .socialmedia {
     display: flex;
-    gap: 20px;
+    gap: 30px;
     font-size: 25px;
 }
 .links a, .socialmedia a {
@@ -41,6 +41,14 @@
     border-radius: 50%;
     border: 2px solid white;
     cursor: pointer;
+    text-align: center;
+}
+.arrowdown a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .cotactus{
     display: flex;
