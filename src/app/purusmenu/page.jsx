@@ -35,7 +35,8 @@ function Page() {
       <div className={styles.container}>
         <div className={styles.content}>
           <p>Our Story</p>
-          <Image src={wwr} className={styles.image} alt="wwt" />
+          <Link href="/purustories" className={styles.image}>
+            <Image src={wwr} className={styles.image} alt="wwt" /></Link>
           <Link href="/purustories">
             <div className={styles.circle}>
               <FaArrowDown style={iconStyle} />
@@ -44,7 +45,8 @@ function Page() {
         </div>
         <div className={styles.content}>
           <p>Our Approach</p>
-          <Image src={Approach} className={styles.image} alt="wwt" />
+          <Link href="/ourapproach" className={styles.image}>
+            <Image src={Approach} className={styles.image} alt="wwt" /></Link>
           <Link href="/ourapproach">
             <div className={styles.circle}>
               <FaArrowDown style={iconStyle} />

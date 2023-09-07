@@ -20,6 +20,7 @@
     font-size: 40px;
     font-weight: 500;
 }
+.content
 .image{
     height: 500px;
     width: 100%;
@@ -55,3 +56,24 @@
     cursor: pointer;
   }
   
+  @media (max-width: 800px){
+    .main{
+      padding: 40px 10px;
+    }
+  }
+  @media (max-width: 600px){
+   .container{
+    flex-direction: column;
+   }
+   .content{
+    width: 100%;
+    align-items: flex-start;
+   }
+   .image{
+    height: 400px;
+    width: 100%;
+   }
+   .circle{
+    display: none;
+   }
+  }
