@@ -3,23 +3,27 @@
 import React, { useState } from "react";
 import styles from "./navbar.module.css";
 import Image from "next/image";
-import { FaSearch } from "react-icons/fa";
+import { FiMenu } from "react-icons/fi";
 import Link from "next/link";
 import Logo from "../../../public/logo.png";
 
 function Navbar() {
   const [activeLink, setActiveLink] = useState(0);
-
-  // Function to set the active link when a link is clicked
+  const [hidden, sethidden] = useState("none");
   const handleLinkClick = (index) => {
     setActiveLink(index);
   };
- 
+  const handleMenuIconClick = () => {
+    if (window.innerWidth < 800){
+    sethidden(hidden === "none" ? "block" : "none");
+    }
+  };
+
   return (
     <div className={styles.main}>
       <div className={styles.header}>
-        <Image src={Logo} alt="LOGO" height={150} width={150} />
-        <div className={styles.container}>
+        <Image src={Logo} alt="LOGO" className={styles.logoimage} height={150} width={150} />
+        <div className={`${styles.container} ${styles.navbar}`}>
           <div className={styles.parent}>
             <div className={styles.box}></div>
           </div>
@@ -91,8 +95,24 @@ function Navbar() {
             </defs>
           </svg>
           <div className={styles.headerlinks2}>
-            <FaSearch className={styles.search} />
+          <FiMenu className={styles.search} onClick={handleMenuIconClick} />
           </div>
+        </div>
+      </div>
+      <div className={styles.mobiletab} style={{ display: hidden}}>
+        <div className={styles.mobilelinks}>
+          <Link href="/" onClick={() => handleLinkClick(0)} className={activeLink === 0 ? styles.activeLink : ''}>
+            You
+          </Link>
+          <Link href="/purusmenu" onClick={() => handleLinkClick(1)} className={activeLink === 1 ? styles.activeLink : ''}>
+            Puru's story
+          </Link>
+          <Link href="/collaboration" onClick={() => handleLinkClick(2)} className={activeLink === 2 ? styles.activeLink : ''}>
+            Collaboration
+          </Link>
+          <Link href="/contactus" onClick={() => handleLinkClick(3)} className={activeLink === 3 ? styles.activeLink : ''}>
+            Contact us
+          </Link>
         </div>
       </div>
     </div>

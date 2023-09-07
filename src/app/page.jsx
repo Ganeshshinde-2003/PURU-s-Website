@@ -84,10 +84,10 @@ export default function Home() {
 
       <section className={styles.part1}>
         <div className={styles.text}>
-          <Image src={Design} alt="Design" />
+          <Image src={Design} alt="Design" className={styles.designimage} />
           <span className={styles.dis}>
             <p>Discover</p>
-            <Image src={Buttonone} alt="Button" width={200} />
+            <Image src={Buttonone} className={styles.buttonone} alt="Button" width={200} />
           </span>
         </div>
         <div className={styles.empty}>
@@ -181,7 +181,7 @@ export default function Home() {
           <div className={styles.links}>
           <span className={styles.dis}>
             <p>Discover</p>
-            <Image src={Buttonone} alt="Button" width={200} />
+            <Image src={Buttonone} className={styles.buttonone} alt="Button" width={200} />
           </span>
             <Link href="/purustories"><Image
               src={Arroedownn}
@@ -195,7 +195,7 @@ export default function Home() {
       <section className={styles.whatwedo}>
         <div className={styles.imgsection}>
           <span>What we do</span>
-          <Image src={wwd1} alt="wwd" height={400} />
+          <Image src={wwd1} alt="wwd" height={400} className={styles.imageswwd} />
           <div className={styles.links}>
             <p>Sustainable product range</p>
             <Link href="/purustories">
@@ -209,7 +209,7 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.imgsection}>
-          <Image src={wwd2} alt="wwd" height={400} />
+          <Image src={wwd2} alt="wwd" height={400} className={styles.imageswwd} />
           <div className={styles.links}>
             <p>Consulting</p>
             <Link href="/purustories">
@@ -235,7 +235,7 @@ export default function Home() {
             </p>
             <span className={styles.dis}>
             <p>Join us</p>
-            <Image src={Buttontwo} alt="Button" width={200} />
+            <Image src={Buttontwo} className={styles.buttontwo} alt="Button" width={200} />
           </span>
           </div>
           <div>
