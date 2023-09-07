@@ -1,13 +1,16 @@
 .footer{
     height: auto;
     background-color: #141a16;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 40px;
 }
 
 .container{
     display: flex;
     justify-content: space-evenly;
     margin: 0 80px;
-    padding: 40px 40px;
+    gap: 20px;
 }
 
 .part1, .part2{
@@ -22,7 +25,7 @@
 }
 .links, .socialmedia {
     display: flex;
-    gap: 20px;
+    gap: 30px;
     font-size: 25px;
 }
 .links a, .socialmedia a {
@@ -41,6 +44,14 @@
     border-radius: 50%;
     border: 2px solid white;
     cursor: pointer;
+    text-align: center;
+}
+.arrowdown a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .cotactus{
     display: flex;
@@ -51,8 +62,50 @@
 .logoname{
     font-size: 110px;
 }
-/* Puru's color palette
-Brown 2f2b2a
-Pink   cd3774
-Green 25362d
-Orange e46737 */
+.cpyrgt{
+    padding: 40px 80px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@media (max-width: 800px){
+    .footer{
+        padding: 40px 0px;
+    }
+    .container, .cpyrgt{
+        margin: 0 10px
+    }
+    .cpyrgt{
+        padding: 40px 0px;
+    }
+    .part1, .part2{
+        align-items: flex-start;
+        gap:30px;
+    }
+    .part1{
+        justify-content: flex-start;
+    }
+    .cotactus{
+        font-size: 15px;
+    }
+    .purustext{
+        height: 100px;
+        width: 160px;
+    }
+    .logo{
+        height: 80px;
+        width: 80px;
+    }
+    .text{
+        font-size: 15px;
+    }
+    .span{
+        font-size: 10px;
+        font-weight: normal;
+    }
+    .cpyrgt{
+        font-size: 10px;
+        font-weight: 200;
+    }
+}

@@ -1,5 +1,6 @@
 .main {
   margin: 0 70px;
+  position: relative;
 }
 /* Styling for the active link and its animated underline */
 .activeLink {
@@ -38,7 +39,6 @@
 .container {
   position: relative;
 }
-
 .box {
   width: 60vw;
   height: 90px;
@@ -89,4 +89,60 @@
 .headerlinks a,
 .search {
   cursor: pointer;
+}
+@media (max-width: 1200px){
+  .main {
+    margin: 0 20px;
+  }
+}
+@media (max-width: 1100px){
+  .main {
+    margin: 0 0px;
+  }
+}
+@media (max-width: 1000px){
+  .box2{
+    width: 110px;
+  }
+  .headerlinks{
+    justify-content: flex-start;
+  }
+}
+.mobilelinks a{
+  text-decoration: none;
+  color: white;
+}
+.mobiletab{
+  z-index: 100;
+  top: 100%;
+  right: 10%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 50px;
+  border-radius: 40px;
+  background-color: #2f2b2a;
+}
+.mobilelinks{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+@media (max-width: 800px) {
+  .navbar{
+    display: none;
+  }
+  .header {
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+  .box2{
+    width: 150px;
+  }
+  .logoimage{
+    height: 100px;
+    width: auto;
+  }
 }

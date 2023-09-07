@@ -9,6 +9,7 @@ import v1 from "../../../public/vectors/Vector (1).png";
 import v2 from "../../../public/vectors/Vector (2).png";
 import StoriesIamge from "../../../public/stories-image.png";
 import Image from "next/image";
+import ImageSlider from "@/compenents/ImageSlidre";
 
 function page() {
   const vectorSectionRef = useRef(null);
@@ -42,7 +43,7 @@ function page() {
 
   return (
     <div className={styles.main}>
-      <Image src={Stories} alt="Strories" />
+      <Image src={Stories} alt="Strories" className={styles.img} />
       <div className={styles.part1}>
         <div className={styles.textpart}>
           <p>
@@ -59,7 +60,7 @@ function page() {
       <section className={styles.approach}>
         <div className={styles.imgpart}>
           <span>WHO WE ARE</span>
-          <Image src={wwr} alt="approach" height={600} />
+          <Image src={wwr} alt="approach" />
         </div>
         <div className={styles.textpart}>
           <p className={styles.head}>Actions that shape the future.</p>
@@ -85,10 +86,11 @@ function page() {
             segments of Personal & Professional developments.
           </p>
         </div>
-      </section>
+      </section> 
       <section className={styles.mainwork}>
         <p className={styles.mainworkhead}>• Consulting -</p>
-        <div className={styles.mainworkdisc}>
+        <ImageSlider id="1" />
+        <div className={styles.mainworkdisc}> 
           <p>
             We offer Consulting Services – to individuals and organizations to
             remain consistent in their area of expertise and business
@@ -101,6 +103,7 @@ function page() {
       </section>
       <section className={styles.mainwork}>
         <p className={styles.mainworkhead}>• Sustainable Solutions -</p>
+        <ImageSlider id="2" />
         <div className={styles.mainworkdisc}>
           <p>
             Our Sustainable Solutions ensure that ‘You’ get more efficient and

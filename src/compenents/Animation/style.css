@@ -132,3 +132,8 @@
 
 }
 
+@media screen and (max-width: 1200px){
+	.right{
+		margin-left: 0px;
+	}
+}

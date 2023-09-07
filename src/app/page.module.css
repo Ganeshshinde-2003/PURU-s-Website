@@ -1,5 +1,6 @@
 .main {
   margin: 0 70px;
+  margin-bottom: 40px;
 }
 
 .header {
@@ -78,8 +79,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
   z-index: 2;
   gap: 50px;
+
 }
 
 .empty {
@@ -139,33 +142,24 @@
   }
 }
 
-
-.dis {
-  margin-left: 10px;
-  transition: background-color 0.3s ease, font-size 0.3s ease, transform 0.3s ease;
-}
-
 .text p {
   font-size: 60px;
   font-weight: 500;
   white-space: nowrap;
 }
 
-.text .dis p {
-  border-radius: 5px;
-  padding: 4px 10px;
-  font-size: 20px;
-  background-color: #25362d;
-  color: white;
-  clip-path: polygon(0% 0%, 30% 0%, 26% 100%, 0% 100%);
+.dis{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
 }
-
-.dis:hover { /* Change to the desired background color on hover */
-  font-size: 24px; /* Change to the desired font size on hover */
-  transform: scale(1.1); /* Add a subtle scale effect on hover */
+.dis p{
+  position: absolute;
+  font-size: 25px;
+  color: white;
 }
-
 
 .circle {
   display: flex;
@@ -184,7 +178,8 @@
 }
 
 .circle:hover {
-  background-color: #D03A71;
+  background-color: black;
+  color: white;
   transform: scale(1.05); /* Increase size on hover for a 3D effect */
   box-shadow: 0 0 20px rgba(0, 0, 0, 5);
   cursor: pointer;
@@ -207,7 +202,8 @@
 }
 
 .circle2:hover {
-  background-color: #D03A71;
+  background-color: black;
+  color: white;
   transform: scale(1.05) rotate(-90deg); /* Increase size on hover for a 3D effect */
   box-shadow: 0 0 20px rgba(0, 0, 0, 5);
   cursor: pointer;
@@ -233,39 +229,50 @@
 }
 .imgvec1{
   top: 30%;
-  left: 15%;
+  left: 20%;
+  height: 180px;
+  width: 150px;
 }
 .imgvec2{
-  bottom: -15%;
-  left: -5%;
+  bottom: 5%;
+  left: 0%;
+  height: 250px;
 }
 .imgvec4{
   top: 20%;
-  left: 5%;
+  left: 10%;
+  height: 100px;
 }
 .imgvec6{
-  top: -10%;
-  left: 18%;
+  top: 5%;
+  left: 28%;
+  height: 150px;
+  width: 150px;
 }
 .imgvec5{
-  bottom: -9%;
+  bottom: 4%;
   left: 40%;
+  height: 200px;
 }
 .imgvec8{
-  top: -5%;
-  left: 60%;
+  top: 5%;
+  left: 62%;
+  height: 200px;
 }
 .imgvec3{
-  bottom: 17%;
-  right: 20%;
+  bottom: 20%;
+  right: 25%;
+  height: 120px;
 }
 .imgvec9{
-  top: 10%;
-  right: 0%;
+  top: 20%;
+  right: 10%;
+  height: 170px;
 }
 .imgvec7{
-  bottom: 0%;
-  right: 0%;
+  bottom: 8%;
+  right: 10%;
+  height: 200px;
 }
 
 .changeColor {
@@ -315,6 +322,7 @@
   display: flex;
   justify-content: flex-end;
 }
+
 .approach .imgpart span {
   top: 43%;
   left: -12.5%;
@@ -340,15 +348,7 @@
   display: flex;
   align-items: center;
 }
-.textpart .dis p {
-  border-radius: 5px;
-  padding: 4px 10px;
-  font-size: 20px;
-  background-color: #25362d;
-  color: white;
-  clip-path: polygon(0% 0%, 80% 0%, 62% 100%, 0% 100%);
-  cursor: pointer;
-}
+
 .approachlink{
   transform: rotate(-90deg);
 }
@@ -379,6 +379,13 @@
   font-size: 25px;
   font-weight: 600;
 }
+.imgsection img{
+  width: 100%;
+}
+.imageswwd {
+  width: 100%;
+  height: auto;
+}
 .jobs {
   position: relative;
   margin: 0 80px;
@@ -399,29 +406,16 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: flex-end;
 }
 .joinus .textpart p {
   font-size: 17px;
   padding-left: 200px;
   font-weight: 400;
 }
-.joinus .joinuslink {
-  padding: 0 20px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  align-self: flex-end;
-  height: 33px;
-  width: 100px;
-  border-radius: 5px;
-  background-color: #25362d;
-  color: white;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 20% 100%);
-  cursor: pointer;
-  transition: background-color 0.3s ease, font-size 0.3s ease, transform 0.3s ease;
-}
-.joinus .joinuslink p {
+.joinus .textpart .dis p{
   padding-left: 0;
+  font-size: 25px;
 }
 .jobhead {
   position: absolute;
@@ -434,4 +428,224 @@
 .joinuslink:hover { /* Change to the desired background color on hover */
   font-size: 24px; /* Change to the desired font size on hover */
   transform: scale(1.1); /* Add a subtle scale effect on hover */
+}
+
+@media (max-width: 1400px){
+  .approach{
+    margin-left: 207px;
+  }
+  .approach .imgpart span{
+    left: -40.5%;
+  }
+  .whatwedo .imgsection span{
+    left: -21%;
+    top: 35%;
+  }
+  .jobhead{
+    left: -11.5%
+  }
+}
+@media (max-width: 1280px){
+  .approach .imgpart img{
+    width: 100%;
+    height: auto;
+  }
+  .approach{
+    margin-left: 80px;
+  }
+  .approach .imgpart span{
+    left: -30.5%;
+  }
+  .whatwedo .imgsection span{
+    left: -26%;
+  }
+  .jobhead{
+    left: -14.5%
+  }
+  .joinus .textpart p {
+    padding-left: 0px;
+  }
+}
+@media (max-width: 1000px){
+  .textpart{
+    gap:5px;
+  }
+  .textpart .head{
+    font-size: 35px;
+  }
+  .textpart p:nth-child(2){
+    font-size: 12px;
+  }
+  .approach .imgpart span{
+    font-size: 40px;
+  }
+  .aboutus p{ 
+    position: relative;
+    font-size: 40px;
+    top: 22%;
+  }
+  .whatwedo .imgsection span{
+    left: -28%;
+    font-size: 40px;
+  }
+  .jobhead{
+    left: -20.5%;
+    font-size: 40px;
+  }
+  .jobs .heaings{
+    font-size: 70px;
+  }
+}
+@media (max-width: 800px) {
+  .main{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+  }
+  .part1{
+    height: auto;
+    padding: 80px 40px;
+  }
+  .aboutus, .jobhead, .aboutlink, .approach .imgpart span, .whatwedo .imgsection span {
+    transform: rotate(0deg);
+  }
+  .circle2{
+    height: 150px;
+    width: 150px;
+  }
+  .approach, .whatwedo{
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px 0;
+  }
+  .whatwedo{
+    margin: 100px 0;
+  }
+  .approach div{
+    width: 100%;
+    gap: 50px;
+  }
+  .whatwedo div{
+    width: 100%;
+    gap: 0px;
+  }
+  .approach .imgpart span, .whatwedo .imgsection span, .jobhead, .aboutus p{
+    top: -100px;
+    left: 0;
+    font-size: 60px;
+    font-weight: 700;
+  }
+  .jobs{
+    margin: 0 0;
+  }
+  .joinus{
+    flex-direction: column-reverse;
+    align-items: self-start;
+  }
+  .joinus div, .joinus img{
+    width: 100%;
+    height: auto;
+  }
+  .jobs .heaings{
+    font-size: 50px;
+    text-align: left;
+  }
+  .designimage{
+    height: 115px;
+    width: 350px;
+  }
+}
+@media (max-width: 500px){
+  .main{
+    margin: 0 10px;
+    margin-bottom: 40px;
+  }
+  .designimage{
+    height: 115px;
+    width: 350px;
+  }
+  .circle{
+    display: none;
+  }
+  .part1{
+    margin: 40px 0;
+    padding: 0 0;
+  }
+  .text{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .vectors{
+    margin: 0 -70px;
+  }
+  .aboutus p{
+    left: 15px;
+  }
+  .approach .imgpart span, .whatwedo .imgsection span, .jobhead, .aboutus p{
+    font-size: 50px;
+    font-weight: 600;
+  }
+  .jobs .heaings{
+    font-size: 35px;
+  }
+  .joinus .buttontwo, .buttonone{
+    height: 50px;
+    width: 150px;
+  }
+  .vectors{
+    height: auto;
+    padding: 40px 0px;
+    margin: 0 -10px;
+  }
+  .vectorimages{
+    height: 250px;
+    width: 250px;
+  }
+  .imgvec1, .imgvec2, .imgvec3, .imgvec4, .imgvec5, .imgvec6, .imgvec7, .imgvec8, .imgvec9{
+    height: 100px;
+    width: 100px;
+  }
+  .imgvec8{
+    top: -20%;
+  }
+  .imgvec9{
+    right: 30px;
+  }
+  .imgvec7{
+    right: 23px;
+    bottom: -30px;
+  }
+  .imgvec2{
+    bottom: -10%;
+    left: 0%;
+  }
+  .imgvec4{
+    top: -20%;
+    left: -5%;
+  }
+  .imgvec1{
+    top: 30%;
+    left: 2%;
+  }
+  .imgvec6{
+    top: -42px;
+  }
+  .imgvec3{
+    bottom: 32%;
+    right: 35%;
+  }
+  .changeColor {
+    animation: fadeInBackground 1s ease forwards;
+  }
+  
+  @keyframes fadeInBackground {
+    from {
+      background-color: white;
+    }
+    to {
+      background-color: white;
+    }
+  }
 }
