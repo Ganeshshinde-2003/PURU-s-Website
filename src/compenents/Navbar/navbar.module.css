@@ -16,7 +16,12 @@
   left: 0;
   width: 0;
   height: 4px; /* Increase the thickness of the line */
-  background: linear-gradient(180deg, #D03A71 0%, #E86026 100%, rgba(119, 205, 216, 0) 100%);
+  background: linear-gradient(
+    180deg,
+    #d03a71 0%,
+    #e86026 100%,
+    rgba(119, 205, 216, 0) 100%
+  );
   background-size: 100% 4px; /* Match the width and height of the underline */
   background-repeat: no-repeat;
   border-radius: 2px; /* Make the line rounded at the corners */
@@ -24,10 +29,9 @@
 }
 
 /* Apply the animation when the link is active or hovered over */
-.activeLink::before{
+.activeLink::before {
   width: 100%;
 }
-
 
 .header {
   display: flex;
@@ -90,29 +94,29 @@
 .search {
   cursor: pointer;
 }
-@media (max-width: 1200px){
+@media (max-width: 1200px) {
   .main {
     margin: 0 20px;
   }
 }
-@media (max-width: 1100px){
+@media (max-width: 1100px) {
   .main {
     margin: 0 0px;
   }
 }
-@media (max-width: 1000px){
-  .box2{
+@media (max-width: 1000px) {
+  .box2 {
     width: 110px;
   }
-  .headerlinks{
+  .headerlinks {
     justify-content: flex-start;
   }
 }
-.mobilelinks a{
+.mobilelinks a {
   text-decoration: none;
   color: white;
 }
-.mobiletab{
+.mobiletab {
   z-index: 100;
   top: 100%;
   right: 10%;
@@ -124,25 +128,27 @@
   border-radius: 40px;
   background-color: #2f2b2a;
 }
-.mobilelinks{
+.mobilelinks {
   display: flex;
   flex-direction: column;
   gap: 20px;
   text-align: center;
 }
 @media (max-width: 800px) {
-  .navbar{
+  .navbar {
     display: none;
   }
   .header {
     justify-content: space-between;
     padding: 0 10px;
   }
-  .box2{
-    width: 150px;
+  .box2 {
+    width: 100px;
+    height: 60px;
+    clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 0% 100%, 0% 55%, 40% 0%);
   }
-  .logoimage{
-    height: 100px;
+  .logoimage {
+    height: 60px;
     width: auto;
   }
 }

@@ -497,6 +497,9 @@
   }
 }
 @media (max-width: 800px) {
+  .approachlink{
+    height: auto;
+  }
   .main{
     display: flex;
     flex-direction: column;
@@ -523,7 +526,7 @@
   }
   .approach div{
     width: 100%;
-    gap: 50px;
+    gap: 20px;
   }
   .whatwedo div{
     width: 100%;
@@ -600,7 +603,7 @@
     margin: 0 -10px;
   }
   .vectorimages{
-    height: 250px;
+    height: auto;
     width: 250px;
   }
   .imgvec1, .imgvec2, .imgvec3, .imgvec4, .imgvec5, .imgvec6, .imgvec7, .imgvec8, .imgvec9{

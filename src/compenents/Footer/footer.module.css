@@ -71,7 +71,8 @@
 }
 @media (max-width: 800px){
     .footer{
-        padding: 40px 0px;
+        padding: 0;
+        padding-top: 40px;
     }
     .container, .cpyrgt{
         margin: 0 10px
@@ -81,21 +82,25 @@
     }
     .part1, .part2{
         align-items: flex-start;
-        gap:30px;
+        gap: 52px;
     }
     .part1{
         justify-content: flex-start;
+        width: auto;
+        gap: 80px;
     }
     .cotactus{
+        margin-top: -24px;
         font-size: 15px;
     }
     .purustext{
-        height: 100px;
+        height: auto;
         width: 160px;
     }
     .logo{
         height: 80px;
         width: 80px;
+        margin-top: -40px;
     }
     .text{
         font-size: 15px;
@@ -107,5 +112,8 @@
     .cpyrgt{
         font-size: 10px;
         font-weight: 200;
+    }
+    .links, .socialmedia{
+        gap: 12px;
     }
 }
