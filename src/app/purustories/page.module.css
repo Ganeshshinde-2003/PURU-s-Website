@@ -247,7 +247,8 @@
     font-size: 25px;
   }
   .values .headings img {
-    height: 60px;
+    height: 40px;
+    width: auto;
   }
   .values .headings {
     gap: 10px;

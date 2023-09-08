@@ -15,19 +15,19 @@ import vec9 from "../../public/vectors/9.png";
 import wwd1 from "../../public/0F4A9036 1.png";
 import wwd2 from "../../public/matthew-henry-VviFtDJakYk-unsplash 1.png";
 import jobs from "../../public/lycs-architecture-U2BI3GMnSSE-unsplash 1.png";
-import Design from "../../public/puru-design.png"
-import Inspiring from "../../public/puru-inspiring.png"
-import Buttonone from "../../public/button-main.png"
-import Buttontwo from "../../public/button-two.png"
+import Design from "../../public/puru-design.png";
+import Inspiring from "../../public/puru-inspiring.png";
+import Buttonone from "../../public/button-main.png";
+import Buttontwo from "../../public/button-two.png";
 import Image from "next/image";
-import { FaArrowDown } from 'react-icons/fa';
+import { FaArrowDown } from "react-icons/fa";
 import { useEffect, useRef } from "react";
 import Link from "next/link";
+import { BsArrowRight } from "react-icons/bs";
 
 export default function Home() {
-
   const iconStyle = {
-    strokeWidth: '1px', // Adjust the stroke width as needed
+    strokeWidth: "1px", // Adjust the stroke width as needed
   };
 
   useEffect(() => {
@@ -42,7 +42,7 @@ export default function Home() {
       } else {
         vectorDiv.classList.remove(styles.changeColor);
       }
-    }
+    };
     window.addEventListener("scroll", handleScroll);
 
     return () => {
@@ -57,10 +57,12 @@ export default function Home() {
       if (vectorSectionRef.current) {
         const scrollPosition = window.scrollY;
         const vectorSectionTop = vectorSectionRef.current.offsetTop;
-        const rotationAngle = (scrollPosition - vectorSectionTop) / 6; // Adjust the division factor for rotation speed
+        const rotationAngle = (scrollPosition - vectorSectionTop) / 4; // Adjust the division factor for rotation speed
 
         // Get all image elements within the vector section
-        const images = Array.from(vectorSectionRef.current.querySelectorAll("img"));
+        const images = Array.from(
+          vectorSectionRef.current.querySelectorAll("img")
+        );
 
         // Remove the fifth element (index 4) from the images array
         if (images.length >= 5) {
@@ -81,13 +83,17 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-
       <section className={styles.part1}>
         <div className={styles.text}>
           <Image src={Design} alt="Design" className={styles.designimage} />
           <span className={styles.dis}>
             <p>Discover</p>
-            <Image src={Buttonone} className={styles.buttonone} alt="Button" width={200} />
+            <Image
+              src={Buttonone}
+              className={styles.buttonone}
+              alt="Button"
+              width={200}
+            />
           </span>
         </div>
         <div className={styles.empty}>
@@ -99,11 +105,7 @@ export default function Home() {
         </div>
       </section>
       <section className={styles.vectors} ref={vectorSectionRef}>
-        <Image
-          src={vec1}
-          className={styles.imgvec1}
-          alt="vector"
-        />
+        <Image src={vec1} className={styles.imgvec1} alt="vector" />
         <Image
           src={vec2}
           className={styles.imgvec2}
@@ -123,7 +125,11 @@ export default function Home() {
           height={100}
         />
         <p className={`${styles.vectorp} no-rotation`}>
-          <Image className={styles.vectorimages} src={Inspiring} alt="Inspring" />
+          <Image
+            className={styles.vectorimages}
+            src={Inspiring}
+            alt="Inspring"
+          />
         </p>
         <Image
           src={vec3}
@@ -179,46 +185,48 @@ export default function Home() {
             sustainability.
           </p>
           <div className={styles.links}>
-          <span className={styles.dis}>
-            <p>Discover</p>
-            <Image src={Buttonone} className={styles.buttonone} alt="Button" width={200} />
-          </span>
-            <Link href="/purustories"><Image
-              src={Arroedownn}
-              alt="LOGO"
-              height={100}
-              className={styles.approachlink}
-            /></Link>
+            <span className={styles.dis}>
+              <p>Discover</p>
+              <Image
+                src={Buttonone}
+                className={styles.buttonone}
+                alt="Button"
+                width={200}
+              />
+            </span>
+            <Link href="/purustories" className={styles.linktolink}>
+              <BsArrowRight className={styles.approachlink} />
+            </Link>
           </div>
         </div>
       </section>
       <section className={styles.whatwedo}>
         <div className={styles.imgsection}>
           <span>What we do</span>
-          <Image src={wwd1} alt="wwd" height={400} className={styles.imageswwd} />
+          <Image
+            src={wwd1}
+            alt="wwd"
+            height={400}
+            className={styles.imageswwd}
+          />
           <div className={styles.links}>
             <p>Sustainable product range</p>
-            <Link href="/purustories">
-              <Image
-                src={Arroedownn}
-                alt="LOGO"
-                height={100}
-                className={styles.approachlink}
-              />
+            <Link href="/purustories" className={styles.linktolink}>
+              <BsArrowRight className={styles.approachlink} />
             </Link>
           </div>
         </div>
         <div className={styles.imgsection}>
-          <Image src={wwd2} alt="wwd" height={400} className={styles.imageswwd} />
+          <Image
+            src={wwd2}
+            alt="wwd"
+            height={400}
+            className={styles.imageswwd}
+          />
           <div className={styles.links}>
             <p>Consulting</p>
-            <Link href="/purustories">
-              <Image
-                src={Arroedownn}
-                alt="LOGO"
-                height={100}
-                className={styles.approachlink}
-              />
+            <Link href="/purustories" className={styles.linktolink}>
+              <BsArrowRight className={styles.approachlink} />
             </Link>
           </div>
         </div>
@@ -234,9 +242,14 @@ export default function Home() {
               inclusive and human environment
             </p>
             <span className={styles.dis}>
-            <p>Join us</p>
-            <Image src={Buttontwo} className={styles.buttontwo} alt="Button" width={200} />
-          </span>
+              <p>Join us</p>
+              <Image
+                src={Buttontwo}
+                className={styles.buttontwo}
+                alt="Button"
+                width={200}
+              />
+            </span>
           </div>
           <div>
             <Image src={jobs} alt="jobs" height={400} />

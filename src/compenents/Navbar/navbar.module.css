@@ -118,8 +118,8 @@
 }
 .mobiletab {
   z-index: 100;
-  top: 100%;
-  right: 10%;
+  top: 110%;
+  right: 2%;
   position: absolute;
   display: flex;
   justify-content: center;
