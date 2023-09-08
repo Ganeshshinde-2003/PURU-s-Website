@@ -241,15 +241,17 @@ export default function Home() {
               at Tilton means being part of a project for the future, in a safe,
               inclusive and human environment
             </p>
-            <span className={styles.dis}>
-              <p>Join us</p>
-              <Image
-                src={Buttontwo}
-                className={styles.buttontwo}
-                alt="Button"
-                width={200}
-              />
-            </span>
+            <Link href="/contactus">
+              <span className={styles.dis}>
+                <p>Join us</p>
+                <Image
+                  src={Buttontwo}
+                  className={styles.buttontwo}
+                  alt="Button"
+                  width={200}
+                />
+              </span>
+            </Link>
           </div>
           <div>
             <Image src={jobs} alt="jobs" height={400} />
