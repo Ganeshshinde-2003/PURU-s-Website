@@ -1,266 +1,276 @@
 .main {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 .part1 {
-    margin: 30px 100px;
-    display: flex;
-    gap: 20px;
+  margin: 30px 100px;
+  display: flex;
+  gap: 20px;
 }
 .part1 div {
-    width: 50%;
+  width: 50%;
 }
-.img{
+.img {
   width: 100%;
   height: auto;
 }
 .textpart p {
-    font-size: 25px;
+  font-size: 25px;
 }
-.ourvalues{
+.ourvalues {
   position: relative;
 }
 .approach {
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    margin-bottom: 30px;
-    height: auto;
-    margin-top: 140px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 30px;
+  height: auto;
+  margin-top: 140px;
+}
+.approach div {
+  width: 50%;
+}
+.imgpart {
+  display: flex;
+  justify-content: center;
+  padding-left: 170px;
+}
+.imgpart img {
+  width: 100%;
+  height: auto;
+}
+.approach span,
+.ourvalues span {
+  top: 43%;
+  left: -10px;
+  position: absolute;
+  font-size: 40px;
+  font-weight: 600;
+  transform: rotate(-90deg);
+}
+.ourvalues span {
+  left: -30px;
+}
+.approach .textpart {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.textpart .head {
+  font-size: 40px;
+  font-weight: bold;
+}
+.textpart p:nth-child(2) {
+  font-size: 20px;
+  padding-right: 150px;
+}
+.textpartwedo p {
+  font-size: 20px;
+  padding-right: 150px;
+}
+.ourvalues {
+  margin: 100px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.ourvalues .values {
+  margin-left: 15%;
+  display: flex;
+}
+.values div {
+  width: 50%;
+}
+.values .headings {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+.values .headings p {
+  font-size: 30px;
+  font-weight: bold;
+}
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -5%;
+}
+.text p {
+  font-size: 20px;
+}
+.mainwork {
+  margin: 50px 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.mainworkhead {
+  font-size: 40px;
+  font-weight: bold;
+}
+.mainworkdisc p {
+  font-size: 20px;
+  font-weight: 400;
+}
+.lastpart {
+  position: relative;
+}
+.lastImage {
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 5%;
+}
+.vission {
+  position: absolute;
+  font-size: 40px;
+  font-weight: 600;
+  transform: rotate(-90deg);
+  top: 20%;
+  left: 2.5%;
+}
+.mission {
+  position: absolute;
+  font-size: 40px;
+  font-weight: 600;
+  transform: rotate(-90deg);
+  bottom: 10%;
+  left: 2.5%;
+}
+.lastpart .firstdisc {
+  text-align: center;
+  top: 30%;
+  left: 21%;
+  color: white;
+  position: absolute;
+  font-size: 20px;
+  width: 18%;
+  line-height: 25px;
+}
+.lastpart .secdisc {
+  text-align: center;
+  bottom: 20%;
+  right: 10%;
+  color: white;
+  position: absolute;
+  font-size: 20px;
+  width: 18%;
+  line-height: 25px;
+}
+.sliderContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  .part1 {
+    margin: 30px 30px;
   }
-  .approach div {
-    width: 50%;
+  .part1 div {
+    width: 100%;
+  }
+  .approach span,
+  .ourvalues span {
+    transform: rotate(0deg);
+    top: -70px;
+    left: 10px;
+  }
+  .approach {
+    flex-direction: column;
+    margin: 150px 20px;
   }
   .imgpart {
-    display: flex;
-    justify-content: center;
-    padding-left: 170px;
+    padding-left: 0;
   }
-  .imgpart img{
+  .textpart p {
+    font-size: 20px;
+  }
+  .approach div {
     width: 100%;
+  }
+  .textpart p:nth-child(2) {
+    font-size: 17px;
+    padding-right: 0px;
+  }
+  .textpartwedo p {
+    padding-right: 0px;
+  }
+  .mainwork {
+    margin: 90px 20px;
+  }
+  .ourvalues {
+    margin: 190px 20px;
+    padding-top: 40px;
+  }
+  .ourvalues .values {
+    margin-left: 0;
+    gap: 40px;
+  }
+  .lastImage {
     height: auto;
+    padding: 0 0;
+    margin-bottom: 80px;
   }
-  .approach span , .ourvalues span{
-    top: 43%;
-    left: -10px;
-    position: absolute;
-    font-size: 40px;
-    font-weight: 600;
-    transform: rotate(-90deg);
+  .lastpart .firstdisc,
+  .lastpart .secdisc {
+    font-size: 15px;
   }
-  .ourvalues span{
-    left: -30px;
+  .lastpart .firstdisc {
+    top: 20%;
   }
-  .approach .textpart {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
+  .lastpart .secdisc {
+    bottom: 13%;
   }
-  .textpart .head{
-    font-size: 40px;
-    font-weight: bold;
+  .vission,
+  .mission {
+    transform: rotate(0deg);
   }
-  .textpart p:nth-child(2){
-    font-size: 20px;
-    padding-right: 150px;
+  .vission {
+    top: -40px;
+    left: 6.5%;
   }
-  .textpartwedo p{
-    font-size: 20px;
-    padding-right: 150px;
+  .mission {
+    bottom: 40px;
+    left: 6.5%;
   }
-  .ourvalues{
-    margin: 100px 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-  }
-  .ourvalues .values{
-    margin-left: 15%;
-    display: flex;
-  }
-  .values div{
-    width: 50%;
-  }
-  .values .headings{
-    display: flex;
-    gap: 50px;
-    align-items: center;
-  }
-  .values .headings p {
-    font-size: 30px;
-    font-weight: bold;
-  }
-.text{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: -5%;
-  }
-  .text p {
-    font-size: 20px;
-  }
-  .mainwork{
-    margin: 50px 120px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
-  .mainworkhead{
-    font-size: 40px;
-    font-weight: bold;
+}
+@media (max-width: 500px) {
+  .textpart p {
+    font-size: 17px;
   }
   .mainworkdisc p {
+    font-size: 17px;
+  }
+  .mainworkhead {
+    font-size: 25px;
+  }
+  .values .headings img {
+    height: 60px;
+  }
+  .values .headings {
+    gap: 10px;
+    align-items: flex-start;
+  }
+  .values .headings p {
     font-size: 20px;
-    font-weight: 400;
   }
-  .lastpart{
-    position: relative;
+  .text p {
+    font-size: 17px;
   }
-  .lastImage{
-    width: 100%;
-    padding-left: 10%;
-    padding-right: 5%;
+  .ourvalues {
+    margin: 190px 5px;
   }
-  .vission{
-    position: absolute;
-    font-size: 40px;
-    font-weight: 600;
-    transform: rotate(-90deg);
-   top: 20%;
-   left: 2.5%;
+  .lastpart .firstdisc {
+    top: 11%;
+    left: 6%;
+    width: 150px;
   }
-  .mission{
-    position: absolute;
-    font-size: 40px;
-    font-weight: 600;
-    transform: rotate(-90deg);
-    bottom: 10%;
-    left: 2.5%;
-   }
-   .lastpart .firstdisc{
-    text-align: center;
-    top: 30%;
-    left: 21%;
-    color: white;
-    position: absolute;
-    font-size: 20px;
-    width: 18%;
-    line-height: 25px;
-   }
-   .lastpart .secdisc{
-    text-align: center;
-   bottom: 20%;
-    right: 10%;
-    color: white;
-    position: absolute;
-    font-size: 20px;
-    width: 18%;
-    line-height: 25px;
-   }
-   @media (max-width: 800px){
-    .part1{
-      margin: 30px 30px;
-    }
-    .part1 div{
-      width: 100%;
-    }
-    .approach span , .ourvalues span{
-      transform: rotate(0deg);
-      top: -70px;
-      left: 10px;
-    }
-    .approach{
-      flex-direction: column;
-      margin: 150px 20px;
-    }
-    .imgpart{
-      padding-left: 0;
-    }
-    .textpart p{
-      font-size: 20px;
-    }
-    .approach div {
-      width: 100%;
-    }
-    .textpart p:nth-child(2){
-      font-size: 17px;
-      padding-right: 0px;
-    }
-    .textpartwedo p{
-      padding-right: 0px;
-    }
-    .mainwork{
-      margin: 90px 20px;
-    }
-    .ourvalues{
-      margin: 190px 20px;
-      padding-top: 40px;
-    }
-    .ourvalues .values{
-      margin-left: 0;
-      gap: 40px;
-    }
-    .lastImage{
-      height: auto;
-      padding: 0 0;
-      margin-bottom: 80px;
-    }
-    .lastpart .firstdisc, .lastpart .secdisc{
-      font-size: 15px;
-    }
-    .lastpart .firstdisc{
-      top: 20%;
-    }
-    .lastpart .secdisc{
-      bottom: 13%;
-    }
-    .vission , .mission{
-      transform: rotate(0deg);
-    }
-    .vission{
-      top: -40px;
-      left: 6.5%;
-    }
-    .mission{
-      bottom: 40px;
-      left: 6.5%;
-    }
-   }
-   @media (max-width: 500px){
-    .textpart p{
-      font-size: 17px;
-    }
-    .mainworkdisc p{
-      font-size: 17px;
-    }
-    .mainworkhead{
-      font-size: 25px;
-    }
-    .values .headings img{
-      height: 60px;
-    }
-    .values .headings{
-      gap: 10px;
-      align-items: flex-start;
-    }
-    .values .headings p{
-      font-size: 20px;
-    }
-    .text p {
-      font-size: 17px;
-    }
-    .ourvalues{
-      margin: 190px 5px;
-    }
-    .lastpart .firstdisc{
-      top: 11%;
-      left: 6%;
-      width: 150px;
-    }
-    .lastpart .secdisc{
-      bottom: 13%;
-      width: 100px;
-      font-size: 11px;
-      right: 4%;
-    }
-   }
+  .lastpart .secdisc {
+    bottom: 13%;
+    width: 100px;
+    font-size: 11px;
+    right: 4%;
+  }
+}

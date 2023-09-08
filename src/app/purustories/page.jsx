@@ -10,7 +10,7 @@ import v1 from "../../../public/vectors/Vector (1).png";
 import v2 from "../../../public/vectors/Vector (2).png";
 import StoriesIamge from "../../../public/stories-image.png";
 import Image from "next/image";
-import ImageSlider from "@/compenents/ImageSlidre";
+import ImageSlider from "@/compenents/ImageSlider/ImageSlidre";
 
 function page() {
   const vectorSectionRef = useRef(null);
@@ -87,11 +87,13 @@ function page() {
             segments of Personal & Professional developments.
           </p>
         </div>
-      </section> 
+      </section>
       <section className={styles.mainwork}>
         <p className={styles.mainworkhead}>• Consulting -</p>
-        <ImageSlider id="1" />
-        <div className={styles.mainworkdisc}> 
+        <div className={styles.sliderContainer}>
+          <ImageSlider id="1" />
+        </div>
+        <div className={styles.mainworkdisc}>
           <p>
             We offer Consulting Services – to individuals and organizations to
             remain consistent in their area of expertise and business
@@ -104,7 +106,9 @@ function page() {
       </section>
       <section className={styles.mainwork}>
         <p className={styles.mainworkhead}>• Sustainable Solutions -</p>
-        <ImageSlider id="2" />
+        <div className={styles.sliderContainer}>
+          <ImageSlider id="2" />
+        </div>
         <div className={styles.mainworkdisc}>
           <p>
             Our Sustainable Solutions ensure that ‘You’ get more efficient and
