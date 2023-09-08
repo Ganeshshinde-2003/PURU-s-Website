@@ -16,6 +16,7 @@
   bottom: 10%;
   color: white;
   padding: 0 200px;
+  padding-left: 100px;
   font-size: 20px;
 }
 .disc {
@@ -44,4 +45,28 @@
   display: inline-block;
   white-space: nowrap;
   overflow: hidden;
+}
+@media (max-width: 800px) {
+  .imgcontainer .textonimg {
+    padding: 0 100px;
+    padding-left: 20px;
+    font-size: 17px;
+  }
+  .disc{
+    font-size: 17px;
+    padding: 30px 20px;
+  }
+}
+@media (max-width: 500px) {
+  .giving, .community{
+    font-size: 60px;
+  }
+  .imgcontainer .textonimg {
+    padding: 0 20px;
+    font-size: 17px;
+  }
+  .disc{
+    font-size: 17px;
+    padding: 30px 20px;
+  }
 }

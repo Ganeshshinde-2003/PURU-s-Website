@@ -137,3 +137,19 @@
 		margin-left: 0px;
 	}
 }
+@media (max-width: 800px){
+	.gallery h1 {
+		font-size:20px;
+		margin-bottom: 20px;
+	}
+	
+	.gallery p {
+		font-size:15px;
+		line-height:1.4;
+	}
+}
+@media (max-width: 600px){
+	.right{
+		margin-bottom: 40px;
+	}
+}
