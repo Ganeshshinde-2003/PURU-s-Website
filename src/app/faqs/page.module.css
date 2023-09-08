@@ -1,58 +1,94 @@
-.main{
-    padding: 100px 0px;
-    padding-left: 100px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+.main {
+  padding: 100px 0px;
+  padding-left: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
-.faqhead{
-    font-size: 50px;
-    font-weight: 600;
-    letter-spacing: 2px;
+.faqhead {
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
-.faqsection{
-    position: relative;
-    display: flex;
-    gap: 30px;
-    height: auto;
+.faqsection {
+  position: relative;
+  display: flex;
+  gap: 30px;
+  height: auto;
 }
-.faqsection .faqs, .faqsection .faqiamge{
-    width: 50%;
+.faqsection .faqs,
+.faqsection .faqiamge {
+  width: 50%;
 }
-.image{
-    width: 100%;
-    object-fit: cover;
-    height: auto;
+.image {
+  width: 100%;
+  object-fit: cover;
+  height: auto;
 }
-.faqs{
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
+.faqs {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
-.faq1{
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+.faq1 {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
-.faq1 .que{
-    font-size: 20px;
-    font-weight: bold;
+.faq1 .que {
+  font-size: 20px;
+  font-weight: bold;
 }
-.faq1 .ans{
-    font-size: 15px;
-    padding-left: 15px;
-    line-height: 20px;
+.faq1 .ans {
+  font-size: 15px;
+  padding-left: 15px;
+  line-height: 20px;
 }
-.faqsection .faqiamge{
-    position: sticky; 
-    top: 0;
-    min-width: 50%;
-    height: 100vh;
+.faqsection .faqiamge {
+  position: sticky;
+  top: 0;
+  min-width: 50%;
+  height: 100vh;
 }
 .faqsection .faqiamge img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 700px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 700px;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 800px) {
+  .main {
+    padding-left: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .main {
+    padding: 50px 20px;
+  }
+  .faqsection .faqiamge {
+    position: relative;
+  }
+  .faqsection .faqiamge img {
+    position: relative;
+  }
+  .faqsection {
+    flex-direction: column-reverse;
+  }
+  .faqsection .faqs,
+  .faqsection .faqiamge {
+    width: 100%;
+  }
+  .faqsection .faqiamge {
+    height: auto;
+  }
+  .faqsection .faqiamge img {
+    height: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+  }
 }
