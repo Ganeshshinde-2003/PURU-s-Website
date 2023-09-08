@@ -5,6 +5,7 @@ import styles from "./page.module.css";
 
 import Stories from "../../../public/2 1 (1).png";
 import wwr from "../../../public/katthy-k-mal-FBX_qonbn5M-unsplash 1.png";
+import wwd from "../../../public/lycs-architecture-U2BI3GMnSSE-unsplash 1.png";
 import v1 from "../../../public/vectors/Vector (1).png";
 import v2 from "../../../public/vectors/Vector (2).png";
 import StoriesIamge from "../../../public/stories-image.png";
@@ -77,7 +78,7 @@ function page() {
       <section className={styles.approach}>
         <div className={styles.imgpart}>
           <span>What “We” Do</span>
-          <Image src={wwr} alt="approach" height={600} />
+          <Image src={wwd} alt="approach" height={600} />
         </div>
         <div className={`${styles.textpart} ${styles.textpartwedo}`}>
           <p>

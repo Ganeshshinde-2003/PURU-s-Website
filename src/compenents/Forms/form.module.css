@@ -34,3 +34,17 @@
   align-items: center;
   cursor: pointer;
 }
+@media (max-width: 800px) {
+  .box{
+    width: 260px;
+  }
+}
+@media (max-width: 500px){
+  .form form{
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .box{
+    width: 300px;
+  }
+}
