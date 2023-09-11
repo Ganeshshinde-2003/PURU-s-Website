@@ -2,10 +2,10 @@
 
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import styles from "./page.module.css"; // You can remove this import
+import styles from "./page.module.css";
 import MainImage from "../../../public/ourapproach.png";
 import Gallery from "@/compenents/Animation/Animation";
-import logo from "../../../public/logo.png"
+import logo from "../../../public/logo.png";
 
 function Page() {
   const [scrollY, setScrollY] = useState(0);
@@ -13,7 +13,7 @@ function Page() {
   useEffect(() => {
     const rightLeftScroll = () => {
       setScrollY(window.scrollY);
-    };  
+    };
 
     window.addEventListener("scroll", rightLeftScroll);
 
@@ -22,8 +22,8 @@ function Page() {
     };
   }, []);
 
-  const horizontalMovementGivingBack = scrollY * 0.5; // Left to right
-  const horizontalMovementCommunity = scrollY * -0.5; // Right to left
+  const horizontalMovementGivingBack = scrollY * 0.5;
+  const horizontalMovementCommunity = scrollY * -0.5;
 
   useEffect(() => {
     const logospan = document.querySelectorAll(`.${styles.logo}`);
@@ -31,7 +31,7 @@ function Page() {
 
     setTimeout(() => {
       logospan.forEach((span, idx) => {
-        setTimeout(() => { 
+        setTimeout(() => {
           span.classList.add(styles.active);
         }, (idx + 1) * 400);
       });
@@ -49,11 +49,9 @@ function Page() {
         intro.style.top = '-100vh';
       }, 2300);
 
-    }, 0); // Delay the execution to ensure all elements are loaded
+    }, 0);
 
-    return () => {
-      // Clean up any timers or other resources if needed
-    };
+    return () => { };
   }, []);
 
   return (

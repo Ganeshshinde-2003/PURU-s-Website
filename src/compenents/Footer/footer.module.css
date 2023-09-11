@@ -8,20 +8,26 @@
 
 .container{
     display: flex;
-    justify-content: space-evenly;
-    margin: 0 80px;
+    justify-content: space-between;
+    margin: 0 200px;
     gap: 20px;
 }
 
 .part1, .part2{
-    width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 60px;
     color: white;
 }
 .part1{
     justify-content: center;
+    gap: 94px;
+}
+.part1 img{
+    margin-top: -20px;
+}
+.part2{
+    align-items: flex-end;
 }
 .links, .socialmedia {
     display: flex;
@@ -33,6 +39,7 @@
 }
 .text{
     font-size: 20px;
+    text-align: right;
 }
 .arrowdown {
     height: 40px;
@@ -63,7 +70,7 @@
     font-size: 110px;
 }
 .cpyrgt{
-    padding: 40px 80px;
+    padding: 40px 200px;
     color: white;
     display: flex;
     align-items: center;
@@ -86,6 +93,9 @@
     .part1, .part2{
         align-items: flex-start;
         gap: 52px;
+    }
+    .part2{
+        align-items: flex-end;
     }
     .part1{
         justify-content: flex-start;

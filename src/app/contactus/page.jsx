@@ -18,6 +18,8 @@ function page() {
             <br />
             <br />
             <span>Write to us</span>
+            <p className={styles.mail}>puru@purusenterprises.in</p>
+            <p className={styles.num}>+91 9967760336</p>
           </p>
           <div className={styles.circle}>
             <FaArrowDown style={iconStyle} />
