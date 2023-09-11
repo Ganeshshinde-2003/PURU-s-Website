@@ -4,7 +4,6 @@ import Image from "next/image";
 import styles from "./style.module.css";
 import { useState } from "react";
 import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
-
 const imagespartone = [slide1, slide2];
 const imagestwo = [slide2, slide1];
 

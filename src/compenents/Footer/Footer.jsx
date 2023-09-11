@@ -22,7 +22,7 @@ function Footer() {
             <Link href="/">News</Link>
           </div>
           <div className={styles.socialmedia}>
-            <Link href="/">
+            <Link href="https://instagram.com/puruent?igshid=OGQ5ZDc2ODk2ZA==">
               <FaInstagram />
             </Link>
             <Link href="/">
