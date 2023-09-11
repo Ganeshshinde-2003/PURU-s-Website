@@ -5,6 +5,7 @@ import React, { useEffect, useState } from "react";
 import styles from "./page.module.css"; // You can remove this import
 import MainImage from "../../../public/ourapproach.png";
 import Gallery from "@/compenents/Animation/Animation";
+import logo from "../../../public/logo.png"
 
 function Page() {
   const [scrollY, setScrollY] = useState(0);
@@ -24,8 +25,42 @@ function Page() {
   const horizontalMovementGivingBack = scrollY * 0.5; // Left to right
   const horizontalMovementCommunity = scrollY * -0.5; // Right to left
 
+  useEffect(() => {
+    const logospan = document.querySelectorAll(`.${styles.logo}`);
+    const intro = document.querySelector(`.${styles.intro}`);
+
+    setTimeout(() => {
+      logospan.forEach((span, idx) => {
+        setTimeout(() => { 
+          span.classList.add(styles.active);
+        }, (idx + 1) * 400);
+      });
+
+      setTimeout(() => {
+        logospan.forEach((span, idx) => {
+          setTimeout(() => {
+            span.classList.remove(styles.active);
+            span.classList.add(styles.fade);
+          }, (idx + 1) * 50);
+        });
+      }, 2000);
+
+      setTimeout(() => {
+        intro.style.top = '-100vh';
+      }, 2300);
+
+    }, 0); // Delay the execution to ensure all elements are loaded
+
+    return () => {
+      // Clean up any timers or other resources if needed
+    };
+  }, []);
+
   return (
     <div className={styles.main}>
+      <div className={styles.intro}>
+        <span className={styles.logo}><Image src={logo} alt="logo" /></span>
+      </div>
       <div className={styles.imgcontainer}>
         <Image src={MainImage} alt="Main-Image" />
         <p className={styles.textonimg}>
