@@ -19,6 +19,8 @@ function page() {
             <br />
             <span>Write to us</span>
           </p>
+          <p className={styles.askings}>puru@purusenterprises.in</p>
+          <p className={styles.askings}>+91 9967760336</p>
           <div className={styles.circle}>
             <FaArrowDown style={iconStyle} />
           </div>
