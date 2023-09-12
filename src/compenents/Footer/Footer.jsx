@@ -2,62 +2,59 @@ import Link from "next/link";
 import styles from "./footer.module.css";
 import Logo from "../../../public/logo.png";
 import Purus from "../../../public/purus.png";
+import { BsArrowRightCircle } from "react-icons/bs";
 
 import React from "react";
 import Image from "next/image";
-import {
-  FaInstagram,
-  FaFacebook,
-  FaTwitter,
-  FaArrowRight,
-} from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 
 function Footer() {
   return (
     <div className={styles.footer}>
       <div className={styles.container}>
         <div className={styles.part1}>
-          <div className={styles.links}>
-            <Link href="/faqs">FAQ</Link>
-            <Link href="/">News</Link>
-          </div>
-          <div className={styles.socialmedia}>
-            <Link href="https://instagram.com/puruent?igshid=OGQ5ZDc2ODk2ZA==">
-              <FaInstagram />
-            </Link>
-            <Link href="/">
-              <FaFacebook />
-            </Link>
-            <Link href="/">
-              <FaTwitter />
-            </Link>
-          </div>
-          <Image src={Logo} className={styles.logo} alt="LOGO" height={180} />
-        </div>
-        <div className={styles.part2}>
-          <div className={styles.text}>
-            <p>
-              Do you want more information? <br />
-              <span className={styles.span}>
-                Contact our sales team now and it will be their pleasure to help
-                you
-              </span>
-            </p>
-          </div>
-          <div className={styles.cotactus}>
-            <p>Contact Us</p>
-            <div className={styles.arrowdown}>
-              <Link href="/contactus">
-                <FaArrowRight />
+          <div className={styles.faq}>
+            <div className={styles.links}>
+              <Link href="/faqs">FAQ</Link>
+              <Link href="/">NEWS</Link>
+            </div>
+            <div className={styles.socialmedia}>
+              <Link href="https://instagram.com/puruent?igshid=OGQ5ZDc2ODk2ZA==">
+                <FaInstagram className={styles.insta} />
               </Link>
             </div>
           </div>
-          <Image
-            src={Purus}
-            alt="PURUS"
-            width={300}
-            className={styles.purustext}
-          />
+          <div className={styles.ques}>
+            <div className={styles.first}>
+              <p className={styles.que}>Do you want more information?</p>
+              <p className={styles.ans}>
+                Contact our sales team now & it will be their pleasure to help
+                you
+              </p>
+            </div>
+            <hr />
+            <div className={styles.first}>
+              <p className={styles.que}>Want to have a collaboration?</p>
+              <p className={styles.ans}>
+                Contact our sales team now & it will be their pleasure to help
+                you
+              </p>
+            </div>
+          </div>
+          <div className={styles.contactus}>
+            <div>
+              <p className={styles.contact}>Contact Us</p>
+            </div>
+            <div>
+              <Link href="/contactus">
+                <BsArrowRightCircle />
+              </Link>
+            </div>
+          </div>
+        </div>
+        <div className={styles.part2}>
+          <Image src={Logo} alt="LOGO" className={styles.logo} />
+          <Image src={Purus} alt="LOGOTEXT" className={styles.logotext} />
         </div>
       </div>
       <div className={styles.cpyrgt}>
