@@ -60,7 +60,7 @@ function Footer() {
       <div className={styles.cpyrgt}>
         <p>@2023 All Rights Reserved.</p>
         <Link href="https://haraaydesignstudio.com/">
-          <p>Designed by Haraay Design Studio</p>
+          <p>Made by HaraayDesignStudio</p>
         </Link>
       </div>
     </div>
