@@ -4,15 +4,13 @@ import React from "react";
 import styles from "./page.module.css";
 import Form from "@/compenents/Forms/Form";
 import { FaArrowDown } from "react-icons/fa";
-import shape1 from "../../../public/shapes/1st.png";
-import shape2 from "../../../public/shapes/2nd.png";
-import shape3 from "../../../public/shapes/3rd.png";
 import { useEffect } from "react";
 import Image from "next/image";
+import logo2 from "../../../public/logo.png";
 
 function page() {
   useEffect(() => {
-    const logospan = document.querySelectorAll(`.${styles.logo}`);
+    const logospan = document.querySelectorAll(`.${styles.logo2}`);
     const intro = document.querySelector(`.${styles.intro}`);
 
     setTimeout(() => {
@@ -44,10 +42,8 @@ function page() {
   return (
     <div className={styles.main}>
       <div className={styles.intro}>
-        <span className={styles.logo}>
-          <Image src={shape1} alt="logo" className={styles.s1} />
-          <Image src={shape2} alt="logo" className={styles.s2} />
-          <Image src={shape3} alt="logo" className={styles.s3} />
+        <span className={styles.logo2}>
+          <Image src={logo2} alt="logo" />
         </span>
       </div>
       <div className={styles.container}>

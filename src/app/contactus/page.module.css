@@ -3,6 +3,8 @@
 }
 .intro {
   display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   z-index: 100;
   top: 0;
@@ -13,12 +15,21 @@
   transition: 1s;
 }
 
-.logo {
-  width: 100%;
+.logoheader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+}
+
+.logo2 {
   position: relative;
   display: inline-block;
   bottom: -20px;
   opacity: 0;
+  font-size: 40px;
+  font-weight: 500;
 }
 
 .active {
@@ -32,31 +43,10 @@
   opacity: 0;
   transition: ease-in-out 0.5s;
 }
-
-.s3 {
-  position: absolute;
-  top: 38%;
-  left: 50%;
-  height: 90px;
-  width: auto;
-}
-.s1 {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  height: 100px;
-  width: auto;
-  transform: translate(-50%, -50%);
-}
-.s2 {
-  position: absolute;
-  height: auto;
-  width: 125px;
-  top: 33%;
-  left: 43.5%;
-}
-.logo img {
+.intro img {
   z-index: 200;
+  height: 150px;
+  width: auto;
 }
 .container {
   display: flex;
