@@ -1,6 +1,53 @@
 .main {
   padding: 100px 100px;
 }
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #161616;
+  transition: 1s;
+}
+
+.logoheader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+}
+
+.logo {
+  position: relative;
+  display: inline-block;
+  bottom: -20px;
+  opacity: 0;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.active {
+  bottom: 0;
+  opacity: 1;
+  transition: ease-in-out 0.5s;
+}
+
+.fade {
+  bottom: 150px;
+  opacity: 0;
+  transition: ease-in-out 0.5s;
+}
+.intro img {
+  z-index: 200;
+  height: 150px;
+  width: auto;
+}
 .container {
   display: flex;
   justify-content: space-evenly;
@@ -20,8 +67,8 @@
   font-weight: 400;
 }
 .askings span {
-    font-weight: bold;
-    font-size: 50px;
+  font-weight: bold;
+  font-size: 50px;
 }
 
 .circle {
@@ -54,25 +101,25 @@
   }
 }
 @media (max-width: 800px) {
-  .askings span{
+  .askings span {
     font-size: 45px;
   }
-  .contact{
+  .contact {
     font-size: 50px;
   }
 }
 @media (max-width: 500px) {
-  .circle{
+  .circle {
     display: none;
   }
-  .container{
+  .container {
     flex-direction: column;
     gap: 50px;
   }
   .main {
     padding: 40px 20px;
   }
-  .namings{
+  .namings {
     gap: 20px;
   }
 }
