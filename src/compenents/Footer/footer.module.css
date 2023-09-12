@@ -1,132 +1,134 @@
-.footer{
-    height: auto;
-    background-color: #141a16;
-    display: flex;
-    flex-direction: column;
-    padding: 40px 40px;
+.footer {
+  height: auto;
+  background-color: #141a16;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 40px;
 }
 
-.container{
-    display: flex;
-    justify-content: space-between;
-    margin: 0 200px;
-    gap: 20px;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 40px 80px;
+  gap: 50px;
 }
 
-.part1, .part2{
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-    color: white;
+.part1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 20px;
+  gap: 10px;
 }
-.part1{
-    justify-content: center;
-    gap: 94px;
+.part1 a {
+  color: white;
 }
-.part1 img{
-    margin-top: -20px;
+.ques {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
-.part2{
-    align-items: flex-end;
+.que {
+  font-weight: 600;
 }
-.links, .socialmedia {
-    display: flex;
-    gap: 30px;
-    font-size: 25px;
+.cpyrgt {
+  padding: 40px 80px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.links a, .socialmedia a {
-    color: white;
+.faq div,
+.contactus div {
+  height: 50%;
 }
-.text{
+.links {
+  display: flex;
+  gap: 20px;
+}
+.links a,
+.socialmedia a {
+  transition: all 0.3s;
+}
+.links a:hover {
+  transform: scale(1.1);
+}
+.socialmedia .insta {
+  font-size: 30px;
+  transition: all 0.3s;
+}
+.insta:hover {
+  transform: scale(1.1);
+}
+.contactus div p {
+  font-size: 35px;
+  font-weight: 600;
+}
+.contactus a {
+  font-size: 120px;
+}
+.part2 {
+  display: flex;
+  gap: 10px;
+}
+.logo {
+  height: auto;
+  width: auto;
+}
+.cpyrgt a {
+  color: white;
+}
+@media (max-width: 900px) {
+  .footer {
+    padding: 0 10px;
+    padding-top: 40px;
+  }
+  .container,
+  .cpyrgt {
+    margin: 0 0;
+  }
+  .cpyrgt {
+    padding: 40px 0px;
+  }
+  .cpyrgt {
+    font-size: 10px;
+    font-weight: 200;
+  }
+}
+@media (max-width: 800px) {
+  .logo {
+    height: 150px;
+  }
+  .logotext {
+    flex: 1;
+    width: 350px;
+  }
+}
+@media (max-width: 500px) {
+  .part2 {
+    gap: 0;
+  }
+  .contactus div p {
     font-size: 20px;
-    text-align: right;
-}
-.arrowdown {
-    height: 40px;
-    width: 40px;
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    border: 2px solid white;
-    cursor: pointer;
-    text-align: center;
-}
-.arrowdown a {
-    text-decoration: none;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.cotactus{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    font-size: 30px;
-}
-.logoname{
-    font-size: 110px;
-}
-.cpyrgt{
-    padding: 40px 200px;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.cpyrgt a{
-    color: white;
-}
-@media (max-width: 800px){
-    .footer{
-        padding: 0;
-        padding-top: 40px;
-    }
-    .container, .cpyrgt{
-        margin: 0 10px
-    }
-    .cpyrgt{
-        padding: 40px 0px;
-    }
-    .part1, .part2{
-        align-items: flex-start;
-        gap: 52px;
-    }
-    .part2{
-        align-items: flex-end;
-    }
-    .part1{
-        justify-content: flex-start;
-        width: auto;
-        gap: 80px;
-    }
-    .cotactus{
-        margin-top: -24px;
-        font-size: 15px;
-    }
-    .purustext{
-        height: auto;
-        width: 160px;
-    }
-    .logo{
-        height: 80px;
-        width: 80px;
-        margin-top: -40px;
-    }
-    .text{
-        font-size: 15px;
-    }
-    .span{
-        font-size: 10px;
-        font-weight: normal;
-    }
-    .cpyrgt{
-        font-size: 10px;
-        font-weight: 200;
-    }
-    .links, .socialmedia{
-        gap: 12px;
-    }
+    width: 115px;
+    font-weight: 400;
+  }
+  .contactus a {
+    font-size: 70px;
+  }
+  .part1 {
+    font-size: 10px;
+  }
+  .faq div {
+    font-size: 13px;
+  }
+  .logo {
+    height: 100px;
+  }
+  .logotext {
+    width: 200px;
+    height: auto;
+  }
 }
