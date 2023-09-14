@@ -44,9 +44,9 @@
 
 /* Loading Progress Styles */
 .progressContainer {
-  font-size: 48px; /* Adjust the font size */
-  color: transparent; /* Transparent text color */
+  font-size: 60px;
   text-align: center;
+  color: white;
   padding: 20px; /* Padding around the text */
   border-radius: 10px; /* Border radius */
   backdrop-filter: blur(10px); /* Blurry effect inside the container */
