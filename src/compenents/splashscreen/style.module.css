@@ -1,3 +1,5 @@
+/* style.module.css */
+
 .intro {
   position: fixed;
   z-index: 100;
@@ -5,8 +7,22 @@
   left: 0;
   height: 100vh;
   width: 100vw;
-  background-color: #161616;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.2
+  ); /* Transparent and blurry background */
+  backdrop-filter: blur(10px); /* Blurry effect */
   transition: 1s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 24px; /* Adjust the font size */
+  color: white; /* Text color */
+  border: 2px solid white; /* White border */
 }
 
 .logoheader {
@@ -26,14 +42,21 @@
   font-weight: 500;
 }
 
-.active {
-  bottom: 0;
-  opacity: 1;
-  transition: ease-in-out 0.5s;
+/* Loading Progress Styles */
+.progressContainer {
+  font-size: 48px; /* Adjust the font size */
+  color: transparent; /* Transparent text color */
+  text-align: center;
+  padding: 20px; /* Padding around the text */
+  border-radius: 10px; /* Border radius */
+  backdrop-filter: blur(10px); /* Blurry effect inside the container */
+  -webkit-text-stroke: 1px white; /* White text outline with increased thickness */
+  text-stroke: 8px white; /* White text outline with increased thickness */
+  text-shadow: 0 0 10px gray; /* Gray outline */
 }
 
-.fade {
-  bottom: 150px;
+/* Transition out the progress text after loading */
+.loading-done .progressContainer {
   opacity: 0;
-  transition: ease-in-out 0.5s;
+  transition: opacity 0.5s;
 }
