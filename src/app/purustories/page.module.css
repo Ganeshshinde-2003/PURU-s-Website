@@ -11,7 +11,13 @@
   left: 0;
   height: 100vh;
   width: 100vw;
-  background-color: #161616;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.2
+  ); /* Transparent and blurry background */
+  backdrop-filter: blur(10px);
   transition: 1s;
 }
 
@@ -43,7 +49,7 @@
   opacity: 0;
   transition: ease-in-out 0.5s;
 }
-.intro img{
+.intro img {
   z-index: 200;
   height: 150px;
   width: auto;

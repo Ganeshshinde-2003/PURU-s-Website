@@ -1,46 +1,39 @@
-"use client"
+"use client";
 
-import styles from "./style.module.css"
-import { useEffect } from "react";
+import styles from "./style.module.css";
+import { useEffect, useState } from "react";
 
 const SplashScreen = () => {
+  const [loadingProgress, setLoadingProgress] = useState(0);
+
   useEffect(() => {
-    const logospan = document.querySelectorAll(`.${styles.logo}`);
     const intro = document.querySelector(`.${styles.intro}`);
 
+    const incrementProgress = () => {
+      if (loadingProgress < 100) {
+        setLoadingProgress(loadingProgress + 1);
+      }
+    };
+
+    const interval = setInterval(incrementProgress, 20);
+
     setTimeout(() => {
-      logospan.forEach((span, idx) => {
-        setTimeout(() => { 
-          span.classList.add(styles.active);
-        }, (idx + 1) * 400);
-      });
-
-      setTimeout(() => {
-        logospan.forEach((span, idx) => {
-          setTimeout(() => {
-            span.classList.remove(styles.active);
-            span.classList.add(styles.fade);
-          }, (idx + 1) * 50);
-        });
-      }, 2000);
-
-      setTimeout(() => {
-        intro.style.top = '-100vh';
-      }, 2300);
-
-    }, 0); // Delay the execution to ensure all elements are loaded
+      clearInterval(interval);
+      intro.style.top = "-100vh";
+    }, 2500);
 
     return () => {
-      // Clean up any timers or other resources if needed
+      clearInterval(interval);
     };
-  }, []);
+  }, [loadingProgress]);
+
   return (
     <div className={styles.intro}>
-      <h1 className={styles.logoheader}>
-        <span className={styles.logo}>PURU</span><span className={styles.logo}>'s</span>
-      </h1>
+      <div className={styles.progressContainer}>
+        <div className={styles.progressText}>{loadingProgress}%</div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default SplashScreen
+export default SplashScreen;

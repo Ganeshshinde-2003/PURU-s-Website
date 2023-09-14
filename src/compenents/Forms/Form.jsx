@@ -4,11 +4,11 @@ import styles from "./form.module.css";
 function Form() {
   return (
     <div className={styles.form}>
-      <form>
+       <form action="add_user.php" method="POST">
         <div className={styles.myInput}>
           <div className={styles.parent}>
             <div className={styles.box}>
-              <input type="text" required placeholder="FIRST NAME*" />
+              <input type="text" name="FirstName" required placeholder="FIRST NAME*" />
             </div>
           </div>
           <svg
@@ -39,7 +39,7 @@ function Form() {
         <div className={styles.myInput}>
           <div className={styles.parent}>
             <div className={styles.box}>
-              <input type="text" required placeholder="LAST NAME*" />
+              <input type="text" name="LastName" required placeholder="LAST NAME*" />
             </div>
           </div>
           <svg
@@ -70,7 +70,7 @@ function Form() {
         <div className={styles.myInput}>
           <div className={styles.parent}>
             <div className={styles.box}>
-              <input type="text" required placeholder="EMAIL ADDRESS*" />
+              <input type="text"  name="EmailAddress" required placeholder="EMAIL ADDRESS*" />
             </div>
           </div>
           <svg
@@ -101,7 +101,7 @@ function Form() {
         <div className={styles.myInput}>
           <div className={styles.parent}>
             <div className={styles.box}>
-              <input type="text" required placeholder="PHONE NUMBER*" />
+              <input type="text" name="CompanyName" required placeholder="PHONE NUMBER*" />
             </div>
           </div>
           <svg
