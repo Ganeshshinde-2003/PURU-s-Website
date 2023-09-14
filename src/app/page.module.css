@@ -493,7 +493,7 @@
     padding-left: 0px;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
   .textpart {
     gap: 5px;
   }
