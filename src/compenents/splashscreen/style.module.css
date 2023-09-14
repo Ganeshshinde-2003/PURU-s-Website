@@ -47,8 +47,6 @@
   font-size: 60px;
   text-align: center;
   color: white;
-  padding: 20px; /* Padding around the text */
-  border-radius: 10px; /* Border radius */
   backdrop-filter: blur(10px); /* Blurry effect inside the container */
   -webkit-text-stroke: 1px white; /* White text outline with increased thickness */
   text-stroke: 8px white; /* White text outline with increased thickness */
