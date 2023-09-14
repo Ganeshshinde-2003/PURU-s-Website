@@ -46,8 +46,9 @@
 .progressContainer {
   font-size: 60px;
   text-align: center;
+  background-color: transparent;
   color: white;
-  backdrop-filter: blur(10px); /* Blurry effect inside the container */
+  backdrop-filter: blur(100%); /* Blurry effect inside the container */
   -webkit-text-stroke: 1px white; /* White text outline with increased thickness */
   text-stroke: 8px white; /* White text outline with increased thickness */
   text-shadow: 0 0 10px gray; /* Gray outline */
