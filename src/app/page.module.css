@@ -748,7 +748,8 @@
   .whatwedo .imgsection span,
   .jobhead,
   .aboutus p {
-    font-size: 43px;
+    font-size: 40px;
+    font-weight: 600;
   }
   .designimage {
     height: 100px;
