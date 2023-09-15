@@ -160,7 +160,7 @@ function Form() {
             </defs>
           </svg>
         </div>
-        <div className={styles.myInput}
+        <div className={styles.myInput} >
           <div className={styles.parent}>
             <div className={`${styles.box} ${styles.box1}`}>
               <p className={styles.submit}>SUBMIT</p>
