@@ -468,17 +468,17 @@
     margin-left: 207px;
   }
   .approach .imgpart span {
-    left: -40.5%;
+    left: -34%;
   }
   .approach.approachabout .imgpart span {
-    left: -22.5%;
+    left: -27.5%;
   }
   .whatwedo .imgsection span {
-    left: -21%;
+    left: -18%;
     top: 35%;
   }
   .jobhead {
-    left: -11.5%;
+    left: -10.5%;
   }
 }
 @media (max-width: 1300px) {
@@ -740,5 +740,14 @@
     to {
       background-color: white;
     }
+  }
+}
+@media (max-width: 380px) {
+  .approach.approachabout .imgpart span,
+  .approach .imgpart span,
+  .whatwedo .imgsection span,
+  .jobhead,
+  .aboutus p {
+    font-size: 48px;
   }
 }
