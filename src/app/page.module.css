@@ -755,4 +755,7 @@
     height: 100px;
     width: auto;
   }
+  .jobs .heaings {
+    font-weight: 30px;
+  }
 }
