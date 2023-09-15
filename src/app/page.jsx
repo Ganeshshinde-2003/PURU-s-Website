@@ -7,6 +7,8 @@ import vec3 from "../../public/vectors/3.png";
 import vec4 from "../../public/vectors/7.png";
 import vec5 from "../../public/vectors/4.png";
 import Approach from "../../public/ricardo-gomez-angel-WsEAiVwGrwo-unsplash 1.png";
+import main from "../../public/Artboard 5@4x-8.png";
+import about from "../../public/Artboard 6@4x-8.png";
 import vec6 from "../../public/vectors/5.png";
 import vec7 from "../../public/vectors/6.png";
 import vec8 from "../../public/vectors/8.png";
@@ -79,7 +81,7 @@ export default function Home() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  
+
   return (
     <main className={styles.main}>
       <section className={styles.part1}>
@@ -96,8 +98,7 @@ export default function Home() {
           </span>
         </div>
         <div className={styles.empty}>
-          {/* <Image className={styles.head1} src={vechead1} alt="head-one" />
-          <Image className={styles.head2} src={vechead2} alt="head-two" /> */}
+          <Image className={styles.head1} src={main} alt="head-one" />
         </div>
         <div className={styles.circle}>
           <FaArrowDown style={iconStyle} />
@@ -161,10 +162,20 @@ export default function Home() {
           height={170}
         />
       </section>
-      <section className={styles.about}>
+      {/* <section className={styles.about}>
         <span className={styles.aboutus}>
           <p>About Us</p>
         </span>
+        <Image src={about} alt="about" className={styles.aboutimage} />
+        <div className={styles.circle2}>
+          <FaArrowDown style={iconStyle} />
+        </div>
+      </section> */}
+      <section className={`${styles.approach} ${styles.approachabout}`}>
+        <div className={styles.imgpart}>
+          <span>About Us</span>
+          <Image src={about} alt="approach" height={600} />
+        </div>
         <div className={styles.circle2}>
           <FaArrowDown style={iconStyle} />
         </div>
