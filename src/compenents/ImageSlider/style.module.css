@@ -61,3 +61,8 @@
         bottom: -5rem;
     }
 }
+@media (max-width: 400px){
+.carousel{
+    height: 300px;
+}
+}

@@ -1,11 +1,13 @@
-import slide1 from "../../../public/matthew-henry-VviFtDJakYk-unsplash 1.png";
-import slide2 from "../../../public/0F4A8688 1.png";
+import slide1 from "../../../public/sliderimages/puru 1.png";
+import slide2 from "../../../public/sliderimages/puru 2.png";
+import slide3 from "../../../public/sliderimages/puru 3.png";
+import slide4 from "../../../public/sliderimages/puru.png";
 import Image from "next/image";
 import styles from "./style.module.css";
 import { useState } from "react";
 import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
-const imagespartone = [slide1, slide2];
-const imagestwo = [slide2, slide1];
+const imagespartone = [slide1, slide2, slide3, slide4];
+const imagestwo = [slide2, slide1, slide3, slide4];
 
 const ImageSlider = ({ id }) => {
   const [slide, setSlide] = useState(0);
