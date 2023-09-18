@@ -1,7 +1,7 @@
 import Link from "next/link";
 import styles from "./footer.module.css";
 import Logo from "../../../public/logo.png";
-import Purus from "../../../public/purus.png";
+import Purus from "../../../public/puru.png";
 import { BsArrowRightCircle } from "react-icons/bs";
 
 import React from "react";

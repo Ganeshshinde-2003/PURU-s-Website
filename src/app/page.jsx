@@ -6,16 +6,16 @@ import vec2 from "../../public/vectors/2.png";
 import vec3 from "../../public/vectors/3.png";
 import vec4 from "../../public/vectors/7.png";
 import vec5 from "../../public/vectors/4.png";
-import Approach from "../../public/ricardo-gomez-angel-WsEAiVwGrwo-unsplash 1.png";
-import main from "../../public/Artboard 5@4x-8.png";
-import about from "../../public/Artboard 6@4x-8.png";
+import Approach from "../../public/PURU WEBSITE ILLUSTRATIONS-06.png";
+import main from "../../public/Artboard 3@4x-8 1.png";
+import about from "../../public/about.png";
 import vec6 from "../../public/vectors/5.png";
 import vec7 from "../../public/vectors/6.png";
 import vec8 from "../../public/vectors/8.png";
 import vec9 from "../../public/vectors/9.png";
-import wwd1 from "../../public/0F4A9036 1.png";
+import wwd1 from "../../public/sliderimages/puru 1.jpg";
 import wwd2 from "../../public/matthew-henry-VviFtDJakYk-unsplash 1.png";
-import jobs from "../../public/lycs-architecture-U2BI3GMnSSE-unsplash 1.png";
+import jobs from "../../public/PURU WEBSITE ILLUSTRATIONS-02 1.png";
 import Design from "../../public/puru-design.png";
 import Inspiring from "../../public/puru-inspiring.png";
 import Buttonone from "../../public/button-main.png";
@@ -162,15 +162,6 @@ export default function Home() {
           height={170}
         />
       </section>
-      {/* <section className={styles.about}>
-        <span className={styles.aboutus}>
-          <p>About Us</p>
-        </span>
-        <Image src={about} alt="about" className={styles.aboutimage} />
-        <div className={styles.circle2}>
-          <FaArrowDown style={iconStyle} />
-        </div>
-      </section> */}
       <section className={`${styles.approach} ${styles.approachabout}`}>
         <div className={styles.imgpart}>
           <span>About Us</span>
