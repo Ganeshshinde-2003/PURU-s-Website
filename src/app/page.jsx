@@ -13,7 +13,7 @@ import vec6 from "../../public/vectors/5.png";
 import vec7 from "../../public/vectors/6.png";
 import vec8 from "../../public/vectors/8.png";
 import vec9 from "../../public/vectors/9.png";
-import wwd1 from "../../public/sliderimages/puru 1.png";
+import wwd1 from "../../public/sliderimages/puru 1.jpg";
 import wwd2 from "../../public/matthew-henry-VviFtDJakYk-unsplash 1.png";
 import jobs from "../../public/PURU WEBSITE ILLUSTRATIONS-02 1.png";
 import Design from "../../public/puru-design.png";

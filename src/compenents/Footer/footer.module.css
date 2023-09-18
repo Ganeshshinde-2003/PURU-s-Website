@@ -72,10 +72,14 @@
 .part2 {
   display: flex;
   gap: 10px;
+  align-items: center;
 }
 .logo {
-  height: auto;
   width: auto;
+}
+.logotext {
+  height: auto;
+  width: 70%;
 }
 .cpyrgt a {
   color: white;

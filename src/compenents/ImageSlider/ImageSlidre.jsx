@@ -1,29 +1,31 @@
-import slide1 from "../../../public/sliderimages/puru 1.png";
-import slide2 from "../../../public/sliderimages/puru 2.png";
-import slide3 from "../../../public/sliderimages/puru 3.png";
-import slide4 from "../../../public/sliderimages/puru.png";
+import slide11 from "../../../public/sliderimages/puru 1.jpg";
+import slide12 from "../../../public/sliderimages/puru 2.jpg";
+import slide13 from "../../../public/sliderimages/puru 3.jpg";
+import slide14 from "../../../public/sliderimages/puru.jpg";
+import slide21 from "../../../public/sliderimages/con.jpg";
+import slide22 from "../../../public/sliderimages/con1.png";
 import Image from "next/image";
 import styles from "./style.module.css";
 import { useState } from "react";
 import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
-const imagespartone = [slide1, slide2, slide3, slide4];
-const imagestwo = [slide2, slide1, slide3, slide4];
+const imagespartone = [slide11, slide12, slide13, slide14];
+const imagestwo = [slide21, slide22];
 
 const ImageSlider = ({ id }) => {
   const [slide, setSlide] = useState(0);
 
-  if(id == "1"){
-    var imagesone = imagespartone
+  if (id == "1") {
+    var imagesone = imagespartone;
   } else {
-    var imagesone = imagestwo
+    var imagesone = imagestwo;
   }
 
   const nextSlide = () => {
-    setSlide( slide === imagesone.length - 1 ? 0 : slide + 1);
+    setSlide(slide === imagesone.length - 1 ? 0 : slide + 1);
   };
 
   const prevSlide = () => {
-    setSlide( slide === 0 ? imagesone.length - 1 : slide - 1);
+    setSlide(slide === 0 ? imagesone.length - 1 : slide - 1);
   };
 
   return (
