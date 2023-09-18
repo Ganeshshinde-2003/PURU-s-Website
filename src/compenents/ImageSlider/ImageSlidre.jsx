@@ -2,8 +2,7 @@ import slide11 from "../../../public/sliderimages/puru 1.jpg";
 import slide12 from "../../../public/sliderimages/puru 2.jpg";
 import slide13 from "../../../public/sliderimages/puru 3.jpg";
 import slide14 from "../../../public/sliderimages/puru.jpg";
-import slide21 from "../../../public/sliderimages/con.jpg";
-import slide22 from "../../../public/sliderimages/con1.png";
+
 import Image from "next/image";
 import styles from "./style.module.css";
 import { useState } from "react";
