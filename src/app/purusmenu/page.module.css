@@ -68,6 +68,9 @@
   .container {
     flex-direction: column;
   }
+  .content .image {
+    height: auto;
+  }
   .content {
     width: 100%;
     align-items: flex-start;

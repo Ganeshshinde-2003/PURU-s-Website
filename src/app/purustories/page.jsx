@@ -4,8 +4,8 @@ import React, { useEffect, useRef } from "react";
 import styles from "./page.module.css";
 
 import Stories from "../../../public/2 1 (1).png";
-import wwr from "../../../public/katthy-k-mal-FBX_qonbn5M-unsplash 1.png";
-import wwd from "../../../public/lycs-architecture-U2BI3GMnSSE-unsplash 1.png";
+import wwr from "../../../public/PURU WEBSITE ILLUSTRATIONS-04 1.png";
+import wwd from "../../../public/PURU WEBSITE ILLUSTRATIONS-03.png";
 import v1 from "../../../public/vectors/Vector (1).png";
 import v2 from "../../../public/vectors/Vector (2).png";
 import StoriesIamge from "../../../public/stories-image.png";
@@ -49,7 +49,7 @@ function page() {
 
     setTimeout(() => {
       logospan.forEach((span, idx) => {
-        setTimeout(() => { 
+        setTimeout(() => {
           span.classList.add(styles.active);
         }, (idx + 1) * 400);
       });
@@ -64,9 +64,8 @@ function page() {
       }, 2000);
 
       setTimeout(() => {
-        intro.style.top = '-100vh';
+        intro.style.top = "-100vh";
       }, 2300);
-
     }, 0); // Delay the execution to ensure all elements are loaded
 
     return () => {
@@ -77,7 +76,9 @@ function page() {
   return (
     <div className={styles.main}>
       <div className={styles.intro}>
-        <span className={styles.logo}><Image src={logo} alt="logo" /></span>
+        <span className={styles.logo}>
+          <Image src={logo} alt="logo" />
+        </span>
       </div>
       <Image src={Stories} alt="Strories" className={styles.img} />
       <div className={styles.part1}>
