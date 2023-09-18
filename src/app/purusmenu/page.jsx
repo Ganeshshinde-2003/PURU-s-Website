@@ -1,12 +1,12 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 import styles from "./page.module.css";
-import wwr from "../../../public/katthy-k-mal-FBX_qonbn5M-unsplash 1.png";
-import Approach from "../../../public/ricardo-gomez-angel-WsEAiVwGrwo-unsplash 1.png";
+import wwr from "../../../public/about.png";
+import Approach from "../../../public/PURU WEBSITE ILLUSTRATIONS-06.png";
 import Link from "next/link";
-import { FaArrowDown } from 'react-icons/fa';
-import { useEffect, useState } from 'react';
+import { FaArrowDown } from "react-icons/fa";
+import { useEffect, useState } from "react";
 
 function Page() {
   const [isVisible, setIsVisible] = useState(false);
@@ -21,13 +21,13 @@ function Page() {
   }, []);
 
   const iconStyle = {
-    strokeWidth: '1px', // Adjust the stroke width as needed
+    strokeWidth: "1px", // Adjust the stroke width as needed
   };
 
   const containerStyle = {
     opacity: isVisible ? 1 : 0,
-    transform: isVisible ? 'translateY(0)' : 'translateY(-100%)',
-    transition: 'opacity 1s, transform 2s',
+    transform: isVisible ? "translateY(0)" : "translateY(-100%)",
+    transition: "opacity 1s, transform 2s",
   };
 
   return (
@@ -36,7 +36,8 @@ function Page() {
         <div className={styles.content}>
           <p>Our Story</p>
           <Link href="/purustories" className={styles.image}>
-            <Image src={wwr} className={styles.image} alt="wwt" /></Link>
+            <Image src={wwr} className={styles.image} alt="wwt" />
+          </Link>
           <Link href="/purustories">
             <div className={styles.circle}>
               <FaArrowDown style={iconStyle} />
@@ -46,7 +47,8 @@ function Page() {
         <div className={styles.content}>
           <p>Our Approach</p>
           <Link href="/ourapproach" className={styles.image}>
-            <Image src={Approach} className={styles.image} alt="wwt" /></Link>
+            <Image src={Approach} className={styles.image} alt="wwt" />
+          </Link>
           <Link href="/ourapproach">
             <div className={styles.circle}>
               <FaArrowDown style={iconStyle} />

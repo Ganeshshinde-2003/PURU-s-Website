@@ -20,10 +20,11 @@
   font-size: 40px;
   font-weight: 500;
 }
+
 .content .image {
   height: 500px;
   width: 400px;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 15%;
 }
 .content a {
