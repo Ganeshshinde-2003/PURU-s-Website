@@ -87,15 +87,18 @@ export default function Home() {
       <section className={styles.part1}>
         <div className={styles.text}>
           <Image src={Design} alt="Design" className={styles.designimage} />
-          <span className={styles.dis}>
-            <p>Discover</p>
-            <Image
-              src={Buttonone}
-              className={styles.buttonone}
-              alt="Button"
-              width={200}
-            />
-          </span>
+          <Link href="/purustories">
+            <span className={styles.dis}>
+              <p>Discover</p>
+              <Image
+                src={Buttonone}
+                className={styles.buttonone}
+                alt="Button"
+                width={200}
+              />
+            </span>
+          </Link>
+
         </div>
         <div className={styles.empty}>
           <Image className={styles.head1} src={main} alt="head-one" />
@@ -167,11 +170,14 @@ export default function Home() {
           <span>About Us</span>
           <Image src={about} alt="approach" height={600} />
         </div>
-        <div className={styles.circle2}>
-          <FaArrowDown style={iconStyle} />
-        </div>
+        <Link href="/purustories" className={styles.circle2a}>
+          <div className={styles.circle2}>
+            <FaArrowDown style={iconStyle} />
+          </div>
+        </Link>
+
       </section>
-      <section className={styles.approach}>
+      <section className={`${styles.approach} ${styles.app2}`}>
         <div className={styles.imgpart}>
           <span>Our Approach</span>
           <Image src={Approach} alt="approach" height={600} />
@@ -186,15 +192,17 @@ export default function Home() {
             sustainability.
           </p>
           <div className={styles.links}>
-            <span className={styles.dis}>
-              <p>Discover</p>
-              <Image
-                src={Buttonone}
-                className={styles.buttonone}
-                alt="Button"
-                width={200}
-              />
-            </span>
+            <Link href="/purustories">
+              <span className={styles.dis}>
+                <p>Discover</p>
+                <Image
+                  src={Buttonone}
+                  className={styles.buttonone}
+                  alt="Button"
+                  width={200}
+                />
+              </span>
+            </Link>
             <Link href="/purustories" className={styles.linktolink}>
               <BsArrowRight className={styles.approachlink} />
             </Link>

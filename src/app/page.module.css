@@ -141,13 +141,16 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: all 1s;
 }
 .dis p {
   position: absolute;
   font-size: 25px;
   color: white;
 }
-
+.dis:hover{
+  transform: scale(1.1);
+}
 .part1 .circle {
   display: flex;
   justify-content: center;
@@ -173,6 +176,7 @@
 }
 
 .circle2 {
+  width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -182,13 +186,13 @@
   right: 10px;
   height: 200px;
   width: 200px;
+  color: black;
   transform: rotate(-90deg);
   border-radius: 50%;
   border: 2px solid rgb(0, 0, 0);
   background-color: transparent; /* Set the initial background color to transparent */
   transition: background-color 2s ease, transform 1s ease, box-shadow 1s ease;
 }
-
 .circle2:hover {
   background-color: black;
   color: white;
@@ -316,9 +320,10 @@
   height: auto;
   margin-top: 140px;
 }
-.approach div {
+.app2 div {
   width: 50%;
 }
+
 .imgpart {
   display: flex;
   justify-content: flex-end;
@@ -593,8 +598,8 @@
     transform: rotate(0deg);
   }
   .circle2 {
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
   }
   .approach,
   .whatwedo {
@@ -605,7 +610,7 @@
   .whatwedo {
     margin: 100px 0;
   }
-  .approach div {
+  .app2 div {
     width: 100%;
     gap: 20px;
   }
@@ -649,6 +654,9 @@
   .part1 {
     margin-bottom: 0;
     margin-left: 0;
+  }
+  .circle2a{
+    align-self: flex-end;
   }
 }
 @media (max-width: 500px) {
