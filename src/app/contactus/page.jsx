@@ -7,6 +7,7 @@ import { FaArrowDown } from "react-icons/fa";
 import { useEffect } from "react";
 import Image from "next/image";
 import logo2 from "../../../public/logo.png";
+import conct from "../../../public/contactusimage.jpg"
 
 function page() {
   useEffect(() => {
@@ -53,13 +54,15 @@ function page() {
             Questions? Feedback?
             <br /> Product ideas?
             <br />
-            <br />
             <span>Write to us</span>
           </p>
           <p className={styles.askings}>puru@purusenterprises.in</p>
           <p className={styles.askings}>+91 9967760336</p>
+          <div className={styles.imgcontainer}>
+            <Image src={conct} height={200} width={200} alt="contactus" />
           <div className={styles.circle}>
             <FaArrowDown style={iconStyle} />
+          </div>
           </div>
         </div>
         <Form />

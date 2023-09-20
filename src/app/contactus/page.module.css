@@ -1,6 +1,7 @@
 .main {
-  padding: 100px 100px;
+  padding: 100px 150px;
 }
+
 .intro {
   display: flex;
   justify-content: center;
@@ -11,12 +12,11 @@
   left: 0;
   height: 100vh;
   width: 100vw;
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.2
-  ); /* Transparent and blurry background */
+  background-color: rgba(255,
+      255,
+      255,
+      0.2);
+  /* Transparent and blurry background */
   backdrop-filter: blur(10px);
   transition: 1s;
 }
@@ -49,29 +49,35 @@
   opacity: 0;
   transition: ease-in-out 0.5s;
 }
+
 .intro img {
   z-index: 200;
   height: 150px;
   width: auto;
 }
+
 .container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
+
 .namings {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+
 .contact {
   font-size: 90px;
   font-weight: bold;
   letter-spacing: 1px;
 }
+
 .askings {
   font-size: 25px;
   font-weight: 400;
 }
+
 .askings span {
   font-weight: bold;
   font-size: 50px;
@@ -90,42 +96,61 @@
   width: 220px;
   border-radius: 50%;
   border: 2px solid rgb(0, 0, 0);
-  background-color: transparent; /* Set the initial background color to transparent */
+  background-color: transparent;
+  /* Set the initial background color to transparent */
   transition: background-color 2s ease, transform 1s ease, box-shadow 1s ease;
 }
 
 .circle:hover {
   background-color: black;
   color: white;
-  transform: scale(1.05) rotate(-90deg); /* Increase size on hover for a 3D effect */
+  transform: scale(1.05) rotate(-90deg);
+  /* Increase size on hover for a 3D effect */
   box-shadow: 0 0 20px rgba(0, 0, 0, 5);
   cursor: pointer;
 }
+
+.imgcontainer {
+  display: flex;
+}
+
+.imgcontainer img {
+  height: 500px;
+  width: auto;
+}
+
 @media (max-width: 1000px) {
   .main {
     padding: 100px 20px;
   }
 }
+
 @media (max-width: 800px) {
   .askings span {
     font-size: 45px;
   }
+
   .contact {
-    font-size: 50px;
+    font-size: 46px;
   }
 }
+
 @media (max-width: 500px) {
   .circle {
     display: none;
+  }
+  .imgcontainer img{
+    height: 100%;
+  }
+  .askings{
+    font-size: 20px;
   }
   .container {
     flex-direction: column;
     gap: 50px;
   }
+
   .main {
     padding: 40px 20px;
-  }
-  .namings {
-    gap: 20px;
   }
 }

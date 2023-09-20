@@ -15,36 +15,46 @@
   overflow: hidden;
   z-index: 1;
 }
-.form form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
+.form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.submit{
+.form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.submit {
   font-size: 17px;
   text-align: left;
   padding-left: 19px;
   font-weight: 400;
 }
-.box1{
+
+.box1 {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   cursor: pointer;
 }
+
 @media (max-width: 800px) {
-  .box{
+  .box {
     width: 260px;
   }
 }
-@media (max-width: 500px){
-  .form form{
+
+@media (max-width: 500px) {
+  .form form {
     align-items: flex-start;
     gap: 20px;
   }
-  .box{
+
+  .box {
     width: 300px;
   }
 }
