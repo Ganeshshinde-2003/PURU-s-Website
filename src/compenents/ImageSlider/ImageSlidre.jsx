@@ -8,8 +8,8 @@ import Image from "next/image";
 import styles from "./style.module.css";
 import { useState } from "react";
 import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
-const imagespartone = [slide11, slide12, slide13, slide14];
-const imagestwo = [slide21, slide22];
+const imagespartone = [slide21, slide22];
+const imagestwo = [slide11, slide12, slide13, slide14];
 
 const ImageSlider = ({ id }) => {
   const [slide, setSlide] = useState(0);

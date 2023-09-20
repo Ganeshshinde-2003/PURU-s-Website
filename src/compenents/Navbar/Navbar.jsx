@@ -12,17 +12,19 @@ function Navbar() {
   const [hidden, sethidden] = useState("none");
   const handleLinkClick = (index) => {
     setActiveLink(index);
+    sethidden("none");
   };
   const handleMenuIconClick = () => {
-    if (window.innerWidth < 800){
-    sethidden(hidden === "none" ? "block" : "none");
+    if (window.innerWidth < 800) {
+      sethidden(hidden === "none" ? "block" : "none");
     }
   };
 
   return (
     <div className={styles.main}>
       <div className={styles.header}>
-        <Image src={Logo} alt="LOGO" className={styles.logoimage} height={150} width={150} />
+        <Link href="/">
+          <Image src={Logo} alt="LOGO" className={styles.logoimage} height={150} width={150} /></Link>
         <div className={`${styles.container} ${styles.navbar}`}>
           <div className={styles.parent}>
             <div className={styles.box}></div>
@@ -95,11 +97,11 @@ function Navbar() {
             </defs>
           </svg>
           <div className={styles.headerlinks2}>
-          <FiMenu className={styles.search} onClick={handleMenuIconClick} />
+            <FiMenu className={styles.search} onClick={handleMenuIconClick} />
           </div>
         </div>
       </div>
-      <div className={styles.mobiletab} style={{ display: hidden}}>
+      <div className={styles.mobiletab} style={{ display: hidden }}>
         <div className={styles.mobilelinks}>
           <Link href="/" onClick={() => handleLinkClick(0)} className={activeLink === 0 ? styles.activeLink : ''}>
             You
