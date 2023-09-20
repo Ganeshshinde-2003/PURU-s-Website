@@ -12,7 +12,7 @@ function Navbar() {
   const [hidden, sethidden] = useState("none");
   const handleLinkClick = (index) => {
     setActiveLink(index);
-    sethidden(!hidden);
+    sethidden("none");
   };
   const handleMenuIconClick = () => {
     if (window.innerWidth < 800) {
