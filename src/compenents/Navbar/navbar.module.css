@@ -63,7 +63,7 @@
   top: 40%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .headerlinks a {
@@ -134,6 +134,12 @@
   flex-direction: column;
   gap: 20px;
   text-align: center;
+  font-size: 1.3rem;
+}
+@media (max-width: 900px){
+  .headerlinks a{
+    font-size: 1rem;
+  }
 }
 @media (max-width: 800px) {
   .navbar {
