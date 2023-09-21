@@ -1,5 +1,6 @@
 .main {
     width: 100%;
+    margin-top: 40px;
 }
 
 .main .mainimg,
@@ -122,6 +123,7 @@
     }
     .onlyimagetwo, .onlyimage{
         margin-bottom: 40px;
+        padding: 10px 15px;
     }
     .onlyimage{
         flex-direction: column;
