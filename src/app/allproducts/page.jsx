@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import styles from "./style.module.css"
 import main from "../../../public/0F4A9170 1.png"
@@ -10,10 +11,44 @@ import six from "../../../public/0F4A9004 1.png"
 import seven from "../../../public/0F4A9009 1.png"
 import eight from "../../../public/0F4A9218 1.png"
 import nine from "../../../public/sliderimages/puru.jpg"
+import { useEffect } from "react";
+import logo2 from "../../../public/logo.png";
 
 const Page = () => {
+    useEffect(() => {
+        const logospan = document.querySelectorAll(`.${styles.logo2}`);
+        const intro = document.querySelector(`.${styles.intro}`);
+    
+        setTimeout(() => {
+          logospan.forEach((span, idx) => {
+            setTimeout(() => {
+              span.classList.add(styles.active);
+            }, (idx + 1) * 400);
+          });
+    
+          setTimeout(() => {
+            logospan.forEach((span, idx) => {
+              setTimeout(() => {
+                span.classList.remove(styles.active);
+                span.classList.add(styles.fade);
+              }, (idx + 1) * 50);
+            });
+          }, 2000);
+    
+          setTimeout(() => {
+            intro.style.top = "-100vh";
+          }, 2300);
+        }, 0);
+    
+        return () => {};
+      }, []);
     return (
         <div className={styles.main}>
+            <div className={styles.intro}>
+        <span className={styles.logo2}>
+          <Image src={logo2} alt="logo" />
+        </span>
+      </div>
             <Image className={styles.mainimg} src={main} alt="Photo" />
             <div className={styles.part1}>
                 <div className={styles.textpart}>

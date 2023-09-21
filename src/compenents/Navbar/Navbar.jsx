@@ -60,10 +60,13 @@ function Navbar() {
             <Link href="/purusmenu" onClick={() => handleLinkClick(1)} className={activeLink === 1 ? styles.activeLink : ''}>
               Puru's story
             </Link>
-            <Link href="/collaboration" onClick={() => handleLinkClick(2)} className={activeLink === 2 ? styles.activeLink : ''}>
+            <Link href="/allproducts" onClick={() => handleLinkClick(2)} className={activeLink === 2 ? styles.activeLink : ''}>
+              Products
+            </Link>
+            <Link href="/collaboration" onClick={() => handleLinkClick(3)} className={activeLink === 3 ? styles.activeLink : ''}>
               Collaboration
             </Link>
-            <Link href="/contactus" onClick={() => handleLinkClick(3)} className={activeLink === 3 ? styles.activeLink : ''}>
+            <Link href="/contactus" onClick={() => handleLinkClick(4)} className={activeLink === 4 ? styles.activeLink : ''}>
               Contact us
             </Link>
           </div>
@@ -109,12 +112,15 @@ function Navbar() {
           <Link href="/purusmenu" onClick={() => handleLinkClick(1)} className={activeLink === 1 ? styles.activeLink : ''}>
             Puru's story
           </Link>
-          <Link href="/collaboration" onClick={() => handleLinkClick(2)} className={activeLink === 2 ? styles.activeLink : ''}>
-            Collaboration
-          </Link>
-          <Link href="/contactus" onClick={() => handleLinkClick(3)} className={activeLink === 3 ? styles.activeLink : ''}>
-            Contact us
-          </Link>
+          <Link href="/allproducts" onClick={() => handleLinkClick(2)} className={activeLink === 2 ? styles.activeLink : ''}>
+              Products
+            </Link>
+            <Link href="/collaboration" onClick={() => handleLinkClick(3)} className={activeLink === 3 ? styles.activeLink : ''}>
+              Collaboration
+            </Link>
+            <Link href="/contactus" onClick={() => handleLinkClick(4)} className={activeLink === 4 ? styles.activeLink : ''}>
+              Contact us
+            </Link>
         </div>
       </div>
     </div>
