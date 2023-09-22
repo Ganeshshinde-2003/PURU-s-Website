@@ -411,9 +411,23 @@
   }
 
   .lastpart .secdisc {
-    bottom: 13%;
+    bottom: 22%;
+    line-height: 20px;
     width: 100px;
     font-size: 11px;
     right: 4%;
+  }
+}
+
+@media (max-width: 350px) {
+  .lastpart .firstdisc {
+    top: 6%;
+    left: 6%;
+    width: 120px;
+    font-size: 11px;
+  }
+  .lastpart .secdisc{
+    width: 80px;
+    font-size: 8px;
   }
 }
