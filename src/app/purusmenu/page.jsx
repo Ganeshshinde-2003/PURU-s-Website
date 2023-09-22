@@ -45,6 +45,17 @@ function Page() {
           </Link>
         </div>
         <div className={styles.content}>
+          <p>Sustainable Store</p>
+          <Link href="/allproducts" className={styles.image}>
+            <Image src={wwr} className={styles.image} alt="wwt" />
+          </Link>
+          <Link href="/allproducts">
+            <div className={styles.circle}>
+              <FaArrowDown style={iconStyle} />
+            </div>
+          </Link>
+        </div>
+        <div className={styles.content}>
           <p>Our Approach</p>
           <Link href="/ourapproach" className={styles.image}>
             <Image src={Approach} className={styles.image} alt="wwt" />
