@@ -1,0 +1,130 @@
+.main {
+    padding: 100px 100px;
+}
+
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(255,
+            255,
+            255,
+            0.2);
+    /* Transparent and blurry background */
+    backdrop-filter: blur(10px);
+    transition: 1s;
+}
+
+.logoheader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+}
+
+.logo2 {
+    position: relative;
+    display: inline-block;
+    bottom: -20px;
+    opacity: 0;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.active {
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.fade {
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}
+
+.intro img {
+    z-index: 200;
+    height: 150px;
+    width: auto;
+}
+
+.main h1 {
+    font-size: 90px;
+}
+
+.content {
+    padding: 40px 0;
+    display: flex;
+}
+
+.content h4 {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.content p {
+    font-size: 20px;
+}
+
+@media (max-width: 1050px) {
+    .main {
+        padding: 100px 40px;
+    }
+}
+
+@media (max-width: 900px) {
+    .content img {
+        height: 500px;
+        width: auto;
+    }
+
+    .main h1 {
+        font-size: 70px;
+    }
+
+    .content p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 800px) {
+    .content img {
+        height: 400px;
+    }
+
+    .main h1 {
+        font-size: 50px;
+    }
+
+    .content p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 600px) {
+    .main {
+        padding: 20px 20px;
+    }
+
+    .main h1 {
+        font-size: 30px;
+    }
+
+    .content {
+        flex-direction: column-reverse;
+    }
+
+    .content h4 {
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+}
