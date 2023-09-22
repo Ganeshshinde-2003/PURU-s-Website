@@ -1,8 +1,7 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, } from "react";
 import styles from "./page.module.css";
-
 import Stories from "../../../public/2 1 (1).png";
 import wwr from "../../../public/PURU WEBSITE ILLUSTRATIONS-04 1.png";
 import wwd from "../../../public/PURU WEBSITE ILLUSTRATIONS-03.png";
@@ -23,7 +22,7 @@ function page() {
         const vectorSectionTop = vectorSectionRef.current.offsetTop;
         const rotationAngle = (scrollPosition - vectorSectionTop) / 7; // Adjust the division factor for rotation speed
 
-        // Get all image elements within the headings div
+        // Get all image elements within the headings div 
         const images = Array.from(
           vectorSectionRef.current.querySelectorAll(
             "." + styles.headings + " img"
@@ -81,7 +80,7 @@ function page() {
         </span>
       </div>
       <Image src={Stories} alt="Strories" className={styles.img} />
-      <div className={styles.part1}>
+      {/* <div className={styles.part1}>
         <div className={styles.textpart}>
           <p>
             At Puru’s Enterprises, We do channelize our energy to focus on
@@ -93,8 +92,8 @@ function page() {
             qualitative lifestyle choices.
           </p>
         </div>
-      </div>
-      <section className={styles.approach}>
+      </div> */}
+      {/* <section className={styles.approach}>
         <div className={styles.imgpart}>
           <span>WHO WE ARE</span>
           <Image src={wwr} alt="approach" />
@@ -110,7 +109,7 @@ function page() {
             to uplift the socio- economic system.
           </p>
         </div>
-      </section>
+      </section> */}
       <section className={styles.approach}>
         <div className={styles.imgpart}>
           <span>What “We” Do</span>
@@ -124,7 +123,7 @@ function page() {
           </p>
         </div>
       </section>
-      <section className={styles.mainwork}>
+      <section className={styles.mainwork} id="imageSliderSection">
         <p className={styles.mainworkhead}>• Consulting -</p>
         <div className={styles.sliderContainer}>
           <ImageSlider id="1" />
@@ -158,6 +157,18 @@ function page() {
             ‘You’ are – Stationery, Home Décor and Utility and Luxury
             Accessories. Our aim is to build a ‘conscious’ perspective and
             effective lifestyle.
+          </p>
+        </div>
+      </section>
+      <section className={`${styles.approach} ${styles.newpart}`}>
+        <span>Formation</span>
+
+        <div className={`${styles.textpart} ${styles.textpartwedo}`}>
+          <p>
+            Year 2023 and Mumbai, India is where Puru’s step into the business world.
+            The philosophy Puru’s believes in “Embrace the Collective Growth”. Puru’s
+            is committed to deliver qualitative results and an actionable plan which
+            leads to quantitative success.
           </p>
         </div>
       </section>
@@ -211,6 +222,19 @@ function page() {
               ways than one!
             </p>
           </div>
+        </div>
+      </section>
+      <section className={`${styles.approach} ${styles.newpart}`}>
+        <span>Positioning</span>
+
+        <div className={`${styles.textpart} ${styles.textpartwedo}`}>
+          <p>
+            Our brand positioning is centered on promoting everyday empowerment via
+            sustainability. We distinguish ourselves by allowing individuals to make long-term
+            decisions that have a positive influence on their lives and the world around them.
+            We try to overcome the sustainability-accessibility gap by making it simple, engaging,
+            and powerful for everyone to adopt a more human sustainable lifestyle.
+          </p>
         </div>
       </section>
       <section className={styles.lastpart}>
