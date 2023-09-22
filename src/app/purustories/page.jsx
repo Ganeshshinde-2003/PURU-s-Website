@@ -243,7 +243,7 @@ function page() {
         <span className={styles.mission}>MISSION</span>
         <p className={styles.firstdisc}>
           To Strive for Excellence and to bring change by inspiring individuals,
-          influencing systematicchange, and fostering collaborations.
+          influencing systematic change, and fostering collaborations.
         </p>
         <p className={styles.secdisc}>
           Our mission is to foster sustainable growth, advocate for positive

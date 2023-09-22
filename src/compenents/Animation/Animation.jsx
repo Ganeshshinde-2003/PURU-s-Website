@@ -57,17 +57,7 @@ const Gallery = () => {
             <div className="mobilePhoto red"></div>
             <h1>Human Sustainability</h1>
               <p>
-                Human sustainability aims to maintain and improve the human
-                capital in society. It is a crucial aspect of achieving overall
-                sustainability.
-                <br /> <br />
-                It encompasses various efforts and initiatives aimed at
-                maintaining and enhancing the human capital within society. This
-                involves ensuring access to quality education, healthcare, and
-                basic necessities for all individuals, regardless of their
-                socio-economic background. Human sustainability recognizes that
-                a healthy and educated population forms the foundation for
-                social progress and economic growth.
+              Human sustainability is focused on people and aims to maintain and improve the human capital in society. Every individual is directly or indirectly involved and impacted by, in some or the other way by the production of goods and provision of services. Our aim is to create the self-sufficient community of skilled craftsmen which can help them uplift their lifestyles, they are the key contributors to our sustainable product line. 
               </p>
 
             <div className="mobilePhoto green"></div>
@@ -133,17 +123,7 @@ const Gallery = () => {
             <div className="desktopContentSection box1">
               <h1>Human Sustainability</h1>
               <p>
-                Human sustainability aims to maintain and improve the human
-                capital in society. It is a crucial aspect of achieving overall
-                sustainability.
-                <br /> <br />
-                It encompasses various efforts and initiatives aimed at
-                maintaining and enhancing the human capital within society. This
-                involves ensuring access to quality education, healthcare, and
-                basic necessities for all individuals, regardless of their
-                socio-economic background. Human sustainability recognizes that
-                a healthy and educated population forms the foundation for
-                social progress and economic growth.
+              Human sustainability is focused on people and aims to maintain and improve the human capital in society. Every individual is directly or indirectly involved and impacted by, in some or the other way by the production of goods and provision of services. Our aim is to create the self-sufficient community of skilled craftsmen which can help them uplift their lifestyles, they are the key contributors to our sustainable product line. 
               </p>
             </div>
             <div className="desktopContentSection">
