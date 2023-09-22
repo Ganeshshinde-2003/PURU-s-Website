@@ -170,7 +170,7 @@ export default function Home() {
           <span>About Us</span>
           <Image src={about} alt="approach" height={600} />
         </div>
-        <Link href="/purustories" className={styles.circle2a}>
+        <Link href="/ourapproach" className={styles.circle2a}>
           <div className={styles.circle2}>
             <FaArrowDown style={iconStyle} />
           </div>
@@ -220,7 +220,7 @@ export default function Home() {
           />
           <div className={styles.links}>
             <p>Sustainable product range</p>
-            <Link href="/purustories" className={styles.linktolink}>
+            <Link href="/allproducts" className={styles.linktolink}>
               <BsArrowRight className={styles.approachlink} />
             </Link>
           </div>

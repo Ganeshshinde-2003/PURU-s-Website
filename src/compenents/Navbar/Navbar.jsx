@@ -61,13 +61,13 @@ function Navbar() {
               Puru's story
             </Link>
             <Link href="/allproducts" onClick={() => handleLinkClick(2)} className={activeLink === 2 ? styles.activeLink : ''}>
-              Products
+            Sustainable Store
             </Link>
             <Link href="/collaboration" onClick={() => handleLinkClick(3)} className={activeLink === 3 ? styles.activeLink : ''}>
               Collaboration
             </Link>
             <Link href="/contactus" onClick={() => handleLinkClick(4)} className={activeLink === 4 ? styles.activeLink : ''}>
-              Contact us
+              Connect with us
             </Link>
           </div>
         </div>
@@ -113,13 +113,13 @@ function Navbar() {
             Puru's story
           </Link>
           <Link href="/allproducts" onClick={() => handleLinkClick(2)} className={activeLink === 2 ? styles.activeLink : ''}>
-              Products
+          Sustainable Store
             </Link>
             <Link href="/collaboration" onClick={() => handleLinkClick(3)} className={activeLink === 3 ? styles.activeLink : ''}>
               Collaboration
             </Link>
             <Link href="/contactus" onClick={() => handleLinkClick(4)} className={activeLink === 4 ? styles.activeLink : ''}>
-              Contact us
+              Connect with us
             </Link>
         </div>
       </div>
