@@ -69,8 +69,7 @@ const Gallery = () => {
             <div className="mobilePhoto pink"></div>
             <h1>Economic Sustainability</h1>
               <p>
-              Social sustainability aims to preserve social capital by investing and creating services that constitute the framework of our society. Social Sustainability focuses on improving the quality of social environment, we are Puru’s aims to contribute with an actionable plan, fair policies and qualitative product and services which lead us towards building better community
-              </p>
+              Enterprises forms the fundamental of economic development, at the same time they do play a crucial part in achieving qualitative economic growth. Economic growth needs to be achieved without negatively impacting the social and environmental aspect of the progressive society. Our goal is to have inclusive policy of enterprises and society to act more responsibly, balance out the quantitative and qualitative elements of growth and ensure that we build a robust economic lifecycle.                </p>
 
             <div className="mobilePhoto blue"></div>
             <h1>Environmental Sustainability</h1>
@@ -104,8 +103,7 @@ const Gallery = () => {
             <div className="desktopContentSection">
               <h1>Economic Sustainability</h1>
               <p>
-              Social sustainability aims to preserve social capital by investing and creating services that constitute the framework of our society. Social Sustainability focuses on improving the quality of social environment, we are Puru’s aims to contribute with an actionable plan, fair policies and qualitative product and services which lead us towards building better community
-              </p>
+              Enterprises forms the fundamental of economic development, at the same time they do play a crucial part in achieving qualitative economic growth. Economic growth needs to be achieved without negatively impacting the social and environmental aspect of the progressive society. Our goal is to have inclusive policy of enterprises and society to act more responsibly, balance out the quantitative and qualitative elements of growth and ensure that we build a robust economic lifecycle.                </p>
             </div>
             <div className="desktopContentSection box2">
               <h1>Environmental Sustainability</h1>
