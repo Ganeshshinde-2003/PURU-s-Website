@@ -63,50 +63,19 @@ const Gallery = () => {
             <div className="mobilePhoto green"></div>
             <h1>Social Sustainability</h1>
               <p>
-                Social sustainability aims to preserve social capital by
-                investing and creating services that constitute the framework of
-                our society. It goes hand in hand with human sustainability as
-                it focuses on preserving social capital through investments in
-                services that form the backbone of our society. This includes
-                promoting social equality, fostering inclusivity, and creating
-                opportunities for active community participation. By investing
-                in social infrastructure such as schools, hospitals, public
-                transportation systems, and cultural institutions, we build
-                resilient communities that can thrive harmoniously.
+              Social sustainability aims to preserve social capital by investing and creating services that constitute the framework of our society. Social Sustainability focuses on improving the quality of social environment, we are Puru’s aims to contribute with an actionable plan, fair policies and qualitative product and services which lead us towards building better community.
               </p>
 
             <div className="mobilePhoto pink"></div>
             <h1>Economic Sustainability</h1>
               <p>
-                Economic sustainability aims to maintain the capital intact. If
-                social sustainability focuses on improving social equality,
-                economic sustainability aims to improve the standard of living.
-                Economic sustainability plays a vital role in sustaining
-                societies by maintaining financial stability while improving
-                living standards. While economic growth is important for
-                development, it should be pursued alongside considerations of
-                long-term well-being rather than purely focusing on material
-                gains. Economic sustainability strives to ensure equitable
-                distribution of resources and wealth while minimizing negative
-                impacts on natural resources or societal welfare.
+              Social sustainability aims to preserve social capital by investing and creating services that constitute the framework of our society. Social Sustainability focuses on improving the quality of social environment, we are Puru’s aims to contribute with an actionable plan, fair policies and qualitative product and services which lead us towards building better community
               </p>
 
             <div className="mobilePhoto blue"></div>
             <h1>Environmental Sustainability</h1>
               <p>
-                Environmental sustainability aims to improve human welfare
-                through the protection of natural capital (e.g., land, air,
-                water, minerals etc.). Initiatives and programs are defined as
-                environmentally sustainable when they ensure that the needs of
-                the population are met without the risk of compromising the
-                needs of future generations. It seeks to safeguard natural
-                capital for the betterment of humanity's welfare. It emphasizes
-                responsible resource management practices to minimize ecological
-                footprint while maximizing ecosystem health. Promoting renewable
-                energy sources over fossil fuels, adopting sustainable
-                agricultural practices that minimize pollution and soil
-                degradation are examples of environmental initiatives
-                underpinning sustainable solutions.
+              Most commonly identified aspect of sustainability is protection of environment. Environmental sustainability aims to improve social lifestyle by preserving the natural resources ensure that the future generations have ample resources to survive. At Puru’s we believe in optimal utilization of natural resources, opt out alternative processes to produce goods and services and ensure that society make conscious choices to become sustainable ambassadors. “Think Sustainable, Act Responsible” is the mantra of New-Age!
               </p>
           </div>
 
@@ -129,50 +98,19 @@ const Gallery = () => {
             <div className="desktopContentSection">
               <h1>Social Sustainability</h1>
               <p>
-                Social sustainability aims to preserve social capital by
-                investing and creating services that constitute the framework of
-                our society. It goes hand in hand with human sustainability as
-                it focuses on preserving social capital through investments in
-                services that form the backbone of our society. This includes
-                promoting social equality, fostering inclusivity, and creating
-                opportunities for active community participation. By investing
-                in social infrastructure such as schools, hospitals, public
-                transportation systems, and cultural institutions, we build
-                resilient communities that can thrive harmoniously.
+              Social sustainability aims to preserve social capital by investing and creating services that constitute the framework of our society. Social Sustainability focuses on improving the quality of social environment, we are Puru’s aims to contribute with an actionable plan, fair policies and qualitative product and services which lead us towards building better community.
               </p>
             </div>
             <div className="desktopContentSection">
               <h1>Economic Sustainability</h1>
               <p>
-                Economic sustainability aims to maintain the capital intact. If
-                social sustainability focuses on improving social equality,
-                economic sustainability aims to improve the standard of living.
-                Economic sustainability plays a vital role in sustaining
-                societies by maintaining financial stability while improving
-                living standards. While economic growth is important for
-                development, it should be pursued alongside considerations of
-                long-term well-being rather than purely focusing on material
-                gains. Economic sustainability strives to ensure equitable
-                distribution of resources and wealth while minimizing negative
-                impacts on natural resources or societal welfare.
+              Social sustainability aims to preserve social capital by investing and creating services that constitute the framework of our society. Social Sustainability focuses on improving the quality of social environment, we are Puru’s aims to contribute with an actionable plan, fair policies and qualitative product and services which lead us towards building better community
               </p>
             </div>
             <div className="desktopContentSection box2">
               <h1>Environmental Sustainability</h1>
               <p>
-                Environmental sustainability aims to improve human welfare
-                through the protection of natural capital (e.g., land, air,
-                water, minerals etc.). Initiatives and programs are defined as
-                environmentally sustainable when they ensure that the needs of
-                the population are met without the risk of compromising the
-                needs of future generations. It seeks to safeguard natural
-                capital for the betterment of humanity's welfare. It emphasizes
-                responsible resource management practices to minimize ecological
-                footprint while maximizing ecosystem health. Promoting renewable
-                energy sources over fossil fuels, adopting sustainable
-                agricultural practices that minimize pollution and soil
-                degradation are examples of environmental initiatives
-                underpinning sustainable solutions.
+              Most commonly identified aspect of sustainability is protection of environment. Environmental sustainability aims to improve social lifestyle by preserving the natural resources ensure that the future generations have ample resources to survive. At Puru’s we believe in optimal utilization of natural resources, opt out alternative processes to produce goods and services and ensure that society make conscious choices to become sustainable ambassadors. “Think Sustainable, Act Responsible” is the mantra of New-Age!
               </p>
             </div>
           </div>
