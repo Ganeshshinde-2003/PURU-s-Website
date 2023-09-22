@@ -106,7 +106,7 @@ function Navbar() {
       </div>
       <div className={styles.mobiletab} style={{ display: hidden }}>
         <div className={styles.mobilelinks}>
-          <Link href="/" onClick={() => handleLinkClick(0)} className={activeLink === 0 ? styles.activeLink : ''}>
+          <Link href="/you" onClick={() => handleLinkClick(0)} className={activeLink === 0 ? styles.activeLink : ''}>
             You
           </Link>
           <Link href="/purusmenu" onClick={() => handleLinkClick(1)} className={activeLink === 1 ? styles.activeLink : ''}>
