@@ -98,7 +98,6 @@ export default function Home() {
               />
             </span>
           </Link>
-
         </div>
         <div className={styles.empty}>
           <Image className={styles.head1} src={main} alt="head-one" />
@@ -170,12 +169,11 @@ export default function Home() {
           <span>About Us</span>
           <Image src={about} alt="approach" height={600} />
         </div>
-        <Link href="/ourapproach" className={styles.circle2a}>
+        <Link href="/purustories" className={styles.circle2a}>
           <div className={styles.circle2}>
             <FaArrowDown style={iconStyle} />
           </div>
         </Link>
-
       </section>
       <section className={`${styles.approach} ${styles.app2}`}>
         <div className={styles.imgpart}>
@@ -192,7 +190,7 @@ export default function Home() {
             sustainability.
           </p>
           <div className={styles.links}>
-            <Link href="/purustories">
+            <Link href="/ourapproach">
               <span className={styles.dis}>
                 <p>Discover</p>
                 <Image
