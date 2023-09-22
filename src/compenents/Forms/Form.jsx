@@ -41,7 +41,6 @@ function Form() {
         setNumber("");
         setCompany("");
       } else {
-        // Handle errors, e.g., display an error message
         alert("Form submission failed.");
       }
     } catch (error) {
