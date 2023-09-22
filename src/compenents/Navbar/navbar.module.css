@@ -91,6 +91,9 @@
   font-size: 2rem;
   color: white;
 }
+.search {
+  display: none;
+}
 
 .headerlinks a,
 .search {
@@ -103,7 +106,7 @@
   .box2 {
     width: 140px;
   }
-  .headerlinks a{
+  .headerlinks a {
     font-size: 1.1rem;
   }
 }
@@ -111,7 +114,7 @@
   .main {
     margin: 0 0px;
   }
-  .headerlinks a{
+  .headerlinks a {
     font-size: 0.8rem;
   }
 }
@@ -147,14 +150,17 @@
   text-align: center;
   font-size: 1.4rem;
 }
-@media (max-width: 900px){
-  .headerlinks a{
+@media (max-width: 900px) {
+  .headerlinks a {
     font-size: 1rem;
   }
 }
 @media (max-width: 800px) {
   .navbar {
     display: none;
+  }
+  .search {
+    display: block;
   }
   .header {
     justify-content: space-between;
