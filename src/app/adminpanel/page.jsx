@@ -14,7 +14,7 @@ const page = () => {
       const response = await fetch("http://localhost:8000/api/contacts");
       if (response.status === 200) {
         const data = await response.json();
-        setData(data); //
+        setData(data.reverse());
       } else {
         console.error("Failed to fetch data from the API.");
       }

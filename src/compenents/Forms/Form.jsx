@@ -23,25 +23,33 @@ function Form() {
 
     // Make a POST request to the API
     try {
-      const response = await fetch("http://localhost:8000/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-
-      if (response.ok) {
-        // Handle success, e.g., show a success message to the user
+      if (
+        firstName !== "" &&
+        secondName !== "" &&
+        email !== "" &&
+        number !== "" &&
+        company !== ""
+      ) {
+        const response = await fetch("http://localhost:8000/api/contact", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        });
         alert("Form submitted successfully!");
-        // Clear the form fields
+
         setFirstName("");
         setSecondName("");
         setEmail("");
         setNumber("");
         setCompany("");
+
+        if (!response.ok) {
+          alert("Something is wrong");
+        }
       } else {
-        alert("Form submission failed.");
+        alert("Fill all the fields");
       }
     } catch (error) {
       // Handle network or other errors
