@@ -11,7 +11,9 @@ const page = () => {
 
   const fetchContacts = async () => {
     try {
-      const response = await fetch("http://localhost:8000/api/contacts");
+      const response = await fetch(
+        "https://purus-server.onrender.com/api/contacts"
+      );
       if (response.status === 200) {
         const data = await response.json();
         setData(data.reverse());
