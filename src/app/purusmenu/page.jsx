@@ -4,6 +4,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import wwr from "../../../public/about.png";
 import Approach from "../../../public/PURU WEBSITE ILLUSTRATIONS-06.png";
+import pencil from "../../../public/puru's product 7 1.png"
 import Link from "next/link";
 import { FaArrowDown } from "react-icons/fa";
 import { useEffect, useState } from "react";
@@ -47,7 +48,7 @@ function Page() {
         <div className={styles.content}>
           <p>Sustainable Store</p>
           <Link href="/allproducts" className={styles.image}>
-            <Image src={wwr} className={styles.image} alt="wwt" />
+            <Image src={pencil} className={styles.image} alt="wwt" />
           </Link>
           <Link href="/allproducts">
             <div className={styles.circle}>

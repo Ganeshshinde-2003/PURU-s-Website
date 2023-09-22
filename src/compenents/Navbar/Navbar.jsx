@@ -8,7 +8,7 @@ import Link from "next/link";
 import Logo from "../../../public/logo.png";
 
 function Navbar() {
-  const [activeLink, setActiveLink] = useState(0);
+  const [activeLink, setActiveLink] = useState();
   const [hidden, sethidden] = useState("none");
   const handleLinkClick = (index) => {
     setActiveLink(index);
@@ -23,7 +23,7 @@ function Navbar() {
   return (
     <div className={styles.main}>
       <div className={styles.header}>
-        <Link href="/">
+        <Link href="/" onClick={() => handleLinkClick()}>
           <Image src={Logo} alt="LOGO" className={styles.logoimage} height={150} width={150} /></Link>
         <div className={`${styles.container} ${styles.navbar}`}>
           <div className={styles.parent}>
@@ -54,7 +54,7 @@ function Navbar() {
             </defs>
           </svg>
           <div className={styles.headerlinks}>
-            <Link href="/" onClick={() => handleLinkClick(0)} className={activeLink === 0 ? styles.activeLink : ''}>
+            <Link href="/you" onClick={() => handleLinkClick(0)} className={activeLink === 0 ? styles.activeLink : ''}>
               You
             </Link>
             <Link href="/purusmenu" onClick={() => handleLinkClick(1)} className={activeLink === 1 ? styles.activeLink : ''}>

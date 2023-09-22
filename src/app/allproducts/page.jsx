@@ -18,37 +18,37 @@ const Page = () => {
     useEffect(() => {
         const logospan = document.querySelectorAll(`.${styles.logo2}`);
         const intro = document.querySelector(`.${styles.intro}`);
-    
+
         setTimeout(() => {
-          logospan.forEach((span, idx) => {
-            setTimeout(() => {
-              span.classList.add(styles.active);
-            }, (idx + 1) * 400);
-          });
-    
-          setTimeout(() => {
             logospan.forEach((span, idx) => {
-              setTimeout(() => {
-                span.classList.remove(styles.active);
-                span.classList.add(styles.fade);
-              }, (idx + 1) * 50);
+                setTimeout(() => {
+                    span.classList.add(styles.active);
+                }, (idx + 1) * 400);
             });
-          }, 2000);
-    
-          setTimeout(() => {
-            intro.style.top = "-100vh";
-          }, 2300);
+
+            setTimeout(() => {
+                logospan.forEach((span, idx) => {
+                    setTimeout(() => {
+                        span.classList.remove(styles.active);
+                        span.classList.add(styles.fade);
+                    }, (idx + 1) * 50);
+                });
+            }, 2000);
+
+            setTimeout(() => {
+                intro.style.top = "-100vh";
+            }, 2300);
         }, 0);
-    
-        return () => {};
-      }, []);
+
+        return () => { };
+    }, []);
     return (
         <div className={styles.main}>
             <div className={styles.intro}>
-        <span className={styles.logo2}>
-          <Image src={logo2} alt="logo" />
-        </span>
-      </div>
+                <span className={styles.logo2}>
+                    <Image src={logo2} alt="logo" />
+                </span>
+            </div>
             <Image className={styles.mainimg} src={main} alt="Photo" />
             <div className={styles.part1}>
                 <div className={styles.textpart}>
