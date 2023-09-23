@@ -1,17 +1,18 @@
 "use client";
 import Image from "next/image";
 import styles from "./style.module.css";
-import main from "../../../public/sliderimages/puru 1.jpg";
+import main from "../../../public/puru 4-min 1.png";
 import main2 from "../../../public/puru's product 5 1.png";
 import one from "../../../public/sliderimages/puru 2.jpg";
 import three from "../../../public/Screenshot 2023-09-20 at 7.58 1.png";
-import five from "../../../public/Screenshot 2023-09-20 at 7.58 2.png";
+import five from "../../../public/puru's product 3 1.png";
 import two from "../../../public/0F4A9073 1.png";
 import four from "../../../public/0F4A9170 1.png";
 import six from "../../../public/0F4A9004 1.png";
 import seven from "../../../public/0F4A9009 1.png";
 import eight from "../../../public/0F4A9218 1.png";
 import nine from "../../../public/sliderimages/puru.jpg";
+import ten from "../../../public/puru's product 8 (1) 1.png";
 import { useEffect } from "react";
 import logo2 from "../../../public/logo.png";
 
@@ -96,10 +97,11 @@ const Page = () => {
       <div className={styles.onlyimagetwo}>
         <div className={styles.imageonly}>
           <Image src={seven} alt="two" />
+          <Image src={ten} alt="two" />
           <Image src={eight} alt="three" />
         </div>
         <h4>Colour Kraft Paper Pencil</h4>
-        <p>Seed & non seed</p>
+        <p>Seed</p>
       </div>
       <div className={styles.part1}>
         <div className={styles.textpart}>
