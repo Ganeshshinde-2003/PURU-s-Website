@@ -4,7 +4,7 @@ import styles from "./style.module.css";
 import main from "../../../public/puru 4-min 1.png";
 import main2 from "../../../public/puru's product 5 1.png";
 import one from "../../../public/sliderimages/puru 2.jpg";
-import three from "../../../public/Screenshot 2023-09-20 at 7.58 1.png";
+import three from "../../../public/puru's product 2 1.png";
 import five from "../../../public/puru's product 3 1.png";
 import two from "../../../public/0F4A9073 1.png";
 import four from "../../../public/0F4A9170 1.png";
