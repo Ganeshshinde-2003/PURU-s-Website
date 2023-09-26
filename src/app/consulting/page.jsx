@@ -34,8 +34,9 @@ const page = () => {
           entities challenges and situations. Accompanied with analytical
           reasoning to address each problem area – common or critical and ensure
           that we deliver robust and long-term solutions.
-          <br /> <br /> This technique will help You to accomplish desirable
-          goals and consistent business growth.
+          <br />
+          This technique will help You to accomplish desirable goals and
+          consistent business growth.
         </div>
         <div className={styles.imgpart2}>
           <Image src={ilu2} alt="ilu" />
@@ -53,8 +54,8 @@ const page = () => {
           entities challenges and situations. Accompanied with analytical
           reasoning to address each problem area – common or critical and ensure
           that we deliver robust and long-term solutions.
-          <br /> <br /> This technique will help You to accomplish desirable
-          goals and consistent business growth.
+          <br /> This technique will help You to accomplish desirable goals and
+          consistent business growth.
         </div>
       </section>
       <section className={styles.contentsection}>
