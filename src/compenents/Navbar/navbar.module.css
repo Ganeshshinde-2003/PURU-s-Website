@@ -64,11 +64,11 @@
   top: 40%;
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 30px;
 }
 
-.headerlinks a {
+.headerlinks a,
+.headerlinks2 a {
   color: white;
   text-decoration: none;
   margin: 0 10px;
@@ -114,6 +114,9 @@
   .headerlinks a {
     font-size: 0.8rem;
   }
+  .headerlinks {
+    gap: 20px;
+  }
 }
 @media (max-width: 1100px) {
   .main {
@@ -126,6 +129,7 @@
   }
   .headerlinks {
     justify-content: flex-start;
+    gap: 10px;
   }
 }
 .mobilelinks a {
@@ -158,6 +162,9 @@
   }
 }
 @media (max-width: 800px) {
+  .headerlinks2 a {
+    display: none;
+  }
   .navbar {
     display: none;
   }
