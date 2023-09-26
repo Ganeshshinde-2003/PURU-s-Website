@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { useState } from "react";
 import styles from "./navbar.module.css";
@@ -24,7 +24,14 @@ function Navbar() {
     <div className={styles.main}>
       <div className={styles.header}>
         <Link href="/" onClick={() => handleLinkClick()}>
-          <Image src={Logo} alt="LOGO" className={styles.logoimage} height={150} width={150} /></Link>
+          <Image
+            src={Logo}
+            alt="LOGO"
+            className={styles.logoimage}
+            height={150}
+            width={150}
+          />
+        </Link>
         <div className={`${styles.container} ${styles.navbar}`}>
           <div className={styles.parent}>
             <div className={styles.box}></div>
@@ -54,19 +61,39 @@ function Navbar() {
             </defs>
           </svg>
           <div className={styles.headerlinks}>
-            <Link href="/you" onClick={() => handleLinkClick(0)} className={activeLink === 0 ? styles.activeLink : ''}>
-              You
+            <Link
+              href="/consulting"
+              onClick={() => handleLinkClick(0)}
+              className={activeLink === 0 ? styles.activeLink : ""}
+            >
+              Consulting
             </Link>
-            <Link href="/purusmenu" onClick={() => handleLinkClick(1)} className={activeLink === 1 ? styles.activeLink : ''}>
+            <Link
+              href="/purusmenu"
+              onClick={() => handleLinkClick(1)}
+              className={activeLink === 1 ? styles.activeLink : ""}
+            >
               Puru's story
             </Link>
-            <Link href="/allproducts" onClick={() => handleLinkClick(2)} className={activeLink === 2 ? styles.activeLink : ''}>
-            Sustainable Store
+            <Link
+              href="/allproducts"
+              onClick={() => handleLinkClick(2)}
+              className={activeLink === 2 ? styles.activeLink : ""}
+            >
+              Sustainable Store
             </Link>
-            <Link href="/collaboration" onClick={() => handleLinkClick(3)} className={activeLink === 3 ? styles.activeLink : ''}>
+            <Link
+              href="/collaboration"
+              onClick={() => handleLinkClick(3)}
+              className={activeLink === 3 ? styles.activeLink : ""}
+            >
               Collaboration
             </Link>
-            <Link href="/contactus" onClick={() => handleLinkClick(4)} className={activeLink === 4 ? styles.activeLink : ''}>
+            <Link
+              href="/contactus"
+              onClick={() => handleLinkClick(4)}
+              className={activeLink === 4 ? styles.activeLink : ""}
+            >
               Connect with us
             </Link>
           </div>
@@ -100,27 +127,61 @@ function Navbar() {
             </defs>
           </svg>
           <div className={styles.headerlinks2}>
+            <Link
+              href="/you"
+              onClick={() => handleLinkClick(5)}
+              className={activeLink === 5 ? styles.activeLink : ""}
+            >
+              You
+            </Link>
             <FiMenu className={styles.search} onClick={handleMenuIconClick} />
           </div>
         </div>
       </div>
       <div className={styles.mobiletab} style={{ display: hidden }}>
         <div className={styles.mobilelinks}>
-          <Link href="/you" onClick={() => handleLinkClick(0)} className={activeLink === 0 ? styles.activeLink : ''}>
+          <Link
+            href="/you"
+            onClick={() => handleLinkClick(0)}
+            className={activeLink === 0 ? styles.activeLink : ""}
+          >
             You
           </Link>
-          <Link href="/purusmenu" onClick={() => handleLinkClick(1)} className={activeLink === 1 ? styles.activeLink : ''}>
+          <Link
+            href="/purusmenu"
+            onClick={() => handleLinkClick(1)}
+            className={activeLink === 1 ? styles.activeLink : ""}
+          >
             Puru's story
           </Link>
-          <Link href="/allproducts" onClick={() => handleLinkClick(2)} className={activeLink === 2 ? styles.activeLink : ''}>
-          Sustainable Store
-            </Link>
-            <Link href="/collaboration" onClick={() => handleLinkClick(3)} className={activeLink === 3 ? styles.activeLink : ''}>
-              Collaboration
-            </Link>
-            <Link href="/contactus" onClick={() => handleLinkClick(4)} className={activeLink === 4 ? styles.activeLink : ''}>
-              Connect with us
-            </Link>
+          <Link
+            href="/allproducts"
+            onClick={() => handleLinkClick(2)}
+            className={activeLink === 2 ? styles.activeLink : ""}
+          >
+            Sustainable Store
+          </Link>
+          <Link
+            href="/collaboration"
+            onClick={() => handleLinkClick(3)}
+            className={activeLink === 3 ? styles.activeLink : ""}
+          >
+            Collaboration
+          </Link>
+          <Link
+            href="/contactus"
+            onClick={() => handleLinkClick(4)}
+            className={activeLink === 4 ? styles.activeLink : ""}
+          >
+            Connect with us
+          </Link>
+          <Link
+            href="/consulting"
+            onClick={() => handleLinkClick(5)}
+            className={activeLink === 5 ? styles.activeLink : ""}
+          >
+            Consulting
+          </Link>
         </div>
       </div>
     </div>
