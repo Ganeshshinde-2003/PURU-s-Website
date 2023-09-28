@@ -88,16 +88,31 @@ const page = () => {
           </form>
         ) : (
           <div className={styles.content}>
-            {data.map((d) => (
-              <div className={styles.datalist}>
-                <h3>{`${d.firstName} ${d.lastName}`}</h3>
-                <p>Email: {d.email}</p>
-                <p>Phone no: {d.number}</p>
-                <p>Message: {d.message}</p>
-                <p>Company: {d.company}</p>
-                <p>CreatedAt: {new Date(d.createdAt).toLocaleString()}</p>
-              </div>
-            ))}
+            <table>
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Phone no</th>
+                  <th>Message</th>
+                  <th>Company</th>
+                  <th>CreatedAt</th>
+                </tr>
+              </thead>
+              <tbody>
+                {data.map((d, index) => (
+                  <tr key={index}>
+                    <td>{`${d.firstName} ${d.lastName}`}</td>
+                    <td>{d.email}</td>
+                    <td>{d.number}</td>
+                    <td>{d.message}</td>
+                    <td>{d.company}</td>
+                    <td>{new Date(d.createdAt).toLocaleString()}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+
           </div>
         )}
       </div>
