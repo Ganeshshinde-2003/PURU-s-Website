@@ -1,4 +1,6 @@
-import React from "react";
+"use client"
+
+import React, {useEffect} from "react";
 import styles from "./style.module.css";
 import Image from "next/image";
 import galss1 from "../../../public/Glass_Prism0092 1.png";
@@ -9,10 +11,43 @@ import three from "../../../public/consulting/three.png";
 import four from "../../../public/consulting/four.png";
 import ilu1 from "../../../public/consulting/iluone.png";
 import ilu2 from "../../../public/consulting/ilutwo.png";
+import logo2 from "../../../public/logo.png";
 
 const page = () => {
+  useEffect(() => {
+    const logospan = document.querySelectorAll(`.${styles.logo2}`);
+    const intro = document.querySelector(`.${styles.intro}`);
+
+    setTimeout(() => {
+      logospan.forEach((span, idx) => {
+        setTimeout(() => {
+          span.classList.add(styles.active);
+        }, (idx + 1) * 400);
+      });
+
+      setTimeout(() => {
+        logospan.forEach((span, idx) => {
+          setTimeout(() => {
+            span.classList.remove(styles.active);
+            span.classList.add(styles.fade);
+          }, (idx + 1) * 50);
+        });
+      }, 2000);
+
+      setTimeout(() => {
+        intro.style.top = "-100vh";
+      }, 2300);
+    }, 0);
+
+    return () => {};
+  }, []);
   return (
     <div className={styles.consultingmain}>
+      <div className={styles.intro}>
+        <span className={styles.logo2}>
+          <Image src={logo2} alt="logo" />
+        </span>
+      </div>
       <section className={styles.headcontainer}>
         <div className={styles.headtext}>
           <p className={styles.headings}>
@@ -50,12 +85,13 @@ const page = () => {
           <Image src={ilu1} alt="ilu" />
         </div>
         <div className={styles.textpart}>
-          Our methodology takes the customized path tailored to each business
-          entities challenges and situations. Accompanied with analytical
-          reasoning to address each problem area – common or critical and ensure
-          that we deliver robust and long-term solutions.
-          <br /> This technique will help You to accomplish desirable goals and
-          consistent business growth.
+        We believe in spontaneity to solve 
+the routine and complex business 
+problems. Our Motto is: Analyze, Identify, 
+Advice and Execute the process. This set our 
+direction to help business owners to conquer 
+all odds and attain highest degree to see their 
+business sustain and grow.
         </div>
       </section>
       <section className={styles.contentsection}>
@@ -78,7 +114,7 @@ const page = () => {
           </div>
         </section>
         <section
-          className={`${styles.contentsection} ${styles.contentsection2}`}
+          className={`${styles.contentsection} ${styles.contentsection2} ${styles.contentsection3}`}
         >
           <div className={styles.imgpart}>
             <Image src={two} alt="one" />
@@ -106,7 +142,7 @@ const page = () => {
           </div>
         </section>
         <section
-          className={`${styles.contentsection} ${styles.contentsection2}`}
+          className={`${styles.contentsection} ${styles.contentsection2} ${styles.contentsection3}`}
         >
           <div className={styles.imgpart}>
             <Image src={four} alt="one" />

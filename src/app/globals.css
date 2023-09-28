@@ -32,6 +32,15 @@ input{
 input::placeholder {
   color: white;
 }
+textarea{
+  width: 110%;
+  height: 110%;
+  padding: 15px;
+  border: none;
+  background-color: #6c6561;
+  font-size: 20px;
+  color: white;
+}
 input:focus,
 input:active {
   background-color: #524e4d;
