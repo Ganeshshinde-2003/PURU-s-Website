@@ -11,8 +11,9 @@ import four from "../../../public/0F4A9170 1.png";
 import six from "../../../public/0F4A9004 1.png";
 import seven from "../../../public/0F4A9009 1.png";
 import eight from "../../../public/0F4A9218 1.png";
-import nine from "../../../public/sliderimages/puru.jpg";
+import nine from "../../../public/9 1.png";
 import ten from "../../../public/puru's product 8 (1) 1.png";
+import main3 from "../../../public/11 1.png"
 import { useEffect } from "react";
 import logo2 from "../../../public/logo.png";
 
@@ -124,6 +125,7 @@ const Page = () => {
           <Image src={nine} alt="photo1" />
         </div>
       </div>
+      <Image className={styles.mainimg} src={main3} alt="Photo" />
       <Image className={styles.mainimg} src={main2} alt="Photo" />
     </div>
   );
