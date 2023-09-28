@@ -93,7 +93,9 @@ const page = () => {
                 <h3>{`${d.firstName} ${d.lastName}`}</h3>
                 <p>Email: {d.email}</p>
                 <p>Phone no: {d.number}</p>
+                <p>Message: {d.message}</p>
                 <p>Company: {d.company}</p>
+                <p>CreatedAt: {new Date(d.createdAt).toLocaleString()}</p>
               </div>
             ))}
           </div>

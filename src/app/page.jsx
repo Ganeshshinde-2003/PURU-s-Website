@@ -201,7 +201,7 @@ export default function Home() {
                 />
               </span>
             </Link>
-            <Link href="/purustories" className={styles.linktolink}>
+            <Link href="/ourapproach" className={styles.linktolink}>
               <BsArrowRight className={styles.approachlink} />
             </Link>
           </div>
@@ -232,7 +232,7 @@ export default function Home() {
           />
           <div className={styles.links}>
             <p>Consulting</p>
-            <Link href="/purustories" className={styles.linktolink}>
+            <Link href="/consulting" className={styles.linktolink}>
               <BsArrowRight className={styles.approachlink} />
             </Link>
           </div>
