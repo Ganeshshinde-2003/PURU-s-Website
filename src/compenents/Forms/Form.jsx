@@ -12,26 +12,23 @@ function Form() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    // Create a data object with the form values
+    if (company == "") {
+      setCompany("N/A");
+    }
     const formData = {
       firstName,
       lastName: secondName,
       email,
       number,
       company,
+      message,
     };
-
-    // Make a POST request to the API
     try {
-      if(company == "") {
-        setCompany("N/A");
-      }
       if (
         firstName !== "" &&
         secondName !== "" &&
         email !== "" &&
-        number !== "" 
+        number !== ""
       ) {
         const response = await fetch("https://purus-server.onrender.com/api/contact", {
           method: "POST",
@@ -47,6 +44,7 @@ function Form() {
         setEmail("");
         setNumber("");
         setCompany("");
+        setMessage("");
 
         if (!response.ok) {
           alert("Something is wrong");
