@@ -85,6 +85,45 @@ input:active {
   transform: translate(-50%, -50%);
   color: #ffffff;
 }
+/* Add these styles to make the table responsive */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ccc;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+/* Adjust the font size for smaller screens */
+@media (max-width: 620px) {
+  table {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+  
+  tr {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  th, td {
+    width: 100%;
+    padding: 5px;
+  }
+}
+@media (max-width: 420px) {
+  table {
+    font-size: 14px;
+  }
+}
 
 .logo {
   position: relative;

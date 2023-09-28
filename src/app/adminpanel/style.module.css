@@ -86,6 +86,7 @@
   cursor: pointer; /* Add a pointer cursor on hover */
   transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
 }
+
 @media (max-width: 620px) {
   .main {
     padding: 0 40px;
