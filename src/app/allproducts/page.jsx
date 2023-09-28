@@ -42,7 +42,7 @@ const Page = () => {
       }, 2300);
     }, 0);
 
-    return () => {};
+    return () => { };
   }, []);
   return (
     <div className={styles.main}>
@@ -86,8 +86,12 @@ const Page = () => {
         <div className={styles.textpart}>
           <h3>Coloured Kraft paper pencils Designed for today’s world.</h3>
           <p>
-            Draw the line on climate change with our eco friendly and fully
-            biodegradable pencils. Our pencils are made from recycled newspapers
+            Draw the line on climate
+            change with our eco friendly
+            and fully biodegradable pencils.
+            Our pencils are made from
+            recycled newspapers<br /><br />Puru’s Pens & Pencils are made from high-quality, sustainable,
+            and recyclable stone paper.
           </p>
         </div>
         <div className={styles.imgpart}>
@@ -107,8 +111,13 @@ const Page = () => {
         <div className={styles.textpart}>
           <h3>Coloured Kraft paper pencils Designed for today’s world.</h3>
           <p>
-            Draw the line on climate change with our eco friendly and fully
-            biodegradable pencils. Our pencils are made from recycled newspapers
+
+            Just because pens & pencils has always been
+            made from the  wood / plastic , doesn’t mean
+            it always to has to be.
+            Function should always outrank form. So we think the pencils & pens  of the
+            21st century should be made from recycled paper.<br /><br />
+            Because it’s the present. It should be better.
           </p>
         </div>
         <div className={styles.imgpart}>

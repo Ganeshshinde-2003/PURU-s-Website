@@ -1,6 +1,6 @@
 "use client"
 
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import styles from "./style.module.css";
 import Image from "next/image";
 import galss1 from "../../../public/Glass_Prism0092 1.png";
@@ -39,7 +39,7 @@ const page = () => {
       }, 2300);
     }, 0);
 
-    return () => {};
+    return () => { };
   }, []);
   return (
     <div className={styles.consultingmain}>
@@ -85,13 +85,13 @@ const page = () => {
           <Image src={ilu1} alt="ilu" />
         </div>
         <div className={styles.textpart}>
-        We believe in spontaneity to solve 
-the routine and complex business 
-problems. Our Motto is: Analyze, Identify, 
-Advice and Execute the process. This set our 
-direction to help business owners to conquer 
-all odds and attain highest degree to see their 
-business sustain and grow.
+          We believe in spontaneity to solve
+          the routine and complex business
+          problems. Our Motto is: Analyze, Identify,
+          Advice and Execute the process. This set our
+          direction to help business owners to conquer
+          all odds and attain highest degree to see their
+          business sustain and grow.
         </div>
       </section>
       <section className={styles.contentsection}>
