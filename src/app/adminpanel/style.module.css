@@ -17,6 +17,28 @@
   border: none;
   border-radius: 10px;
 }
+.datap {
+  margin-top: 40px;
+  color: black;
+  font-size: 25px;
+  text-decoration: underline;
+  font-weight: 600;
+}
+.change {
+  font-size: 15px;
+  color: #141a16;
+  padding: 10px 20px;
+  border: 2px solid black;
+  border-radius: 20px;
+  text-align: center;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.change:hover {
+  color: white;
+  background-color: black;
+  transform: scale(1.1);
+}
 .mainform,
 .datalist {
   max-width: 100%;
@@ -86,7 +108,14 @@
   cursor: pointer; /* Add a pointer cursor on hover */
   transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
 }
-
+.link {
+  font-size: 10px !important;
+  background-color: transparent !important;
+  border: 1px solid black !important;
+  cursor: pointer !important;
+  padding: 5px 5px !important;
+  color: black !important;
+}
 @media (max-width: 620px) {
   .main {
     padding: 0 40px;
