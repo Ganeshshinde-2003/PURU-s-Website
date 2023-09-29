@@ -157,6 +157,14 @@
     width: auto;
     height: 400px;
 }
+.footer2{
+    padding: 0 140px;
+    margin: 40px 0;
+  }
+  .footer2 p:first-child{
+    font-size: 40px;
+    font-weight: 600;
+  }
 
 @media (max-width: 800px) {
     .part1 {
@@ -180,6 +188,12 @@
         flex-direction: column;
         gap: 10px;
     }
+    .footer2{
+        padding: 0 10px;
+      }
+      .footer2text{
+        font-size: 13px;
+      }
 }
 
 @media (max-width: 420px) {
