@@ -15,6 +15,7 @@
   overflow: hidden;
   z-index: 1;
 }
+
 .form {
   display: flex;
   align-items: center;
@@ -22,6 +23,7 @@
   flex-direction: column;
   gap: 30px;
 }
+
 .cvlink {
   color: #6c6561;
   font-size: 15px;
@@ -31,6 +33,7 @@
   cursor: pointer;
   transition: all 0.5s;
 }
+
 .cvlink:hover {
   transform: scale(1.2);
   background-color: black;
@@ -58,10 +61,12 @@
   align-items: center;
   cursor: pointer;
 }
+
 .boxtext {
   height: 120px;
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 80% 100%, 0% 100%, 0% 50%);
 }
+
 @media (max-width: 800px) {
   .box {
     width: 260px;

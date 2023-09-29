@@ -75,6 +75,7 @@
   margin-left: 50px;
   margin-bottom: 100px;
 }
+
 .part1 div {
   width: 50%;
 }
@@ -100,10 +101,12 @@
   top: -50px;
   left: 215px;
   perspective: 20px;
-  animation: parallaxHead2 3s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite
-    alternate; /* Adjust animation duration and cubic-bezier as needed */
-  transform-style: preserve-3d; /* Enable 3D transformations */
-  transform: translateZ(0); /* Create a 3D context */
+  animation: parallaxHead2 3s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite alternate;
+  /* Adjust animation duration and cubic-bezier as needed */
+  transform-style: preserve-3d;
+  /* Enable 3D transformations */
+  transform: translateZ(0);
+  /* Create a 3D context */
   backface-visibility: hidden;
 }
 
@@ -112,8 +115,10 @@
     transform: translateY(-10px) scale(0.9) rotate(0deg);
     opacity: 0.8;
   }
+
   100% {
-    transform: translateY(10px) scale(1) rotate(3deg); /* Adjust the rotation angle as needed */
+    transform: translateY(10px) scale(1) rotate(3deg);
+    /* Adjust the rotation angle as needed */
     opacity: 1;
   }
 }
@@ -123,8 +128,10 @@
     transform: translateY(-20px) scale(1) rotate(0deg);
     opacity: 0.8;
   }
+
   100% {
-    transform: translateY(30px) scale(1) rotate(-3deg); /* Adjust the rotation angle as needed */
+    transform: translateY(30px) scale(1) rotate(-3deg);
+    /* Adjust the rotation angle as needed */
     opacity: 1;
   }
 }
@@ -143,14 +150,17 @@
   cursor: pointer;
   transition: all 1s;
 }
+
 .dis p {
   position: absolute;
   font-size: 25px;
   color: white;
 }
-.dis:hover{
+
+.dis:hover {
   transform: scale(1.1);
 }
+
 .part1 .circle {
   display: flex;
   justify-content: center;
@@ -163,14 +173,16 @@
   width: 150px;
   border-radius: 50%;
   border: 2px solid rgb(0, 0, 0);
-  background-color: transparent; /* Set the initial background color to transparent */
+  background-color: transparent;
+  /* Set the initial background color to transparent */
   transition: background-color 2s ease, transform 1s ease, box-shadow 1s ease;
 }
 
 .circle:hover {
   background-color: black;
   color: white;
-  transform: scale(1.05); /* Increase size on hover for a 3D effect */
+  transform: scale(1.05);
+  /* Increase size on hover for a 3D effect */
   box-shadow: 0 0 20px rgba(0, 0, 0, 5);
   cursor: pointer;
 }
@@ -190,16 +202,20 @@
   transform: rotate(-90deg);
   border-radius: 50%;
   border: 2px solid rgb(0, 0, 0);
-  background-color: transparent; /* Set the initial background color to transparent */
+  background-color: transparent;
+  /* Set the initial background color to transparent */
   transition: background-color 2s ease, transform 1s ease, box-shadow 1s ease;
 }
+
 .circle2:hover {
   background-color: black;
   color: white;
-  transform: scale(1.05) rotate(-90deg); /* Increase size on hover for a 3D effect */
+  transform: scale(1.05) rotate(-90deg);
+  /* Increase size on hover for a 3D effect */
   box-shadow: 0 0 20px rgba(0, 0, 0, 5);
   cursor: pointer;
 }
+
 .vectors {
   margin: 65px -70px;
   position: relative;
@@ -210,12 +226,14 @@
   height: 100vh;
   background-color: white;
 }
+
 .vectorp {
   font-size: 80px;
   font-weight: 500;
   text-align: right;
   z-index: 10;
 }
+
 .vectors .imgvec1,
 .vectors .imgvec2,
 .vectors .imgvec3,
@@ -227,48 +245,57 @@
 .vectors .imgvec9 {
   position: absolute;
 }
+
 .imgvec1 {
   top: 30%;
   left: 20%;
   height: 180px;
   width: 150px;
 }
+
 .imgvec2 {
   bottom: 5%;
   left: 0%;
   height: 250px;
 }
+
 .imgvec4 {
   top: 20%;
   left: 10%;
   height: 100px;
 }
+
 .imgvec6 {
   top: 5%;
   left: 28%;
   height: 150px;
   width: 150px;
 }
+
 .imgvec5 {
   bottom: 4%;
   left: 40%;
   height: 200px;
 }
+
 .imgvec8 {
   top: 5%;
   left: 62%;
   height: 200px;
 }
+
 .imgvec3 {
   bottom: 20%;
   right: 25%;
   height: 120px;
 }
+
 .imgvec9 {
   top: 20%;
   right: 10%;
   height: 170px;
 }
+
 .imgvec7 {
   bottom: 8%;
   right: 10%;
@@ -283,6 +310,7 @@
   from {
     background-color: white;
   }
+
   to {
     background-color: rgb(224, 222, 222);
   }
@@ -294,23 +322,28 @@
   justify-content: space-between;
   height: 540px;
 }
+
 .aboutimage {
   height: 100%;
   width: auto;
 }
+
 .aboutus p {
   font-size: 60px;
   font-weight: 500;
 }
+
 .aboutus {
   transform: rotate(-90deg);
   margin-left: 9%;
 }
+
 .aboutlink {
   align-self: self-end;
   transform: rotate(-90deg);
   margin-bottom: -100px;
 }
+
 .approach {
   position: relative;
   display: flex;
@@ -320,6 +353,7 @@
   height: auto;
   margin-top: 140px;
 }
+
 .app2 div {
   width: 50%;
 }
@@ -328,22 +362,28 @@
   display: flex;
   justify-content: flex-end;
 }
+
 .approach.approachabout .imgpart span {
   left: -7.5%;
 }
+
 .approach.approachabout .imgpart {
   width: 80%;
 }
+
 .approach.approachabout .imgpart img {
   height: auto;
   width: 100%;
 }
+
 .approachabout {
   justify-content: space-around;
 }
+
 .approachabout div:nth-child(2) {
   width: 200px;
 }
+
 .approach .imgpart span {
   top: 43%;
   left: -12.5%;
@@ -352,23 +392,28 @@
   font-weight: 500;
   transform: rotate(-90deg);
 }
+
 .textpart {
   display: flex;
   flex-direction: column;
   gap: 50px;
 }
+
 .textpart .head {
   font-size: 50px;
   font-weight: bold;
 }
+
 .textpart p:nth-child(2) {
   font-size: 20px;
 }
+
 .links {
   display: flex;
   align-items: center;
   gap: 20px;
 }
+
 .linktolink {
   text-decoration: none;
   color: black;
@@ -381,15 +426,18 @@
   border: 2px solid black;
   transition: all 1s ease;
 }
+
 .approachlink {
   font-size: 30px;
 }
+
 .linktolink:hover {
   color: white;
   background-color: black;
   transform: scale(1.3);
   box-shadow: 0 0 20px rgba(0, 0, 0, 5);
 }
+
 .whatwedo {
   margin-bottom: 100px;
   margin-left: 80px;
@@ -399,6 +447,7 @@
   position: relative;
   justify-content: space-around;
 }
+
 .whatwedo .imgsection span {
   top: 43%;
   left: -17%;
@@ -407,6 +456,7 @@
   font-weight: 500;
   transform: rotate(-90deg);
 }
+
 .imgsection {
   width: 50%;
   display: flex;
@@ -414,22 +464,27 @@
   justify-content: flex-end;
   gap: 20px;
 }
+
 .imgsection .links p {
   font-size: 25px;
   font-weight: 600;
 }
+
 .imgsection img {
   width: 100%;
   height: 500px;
 }
+
 .imageswwd {
   width: 100%;
   height: auto;
 }
+
 .jobs {
   position: relative;
   margin: 0 80px;
 }
+
 .jobs .heaings {
   font-size: 120px;
   word-spacing: 2px;
@@ -437,26 +492,31 @@
   margin: 0 0;
   text-align: right;
 }
+
 .joinus {
   display: flex;
   text-align: right;
   gap: 40px;
 }
+
 .joinus .textpart {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-end;
 }
+
 .joinus .textpart p {
   font-size: 17px;
   padding-left: 200px;
   font-weight: 400;
 }
+
 .joinus .textpart .dis p {
   padding-left: 0;
   font-size: 25px;
 }
+
 .jobhead {
   position: absolute;
   font-size: 60px;
@@ -465,10 +525,13 @@
   top: 15%;
   left: -9.5%;
 }
+
 .joinuslink:hover {
   /* Change to the desired background color on hover */
-  font-size: 24px; /* Change to the desired font size on hover */
-  transform: scale(1.1); /* Add a subtle scale effect on hover */
+  font-size: 24px;
+  /* Change to the desired font size on hover */
+  transform: scale(1.1);
+  /* Add a subtle scale effect on hover */
 }
 
 @media (max-width: 1500px) {
@@ -476,96 +539,121 @@
     margin-top: 12%;
     margin-left: 5%;
   }
+
   .approach {
     margin-left: 207px;
   }
+
   .approach .imgpart span {
     left: -34%;
   }
+
   .approach.approachabout .imgpart span {
     left: -27.5%;
   }
+
   .whatwedo .imgsection span {
     left: -18%;
     top: 35%;
   }
+
   .jobhead {
     left: -10.5%;
   }
 }
+
 @media (max-width: 1000px) {
   .imgsection img {
     width: 100%;
     height: 400px;
   }
 }
+
 @media (max-width: 1300px) {
   .approach .imgpart img {
     width: 100%;
     height: auto;
   }
+
   .approach {
     margin-left: 80px;
   }
+
   .approach .imgpart span {
     left: -30.5%;
   }
+
   .approach.approachabout .imgpart span {
     left: -23.5%;
   }
+
   .whatwedo .imgsection span {
     left: -26%;
   }
+
   .jobhead {
     left: -14.5%;
   }
+
   .joinus .textpart p {
     padding-left: 0px;
   }
 }
+
 @media (max-width: 1100px) {
   .textpart {
     gap: 5px;
   }
+
   .textpart .head {
     font-size: 35px;
   }
+
   .textpart p:nth-child(2) {
     font-size: 12px;
   }
+
   .approach .imgpart span {
     font-size: 40px;
   }
+
   .aboutus p {
     position: relative;
     font-size: 40px;
     top: 22%;
   }
+
   .whatwedo .imgsection span {
     left: -28%;
     font-size: 40px;
   }
+
   .jobhead {
     left: -20.5%;
     font-size: 40px;
   }
+
   .jobs .heaings {
     font-size: 70px;
   }
 }
+
 @media (max-width: 800px) {
   .imgsection img {
     height: auto;
   }
+
   .part1 .circle {
     height: 100px;
     width: 100px;
   }
+
   .approachabout div:nth-child(2) {
     width: 75px;
     height: 75px;
     margin-top: -100px;
   }
+
   .imgvec1,
   .imgvec2,
   .imgvec3,
@@ -578,18 +666,22 @@
     height: auto;
     width: 60px;
   }
+
   .approachlink {
     height: auto;
   }
+
   .main {
     display: flex;
     flex-direction: column;
     gap: 100px;
   }
+
   .part1 {
     height: auto;
     padding: 80px 40px;
   }
+
   .aboutus,
   .jobhead,
   .aboutlink,
@@ -597,27 +689,33 @@
   .whatwedo .imgsection span {
     transform: rotate(0deg);
   }
+
   .circle2 {
     height: 100px;
     width: 100px;
   }
+
   .approach,
   .whatwedo {
     flex-direction: column;
     align-items: flex-start;
     margin: 20px 0;
   }
+
   .whatwedo {
     margin: 100px 0;
   }
+
   .app2 div {
     width: 100%;
     gap: 20px;
   }
+
   .whatwedo div {
     width: 100%;
     gap: 10px;
   }
+
   .approach .imgpart span,
   .whatwedo .imgsection span,
   .approach.approachabout .imgpart span,
@@ -628,65 +726,81 @@
     font-size: 60px;
     font-weight: 700;
   }
+
   .jobs {
     margin: 0 0;
   }
+
   .joinus {
     flex-direction: column-reverse;
     align-items: self-start;
   }
+
   .joinus div,
   .joinus img {
     width: 100%;
     height: auto;
   }
+
   .jobs .heaings {
     font-size: 50px;
     text-align: left;
   }
+
   .designimage {
     height: 115px;
     width: 350px;
   }
+
   .empty {
     display: none;
   }
+
   .part1 {
     margin-bottom: 0;
     margin-left: 0;
   }
-  .circle2a{
+
+  .circle2a {
     align-self: flex-end;
   }
 }
+
 @media (max-width: 500px) {
   .main {
     margin: 0 10px;
     margin-bottom: 40px;
   }
+
   .designimage {
     height: 115px;
     width: 350px;
   }
+
   .circle {
     display: none;
   }
+
   .part1 {
     margin: 40px 0;
     padding: 0 0;
   }
+
   .text {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
   }
+
   .vectors {
     margin: 0 -70px;
   }
+
   .aboutus p {
     left: 15px;
   }
+
   .approach .imgpart span,
   .whatwedo .imgsection span,
   .jobhead,
@@ -694,23 +808,28 @@
     font-size: 50px;
     font-weight: 600;
   }
+
   .jobs .heaings {
     font-size: 35px;
   }
+
   .joinus .buttontwo,
   .buttonone {
     height: 50px;
     width: 150px;
   }
+
   .vectors {
     height: auto;
     padding: 40px 0px;
     margin: 80px -10px;
   }
+
   .vectorimages {
     height: auto;
     width: 250px;
   }
+
   .imgvec1,
   .imgvec2,
   .imgvec3,
@@ -723,36 +842,45 @@
     height: auto;
     width: 60px;
   }
+
   .imgvec8 {
     left: 72%;
     top: -20%;
   }
+
   .imgvec9 {
     right: 30px;
   }
+
   .imgvec7 {
     right: 23px;
     bottom: -30px;
   }
+
   .imgvec2 {
     bottom: -10%;
     left: 0%;
   }
+
   .imgvec4 {
     top: -20%;
     left: -5%;
   }
+
   .imgvec1 {
     top: 30%;
     left: 2%;
   }
+
   .imgvec6 {
     top: -42px;
   }
+
   .imgvec3 {
     bottom: 32%;
     right: 5%;
   }
+
   .changeColor {
     animation: fadeInBackground 1s ease forwards;
   }
@@ -761,12 +889,15 @@
     from {
       background-color: white;
     }
+
     to {
       background-color: white;
     }
   }
 }
+
 @media (max-width: 380px) {
+
   .approach.approachabout .imgpart span,
   .approach .imgpart span,
   .whatwedo .imgsection span,
@@ -775,10 +906,12 @@
     font-size: 40px;
     font-weight: 600;
   }
+
   .designimage {
     height: 100px;
     width: auto;
   }
+
   .jobs .heaings {
     font-size: 30px;
   }
