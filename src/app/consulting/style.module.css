@@ -176,7 +176,14 @@
   font-weight: 500;
   text-align: center;
 }
-
+.footer2{
+  padding: 0 140px;
+  margin-bottom: 40px;
+}
+.footer2 p:first-child{
+  font-size: 40px;
+  font-weight: 600;
+}
 @media (max-width: 1500px) {
   .glass1 {
     height: 600px;
@@ -237,6 +244,12 @@
     height: auto;
     padding: 50px 0;
   }
+  .footer2{
+    padding: 0 10px;
+  }
+  .footer2text{
+    font-size: 13px;
+  }
   .headtext {
     width: 100%;
   }
@@ -290,5 +303,10 @@
   }
   .footertext {
     font-size: 20px;
+  }
+  .contentsection.footer{
+    padding-top: 30px;
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
 }
