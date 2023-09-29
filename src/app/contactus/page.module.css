@@ -118,11 +118,12 @@
   height: 500px;
   width: auto;
 }
-@media (max-width: 1060px){
+
+@media (max-width: 1060px) {
   .main {
     padding: 100px 50px;
   }
-  
+
 }
 
 @media (max-width: 1000px) {
@@ -139,18 +140,21 @@
   .contact {
     font-size: 46px;
   }
+
   .circle {
     display: none;
   }
 }
 
 @media (max-width: 500px) {
-  .imgcontainer img{
+  .imgcontainer img {
     height: 100%;
   }
-  .askings{
+
+  .askings {
     font-size: 20px;
   }
+
   .container {
     flex-direction: column;
     gap: 50px;

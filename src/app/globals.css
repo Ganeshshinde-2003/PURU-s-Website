@@ -10,17 +10,21 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-img{
+
+img {
   border-radius: 10px;
 }
+
 a {
   text-decoration: none;
 }
-p{
+
+p {
   margin: 0 0;
 }
-input{
-  outline: none; 
+
+input {
+  outline: none;
   border: none;
   background-color: #6c6561;
   padding: 10px 20px;
@@ -29,10 +33,12 @@ input{
   width: 200%;
   height: 200%;
 }
+
 input::placeholder {
   color: white;
 }
-textarea{
+
+textarea {
   width: 110%;
   height: 110%;
   padding: 15px;
@@ -41,11 +47,13 @@ textarea{
   font-size: 20px;
   color: white;
 }
+
 input:focus,
 input:active {
   background-color: #524e4d;
 }
-.slide-in{
+
+.slide-in {
   position: fixed;
   top: 0;
   left: 0;
@@ -54,7 +62,8 @@ input:active {
   background-color: black;
   transform-origin: bottom;
 }
-.slide-out{
+
+.slide-out {
   position: fixed;
   top: 0;
   left: 0;
@@ -63,10 +72,12 @@ input:active {
   background-color: black;
   transform-origin: top;
 }
-.slideimage{
+
+.slideimage {
   width: 100%;
   height: 100%;
 }
+
 .intro {
   position: fixed;
   z-index: 100;
@@ -85,17 +96,20 @@ input:active {
   transform: translate(-50%, -50%);
   color: #ffffff;
 }
+
 /* Add these styles to make the table responsive */
 table {
   width: 100%;
   border-collapse: collapse;
 }
 
-th, td {
+th,
+td {
   border: 1px solid #ccc;
 }
 
-th, td {
+th,
+td {
   padding: 10px;
   text-align: left;
 }
@@ -107,18 +121,20 @@ th, td {
     flex-direction: column;
     width: auto;
   }
-  
+
   tr {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
   }
 
-  th, td {
+  th,
+  td {
     width: 100%;
     padding: 5px;
   }
 }
+
 @media (max-width: 420px) {
   table {
     font-size: 14px;

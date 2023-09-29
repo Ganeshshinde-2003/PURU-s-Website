@@ -5,51 +5,61 @@
   flex-direction: column;
   gap: 40px;
 }
+
 .faqhead {
   font-size: 50px;
   font-weight: 600;
   letter-spacing: 2px;
 }
+
 .faqsection {
   position: relative;
   display: flex;
   gap: 30px;
   height: auto;
 }
+
 .faqsection .faqs,
 .faqsection .faqiamge {
   width: 50%;
 }
+
 .image {
   width: 100%;
   object-fit: cover;
   height: auto;
 }
+
 .faqs {
   display: flex;
   flex-direction: column;
   gap: 50px;
 }
+
 .faq1 {
   display: flex;
   flex-direction: column;
   gap: 25px;
 }
+
 .faq1 .que {
   font-size: 20px;
   font-weight: bold;
 }
+
 .faq1 .ans {
   font-size: 15px;
   padding-left: 15px;
   line-height: 20px;
 }
+
 .faqsection .faqiamge {
   position: sticky;
   top: 0;
   min-width: 50%;
   height: 100vh;
 }
+
 .faqsection .faqiamge img {
   position: absolute;
   top: 50%;
@@ -59,32 +69,40 @@
   height: 140%;
   object-fit: contain;
 }
+
 @media (max-width: 800px) {
   .main {
     padding-left: 20px;
   }
 }
+
 @media (max-width: 600px) {
   .main {
     padding: 50px 20px;
   }
+
   .faqsection .faqiamge {
     position: relative;
     margin: 0 20px;
   }
+
   .faqsection .faqiamge img {
     position: relative;
   }
+
   .faqsection {
     flex-direction: column-reverse;
   }
+
   .faqsection .faqs,
   .faqsection .faqiamge {
     width: 100%;
   }
+
   .faqsection .faqiamge {
     height: auto;
   }
+
   .faqsection .faqiamge img {
     height: auto;
     position: relative;

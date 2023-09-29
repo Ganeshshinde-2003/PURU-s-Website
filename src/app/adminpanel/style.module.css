@@ -7,6 +7,7 @@
   width: 100%;
   padding: 0 80px;
 }
+
 .main a,
 .headings {
   color: white;
@@ -17,6 +18,7 @@
   border: none;
   border-radius: 10px;
 }
+
 .datap {
   margin-top: 40px;
   color: black;
@@ -24,6 +26,7 @@
   text-decoration: underline;
   font-weight: 600;
 }
+
 .change {
   font-size: 15px;
   color: #141a16;
@@ -34,35 +37,47 @@
   transition: all 0.3s;
   cursor: pointer;
 }
+
 .change:hover {
   color: white;
   background-color: black;
   transform: scale(1.1);
 }
+
 .mainform,
 .datalist {
   max-width: 100%;
   padding: 20px;
-  background-color: #fff; /* Background color */
-  border: 1px solid #ccc; /* Border for the card */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
-  transform: perspective(1000px) rotateY(10deg); /* 3D effect */
-  transition: transform 0.3s ease-in-out; /* Transition for smooth effect */
+  background-color: #fff;
+  /* Background color */
+  border: 1px solid #ccc;
+  /* Border for the card */
+  border-radius: 10px;
+  /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  /* Box shadow for depth */
+  transform: perspective(1000px) rotateY(10deg);
+  /* 3D effect */
+  transition: transform 0.3s ease-in-out;
+  /* Transition for smooth effect */
 
   /* Other styling properties */
   /* Add padding, margin, font styles, etc. as needed */
 }
+
 .mainform:hover,
 .datalist:hover {
-  transform: perspective(1000px) rotateY(0deg); /* Reset the rotation on hover */
+  transform: perspective(1000px) rotateY(0deg);
+  /* Reset the rotation on hover */
 }
+
 .content {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
+
 .datalist {
   height: 300px;
   width: 100%;
@@ -71,6 +86,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .form {
   width: 100%;
   display: flex;
@@ -79,35 +95,57 @@
   gap: 50px;
   margin-bottom: 40px;
 }
+
 /* Apply these styles to your input fields */
 .form input {
   width: 100%;
-  padding: 10px; /* Add padding for spacing inside the input fields */
-  border: none; /* Remove the default border */
-  border-bottom: 2px solid #333; /* Add a bottom border */
-  outline: none; /* Remove the outline when focused */
-  background-color: transparent; /* Make the background transparent */
-  color: #333; /* Text color */
-  font-size: 16px; /* Font size */
-  transition: border-bottom 0.3s ease; /* Smooth transition for the bottom border */
+  padding: 10px;
+  /* Add padding for spacing inside the input fields */
+  border: none;
+  /* Remove the default border */
+  border-bottom: 2px solid #333;
+  /* Add a bottom border */
+  outline: none;
+  /* Remove the outline when focused */
+  background-color: transparent;
+  /* Make the background transparent */
+  color: #333;
+  /* Text color */
+  font-size: 16px;
+  /* Font size */
+  transition: border-bottom 0.3s ease;
+  /* Smooth transition for the bottom border */
 }
 
 /* Style the label elements */
 .form label {
-  display: block; /* Make labels a block element for spacing */
-  margin-bottom: 10px; /* Add space between labels and input fields */
-  font-weight: bold; /* Make labels bold */
+  display: block;
+  /* Make labels a block element for spacing */
+  margin-bottom: 10px;
+  /* Add space between labels and input fields */
+  font-weight: bold;
+  /* Make labels bold */
 }
+
 .button {
-  background-color: #141a16; /* Button background color */
-  color: #fff; /* Text color */
-  padding: 10px 20px; /* Add padding for spacing */
-  border: none; /* Remove the default button border */
-  border-radius: 5px; /* Rounded corners */
-  font-size: 16px; /* Font size */
-  cursor: pointer; /* Add a pointer cursor on hover */
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+  background-color: #141a16;
+  /* Button background color */
+  color: #fff;
+  /* Text color */
+  padding: 10px 20px;
+  /* Add padding for spacing */
+  border: none;
+  /* Remove the default button border */
+  border-radius: 5px;
+  /* Rounded corners */
+  font-size: 16px;
+  /* Font size */
+  cursor: pointer;
+  /* Add a pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  /* Smooth transitions */
 }
+
 .link {
   font-size: 10px !important;
   background-color: transparent !important;
@@ -116,11 +154,13 @@
   padding: 5px 5px !important;
   color: black !important;
 }
+
 @media (max-width: 620px) {
   .main {
     padding: 0 40px;
   }
 }
+
 @media (max-width: 420px) {
   .main {
     padding: 0 10px;

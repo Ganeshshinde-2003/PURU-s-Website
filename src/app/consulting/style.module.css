@@ -66,6 +66,7 @@
   align-items: stretch;
   height: 700px;
 }
+
 .headtext {
   width: 50%;
   height: 100%;
@@ -77,55 +78,69 @@
   margin-left: 100px;
   color: white;
 }
+
 .headtext .headings {
   font-size: 60px;
   font-weight: 600;
 }
+
 .headtext .disc {
   font-size: 25px;
 }
+
 .glass1,
 .glass2 {
   position: absolute;
 }
+
 .glass1 {
   height: 690px;
   width: auto;
   left: 40%;
 }
+
 .glass2 {
   left: 80%;
 }
+
 .contentsection {
   display: flex;
   align-items: center;
   margin: 0 140px;
 }
+
 .con2 {
   margin: 0;
 }
+
 .textpart {
   margin: 100px;
 }
+
 .contentsection2 {
   margin: 0;
   margin-bottom: 40px;
 }
+
 .contentsection div {
   width: 50%;
 }
+
 .textpart {
   font-size: 20px;
 }
+
 .headertext {
   font-size: 35px;
   font-weight: 700;
 }
+
 .wwd {
   background-color: #2f2b2a;
   color: white;
   padding: 50px 0;
 }
+
 .textpart2 {
   display: flex;
   align-items: center;
@@ -133,37 +148,45 @@
   flex-direction: column;
   gap: 40px;
 }
+
 .textpart2 .head {
   font-size: 50px;
   font-weight: 600;
 }
+
 .textpart2 .explain {
   font-size: 25px;
   text-align: center;
   width: 70%;
 }
+
 .contentsection .imgpart {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .contentsection .imgpart img {
   width: 100%;
   height: 600px;
   object-fit: contain;
 }
+
 .lasttext {
   margin-top: 50px;
   font-size: 25px;
   width: 70%;
 }
+
 .imgpart2 {
   width: 50%;
 }
+
 .imgpart2 img {
   width: 100%;
   height: auto;
 }
+
 .contentsection.footer {
   margin-bottom: 50px;
   display: flex;
@@ -171,140 +194,176 @@
   justify-content: center;
   padding: 30px 0;
 }
+
 .footertext {
   font-size: 50px;
   font-weight: 500;
   text-align: center;
 }
-.footer2{
+
+.footer2 {
   padding: 0 140px;
   margin-bottom: 40px;
 }
-.footer2 p:first-child{
+
+.footer2 p:first-child {
   font-size: 40px;
   font-weight: 600;
 }
+
 @media (max-width: 1500px) {
   .glass1 {
     height: 600px;
     top: 15%;
   }
+
   .glass2 {
     left: 75%;
   }
 }
+
 @media (max-width: 1100px) {
   .glass1 {
     height: 500px;
   }
+
   .glass2 {
     left: 70%;
   }
 }
+
 @media (max-width: 800px) {
   .headtext {
     margin-left: 10px;
     width: 75%;
   }
+
   .glass1 {
     height: 360px;
     top: 45%;
     left: 30%;
   }
+
   .glass2 {
     left: 56%;
     top: 5%;
   }
+
   .textpart {
     margin: 10px;
     font-size: 15px;
   }
+
   .contentsection {
     margin: 0 10px;
   }
+
   .lasttext {
     width: 100%;
     font-size: 20px;
     text-align: center;
   }
+
   .footertext {
     font-size: 27px;
   }
+
   .textpart2 .head {
     font-size: 40px;
     font-weight: 500;
   }
+
   .textpart2 .explain {
     width: 100%;
     font-size: 20px;
   }
 }
+
 @media (max-width: 600px) {
   .headcontainer {
     height: auto;
     padding: 50px 0;
   }
-  .footer2{
+
+  .footer2 {
     padding: 0 10px;
   }
-  .footer2text{
+
+  .footer2text {
     font-size: 13px;
   }
+
   .headtext {
     width: 100%;
   }
+
   .headtext .headings {
     font-size: 24px;
   }
+
   .headtext .disc {
     font-size: 14px;
   }
+
   .glass1 {
     height: 160px;
     top: 40%;
     left: 45%;
   }
+
   .glass2 {
     width: auto;
     height: 75px;
     top: 20%;
     left: 75%;
   }
+
   .contentsection {
     flex-direction: column;
   }
-  .contentsection3{
+
+  .contentsection3 {
     flex-direction: column-reverse;
   }
+
   .contentsection div {
     width: 100%;
   }
+
   .headertext {
     font-size: 20px;
   }
+
   .textpart2 {
     gap: 5px;
   }
+
   .contentsection .imgpart img {
     height: 300px;
   }
+
   .contentsection2 {
     margin-bottom: 100px;
     gap: 40px;
   }
+
   .lasttext {
     font-size: 15px;
   }
+
   .textpart2 .head {
     font-size: 30px;
   }
+
   .textpart2 .explain {
     font-size: 15px;
   }
+
   .footertext {
     font-size: 20px;
   }
-  .contentsection.footer{
+
+  .contentsection.footer {
     padding-top: 30px;
     padding-bottom: 0;
     margin-bottom: 0;
