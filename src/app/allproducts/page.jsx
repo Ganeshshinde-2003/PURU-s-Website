@@ -127,6 +127,13 @@ const Page = () => {
       </div>
       <Image className={styles.mainimg} src={main3} alt="Photo" />
       <Image className={styles.mainimg} src={main2} alt="Photo" />
+      <section className={styles.footer2}>
+        <p>Disclaimer</p>
+        <p className={styles.footer2text}>
+
+          Puru’s Enterprises, A proprietary firm engaged in Consulting services and Whole selling of Sustainable products. As a firm we are bound to abide and follow all legal processes and protocols to conduct our operations. As a responsible entity we ensure to offer our expertise and experience towards betterment of commercial entities and society in general. None of our operational practices have intent to cause any harm or to provide any false information regarding our services and products. We do not provide any guarantees or unrealistic promises with respect to use of our products and services. We are committed to follow all fair practices of trade set by course of law.
+        </p>
+      </section>
     </div>
   );
 };

@@ -7,22 +7,25 @@
   left: 0;
   height: 100vh;
   width: 100vw;
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.2
-  ); /* Transparent and blurry background */
-  backdrop-filter: blur(10px); /* Blurry effect */
+  background-color: rgba(255,
+      255,
+      255,
+      0.2);
+  /* Transparent and blurry background */
+  backdrop-filter: blur(10px);
+  /* Blurry effect */
   transition: 1s;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 24px; /* Adjust the font size */
-  color: white; /* Text color */
-  border: 2px solid white; /* White border */
+  font-size: 24px;
+  /* Adjust the font size */
+  color: white;
+  /* Text color */
+  border: 2px solid white;
+  /* White border */
 }
 
 .logoheader {
@@ -48,10 +51,14 @@
   text-align: center;
   background-color: transparent;
   color: white;
-  backdrop-filter: blur(100%); /* Blurry effect inside the container */
-  -webkit-text-stroke: 1px white; /* White text outline with increased thickness */
-  text-stroke: 8px white; /* White text outline with increased thickness */
-  text-shadow: 0 0 10px gray; /* Gray outline */
+  backdrop-filter: blur(100%);
+  /* Blurry effect inside the container */
+  -webkit-text-stroke: 1px white;
+  /* White text outline with increased thickness */
+  text-stroke: 8px white;
+  /* White text outline with increased thickness */
+  text-shadow: 0 0 10px gray;
+  /* Gray outline */
 }
 
 /* Transition out the progress text after loading */

@@ -8,6 +8,7 @@
   width: 600px;
   height: 400px;
 }
+
 .slide {
   border-radius: 0.5rem;
   box-shadow: 0px 0px 7px #666;
@@ -15,29 +16,36 @@
   height: 100%;
   object-fit: cover;
 }
+
 .slidehidden {
   display: none;
 }
+
 .arrow {
   position: absolute;
   width: 3rem;
   height: 3rem;
   color: black;
 }
+
 .arrow:hover {
   cursor: pointer;
 }
+
 .arrowleft {
   left: -5rem;
 }
+
 .arrowright {
   right: -5rem;
 }
+
 .indicators {
   display: flex;
   position: absolute;
   bottom: 1rem;
 }
+
 .indicator {
   background-color: white;
   height: 0.5rem;
@@ -49,19 +57,23 @@
   margin: 0 0.2rem;
   cursor: pointer;
 }
+
 .indicatorinactive {
   background-color: gray;
 }
+
 @media (max-width: 800px) {
   .arrowleft {
     bottom: -5rem;
     left: 30%;
   }
+
   .arrowright {
     right: 30%;
     bottom: -5rem;
   }
 }
+
 @media (max-width: 400px) {
   .carousel {
     height: 300px;

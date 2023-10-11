@@ -2,30 +2,36 @@
   margin: 0 30px;
   position: relative;
 }
+
 /* Styling for the active link and its animated underline */
 .activeLink {
   position: relative;
-  color: #000; /* Change the color of the link text */
-  text-decoration: none; /* Remove default underline */
+  color: #000;
+  /* Change the color of the link text */
+  text-decoration: none;
+  /* Remove default underline */
 }
 
 .activeLink::before {
   content: "";
   position: absolute;
-  bottom: -10px; /* Adjust this value to control the gap from the link text and center the line */
+  bottom: -10px;
+  /* Adjust this value to control the gap from the link text and center the line */
   left: 0;
   width: 0;
-  height: 4px; /* Increase the thickness of the line */
-  background: linear-gradient(
-    180deg,
-    #d03a71 0%,
-    #e86026 100%,
-    rgba(119, 205, 216, 0) 100%
-  );
-  background-size: 100% 4px; /* Match the width and height of the underline */
+  height: 4px;
+  /* Increase the thickness of the line */
+  background: linear-gradient(180deg,
+      #d03a71 0%,
+      #e86026 100%,
+      rgba(119, 205, 216, 0) 100%);
+  background-size: 100% 4px;
+  /* Match the width and height of the underline */
   background-repeat: no-repeat;
-  border-radius: 2px; /* Make the line rounded at the corners */
-  transition: width 3s ease-in-out; /* Adjust animation duration as needed */
+  border-radius: 2px;
+  /* Make the line rounded at the corners */
+  transition: width 3s ease-in-out;
+  /* Adjust animation duration as needed */
 }
 
 /* Apply the animation when the link is active or hovered over */
@@ -44,6 +50,7 @@
 .container {
   position: relative;
 }
+
 .box {
   width: 67vw;
   height: 90px;
@@ -92,6 +99,7 @@
   font-size: 2rem;
   color: white;
 }
+
 .search {
   display: none;
 }
@@ -100,43 +108,53 @@
 .search {
   cursor: pointer;
 }
+
 @media (max-width: 1300px) {
   .headerlinks a {
     font-size: 1rem;
   }
 }
+
 @media (max-width: 1200px) {
   .main {
     margin: 0 20px;
   }
+
   .box2 {
     width: 140px;
   }
+
   .headerlinks a {
     font-size: 0.8rem;
   }
+
   .headerlinks {
     gap: 20px;
   }
 }
+
 @media (max-width: 1100px) {
   .main {
     margin: 0 0px;
   }
 }
+
 @media (max-width: 1000px) {
   .box2 {
     width: 110px;
   }
+
   .headerlinks {
     justify-content: flex-start;
     gap: 10px;
   }
 }
+
 .mobilelinks a {
   text-decoration: none;
   color: white;
 }
+
 .mobiletab {
   z-index: 100;
   top: 110%;
@@ -150,6 +168,7 @@
   border-radius: 40px;
   background-color: #2f2b2a;
 }
+
 .mobilelinks {
   display: flex;
   flex-direction: column;
@@ -157,30 +176,37 @@
   text-align: center;
   font-size: 1.4rem;
 }
+
 @media (max-width: 900px) {
   .headerlinks a {
     font-size: 1rem;
   }
 }
+
 @media (max-width: 800px) {
   .headerlinks2 a {
     display: none;
   }
+
   .navbar {
     display: none;
   }
+
   .search {
     display: block;
   }
+
   .header {
     justify-content: space-between;
     padding: 0 10px;
   }
+
   .box2 {
     width: 100px;
     height: 60px;
     clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 0% 100%, 0% 55%, 40% 0%);
   }
+
   .logoimage {
     height: 60px;
     width: auto;
