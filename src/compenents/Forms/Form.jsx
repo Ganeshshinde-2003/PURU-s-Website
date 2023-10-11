@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./form.module.css";
-import { useState } from "react";
+import { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 function Form() {
   const [candidate, setCandidate] = useState(true);
@@ -12,6 +13,7 @@ function Form() {
   const [message, setMessage] = useState("");
   const [portfolio, setPortfolio] = useState("");
   const [cv, setCV] = useState("");
+  const form = useRef();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -43,6 +45,21 @@ function Form() {
             body: JSON.stringify(formData),
           }
         );
+        emailjs
+          .sendForm(
+            "service_9cjeocr",
+            "template_5ezxh0b",
+            form.current,
+            "kur0xlk0tkiiMPcML"
+          )
+          .then(
+            (result) => {
+              console.log(result.text);
+            },
+            (error) => {
+              console.log(error.text);
+            }
+          );
         alert("Form submitted successfully!");
 
         setFirstName("");
@@ -94,6 +111,21 @@ function Form() {
             body: JSON.stringify(formData),
           }
         );
+        emailjs
+          .sendForm(
+            "service_3lsu20f",
+            "template_xzwaq0g",
+            form.current,
+            "kur0xlk0tkiiMPcML"
+          )
+          .then(
+            (result) => {
+              console.log(result.text);
+            },
+            (error) => {
+              console.log(error.text);
+            }
+          );
         alert("Form submitted successfully!");
 
         setFirstName("");
@@ -119,7 +151,7 @@ function Form() {
   return (
     <div className={styles.form}>
       {candidate ? (
-        <form>
+        <form ref={form}>
           <div className={styles.myInput}>
             <div className={styles.parent}>
               <div className={styles.box}>
@@ -239,7 +271,7 @@ function Form() {
               <div className={styles.box}>
                 <input
                   type="text"
-                  name="CompanyName"
+                  name="PhoneNo"
                   required
                   value={number}
                   placeholder="PHONE NUMBER*"
@@ -278,6 +310,7 @@ function Form() {
                 <input
                   type="text"
                   required
+                  name="companyName"
                   placeholder="COMPANY NAME"
                   value={company}
                   onChange={(e) => setCompany(e.target.value)}
@@ -314,7 +347,7 @@ function Form() {
               <div className={`${styles.box} ${styles.boxtext}`}>
                 <textarea
                   type="text"
-                  name="Message"
+                  name="message"
                   required
                   placeholder="Message*"
                   value={message}
@@ -380,7 +413,7 @@ function Form() {
           </div>
         </form>
       ) : (
-        <form>
+        <form ref={form}>
           <div className={styles.myInput}>
             <div className={styles.parent}>
               <div className={styles.box}>
@@ -500,7 +533,7 @@ function Form() {
               <div className={styles.box}>
                 <input
                   type="text"
-                  name="CompanyName"
+                  name="PhoneNo"
                   required
                   value={number}
                   placeholder="PHONE NUMBER*"
@@ -538,6 +571,7 @@ function Form() {
               <div className={styles.box}>
                 <input
                   type="text"
+                  name="Portfolio"
                   required
                   placeholder="PORTFOLIO LINK*"
                   value={portfolio}
@@ -575,6 +609,7 @@ function Form() {
               <div className={styles.box}>
                 <input
                   type="text"
+                  name="CV"
                   required
                   placeholder="CV GOOGLE DRIVE LINK*"
                   value={cv}
@@ -612,7 +647,7 @@ function Form() {
               <div className={`${styles.box} ${styles.boxtext}`}>
                 <textarea
                   type="text"
-                  name="Message"
+                  name="message"
                   required
                   placeholder="Message*"
                   value={message}
