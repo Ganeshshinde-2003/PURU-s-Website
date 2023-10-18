@@ -22,7 +22,6 @@ function Footer() {
               <Link href="https://instagram.com/puruent?igshid=OGQ5ZDc2ODk2ZA==">
                 <FaInstagram className={styles.insta} />
               </Link>
-              &nbsp;
               <Link href="https://wa.me/9967760336">
                 <FaWhatsapp className={styles.insta} />
               </Link>
