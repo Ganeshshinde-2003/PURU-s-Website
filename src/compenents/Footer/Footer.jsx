@@ -6,7 +6,7 @@ import { BsArrowRightCircle } from "react-icons/bs";
 
 import React from "react";
 import Image from "next/image";
-import { FaInstagram } from "react-icons/fa";
+import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -21,6 +21,10 @@ function Footer() {
             <div className={styles.socialmedia}>
               <Link href="https://instagram.com/puruent?igshid=OGQ5ZDc2ODk2ZA==">
                 <FaInstagram className={styles.insta} />
+              </Link>
+              &nbsp;
+              <Link href="https://wa.me/9967760336">
+                <FaWhatsapp className={styles.insta} />
               </Link>
             </div>
           </div>
