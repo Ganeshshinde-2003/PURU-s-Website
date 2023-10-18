@@ -19,10 +19,10 @@ function Footer() {
               <Link href="/">NEWS</Link>
             </div>
             <div className={styles.socialmedia}>
-              <Link href="https://instagram.com/puruent?igshid=OGQ5ZDc2ODk2ZA==">
+              <Link href="https://instagram.com/puruent?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">
                 <FaInstagram className={styles.insta} />
               </Link>
-              <Link href="https://wa.me/9967760336">
+              <Link href="https://wa.me/9967760336" target="_blank">
                 <FaWhatsapp className={styles.insta} />
               </Link>
             </div>
