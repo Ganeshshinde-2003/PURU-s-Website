@@ -6,6 +6,7 @@ import Image from "next/image";
 import { FiMenu } from "react-icons/fi";
 import Link from "next/link";
 import Logo from "../../../public/logo.png";
+import { RiWhatsappFill } from "react-icons/ri";
 
 function Navbar() {
   const [activeLink, setActiveLink] = useState();
@@ -183,6 +184,11 @@ function Navbar() {
             Consulting
           </Link>
         </div>
+      </div>
+      <div className={styles.linkwhatsapp}>
+        <Link href="https://wa.me/9967760336" target="_blank">
+          <RiWhatsappFill className={styles.insta} />
+        </Link>
       </div>
     </div>
   );
