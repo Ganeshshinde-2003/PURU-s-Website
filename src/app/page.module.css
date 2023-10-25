@@ -94,14 +94,18 @@
   width: 100%;
   height: auto;
 }
-
+.designimage {
+  height: auto;
+  width: 650px;
+}
 .empty .head2 {
   overflow: hidden;
   height: 1200px;
   top: -50px;
   left: 215px;
   perspective: 20px;
-  animation: parallaxHead2 3s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite alternate;
+  animation: parallaxHead2 3s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite
+    alternate;
   /* Adjust animation duration and cubic-bezier as needed */
   transform-style: preserve-3d;
   /* Enable 3D transformations */
@@ -162,7 +166,7 @@
 }
 
 .part1 .circle {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   font-size: 60px;
@@ -562,10 +566,13 @@
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .imgsection img {
     width: 100%;
     height: 400px;
+  }
+  .designimage {
+    width: 460px;
   }
 }
 
@@ -644,6 +651,7 @@
   }
 
   .part1 .circle {
+    display: flex;
     height: 100px;
     width: 100px;
   }
@@ -897,7 +905,6 @@
 }
 
 @media (max-width: 380px) {
-
   .approach.approachabout .imgpart span,
   .approach .imgpart span,
   .whatwedo .imgsection span,
