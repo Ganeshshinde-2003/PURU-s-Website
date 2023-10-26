@@ -10,15 +10,12 @@ const poppins = Poppins({
   weight: ["400", "500", "600", "700", "800", "900"],
 });
 
-export default function RootLayout({ children, title, description }) {
+export default function RootLayout({ children }) {
   return (
     <>
       <Head>
-        <title>{title || "Puru's"}</title>
-        <meta
-          name="description"
-          content={description || "Puru's Enterprises"}
-        />
+        <title>Puru's</title>
+        <meta name="description" content="Puru's Enterprises" />
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-H2VS7XQ1VW"
