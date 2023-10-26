@@ -23,18 +23,21 @@ export default function RootLayout({ children, title, description }) {
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-H2VS7XQ1VW"
         ></script>
-        <script
-          dangerouslySetInnerHTML={{
+        <script>
+          dangerouslySetInnerHTML=
+          {{
             __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag() {
                 dataLayer.push(arguments);
               }
               gtag('js', new Date());
-              gtag('config', 'G-H2VS7XQ1VW');
+              gtag('config', 'G-H2VS7XQ1VW'),{
+                page_path: window.location.pathname,
+              };
             `,
           }}
-        ></script>
+        </script>
       </Head>
       <html lang="en">
         <body className={poppins.className}>
